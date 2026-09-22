@@ -16,8 +16,9 @@
 ### 1. Úvod (Děti a rodina)
 Děti patří k rodičům. Naše děti jsou pro nás vším, ale kvůli ztrátě bydlení musely být dočasně umístěny do ústavní péče. Každý den bez nich je nesmírně těžký. Naším jediným cílem je mít děti zpátky doma u sebe.
 
-### 2. Byt jako jediná zákonná podmínka soudu
-Děti nám byly odebrány z jediného důvodu: ztráta bydlení. Soud i OSPOD stanovily jasnou podmínku: jakmile zajistíme stabilní bydlení s vlastní postelí pro každé dítě, ústavní výchova bude zrušena a děti se okamžitě vrací domů. Nemáme problémy se závislostmi ani zanedbáváním péče – jedinou překážkou je chybějící kauce na nájemní byt.
+### 2. Oficiální podmínka soudu a OSPOD
+Děti máme umístěné v ústavní péči pouze z důvodu absence vlastního bydlení. V usnesení soudu i v plánu OSPOD (IPOD) máme písemně stanovenou jasnou podmínku: jakmile předložíme platnou nájemní smlouvu a zajistíme dětský pokoj, ústavní výchova se neprodleně ruší a děti se vrací do péče rodičů. Vše máme doloženo úředními dokumenty.
+
 
 ### 3. Co už děláme (Aktivní snaha)
 Pracujeme, máme pravidelný příjem a spolupracujeme se sociálními pracovníky. Našli jsme vhodný byt a majitel je připraven podepsat smlouvu. Jediné, co chybí k podpisu a návratu dětí, je složení vratné kauce a prvního nájmu.

@@ -60,11 +60,15 @@
 
 ## 6. Postup založení sbírky krok za krokem
 
-1. **Zajištění bydlení:** Najít pronajímatele ochotného vystavit návrh nájemní smlouvy.
-2. **Příprava podkladů:** OP žadatele, návrh nájemní smlouvy, zpráva OSPOD/soudu.
-3. **Založení na Znesnáze21 / Donio:** Vyplnění formuláře, nahrání fotky a podkladů.
-4. **Konzultace s týmem:** Specifikovat požadavek na přímé proplacení nájmu majiteli.
-5. **Spuštění a medializace:** Okamžité sdílení, kontaktování sociálních organizací.
+1. **Příprava úředních dokladů:**
+   * Usnesení / rozsudek soudu (odůvodnění umístění z důvodu bydlení).
+   * Individuální plán ochrany dítěte (IPOD) nebo zpráva OSPOD.
+   * Občanský průkaz žadatele.
+2. **Zajištění bydlení:** Získat písemný návrh nájemní smlouvy s vyčíslením kauce.
+3. **Založení sbírky:** Nahrání formuláře na Znesnáze21 nebo Donio s doložením dokumentů.
+4. **Nastavení přímé platby:** Požadavek na úhradu kauce přímo pronajímateli.
+5. **Spuštění a medializace:** Okamžité sdílení a informování sociálního kurátora.
+
 
 ---
 
