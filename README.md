@@ -52,7 +52,13 @@
 
 ---
 
-## Shrnutí a rizika pro tuto situaci
-* **Exekuce:** Zahraniční weby posílají peníze na osobní účet (exekutor v ČR je zabaví).
-* **Doporučení:** Znesnáze21 chrání peníze platbou přímo majiteli bytu.
+## Oficiální pravidla a tipy Znesnáze21 (#tipy)
+* **1. Maximální upřímnost:** Přesný popis situace bez přikrášlování i zlehčování.
+* **2. Autentické fotografie:** Klíč k důvěře dárců; sbírka bez fotky selhává.
+* **3. Okamžité sdílení:** Sdílení rodině a známým startuje prvotní algoritmus dárců.
+* **4. Pravidelné aktuality:** Zveřejňování pokroků v jednání s úřady a hledání bytu.
+* **5. Oslovení osobností/médií:** Zapojení lokálních médií a známých tváří zvyšuje dosah.
+* **6. Lokální komunita a firmy:** Zapojení zaměstnavatelů a místních spolků v okolí.
+* **7. Průběžná asistence:** Konzultace s koordinátory Znesnáze21 ohledně úřadů a smluv.
+
 
