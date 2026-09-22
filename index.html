@@ -3,42 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vraťme děti domů: Pomoc se zajištěním bydlení</title>
-  <meta name="description" content="Informační stránka rodiny: Sbírka na kauci a vybavení pro splnění podmínky soudu k návratu dětí z ústavní péče.">
+  <title>Vraťme děti domů | Pomoc se zajištěním stabilního bydlení</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Informační iniciativa pro návrat dětí z ústavní péče. Zajištění kauce a bezpečného bydlení jako jediná zákonná podmínka soudu a OSPOD.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vraťme děti domů | Zajištění stabilního bydlení">
+  <meta property="og:description" content="Oficiální sbírka na kauci a dětský pokoj. Jediná podmínka soudu pro návrat dětí k rodičům.">
+  <meta property="og:locale" content="cs_CZ">
+  
+  <!-- Favicon SVG Data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e63946'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>">
+
+  <!-- Google Consent Mode v2 Default Setup -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied'
+    });
+  </script>
+
   <style>
     :root {
       --primary: #e63946;
       --primary-hover: #d62828;
-      --dark: #1d3557;
-      --light: #f8f9fa;
-      --text: #2b2d42;
-      --card: #ffffff;
-      --border: #e2e8f0;
+      --navy: #1d3557;
+      --blue-light: #f1faee;
+      --teal: #2a9d8f;
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --card-bg: #ffffff;
+      --border: #cbd5e1;
       --muted: #64748b;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
     }
+    
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       color: var(--text);
-      background-color: var(--light);
+      background-color: var(--bg);
       line-height: 1.6;
-      padding-bottom: 80px;
+      padding-bottom: 90px;
+      -webkit-font-smoothing: antialiased;
     }
+    
     .container {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto;
-      padding: 24px 16px;
+      padding: 32px 16px;
     }
+
+    /* Trust Header Bar */
+    .trust-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--blue-light);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      border: 1px solid #cce3de;
+    }
+
+    /* Main Title */
     header {
       text-align: center;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
     .badge {
       display: inline-block;
       background: #fee2e2;
       color: #991b1b;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       padding: 4px 12px;
       border-radius: 9999px;
       margin-bottom: 12px;
@@ -46,37 +98,55 @@
       letter-spacing: 0.5px;
     }
     h1 {
-      font-size: 1.85rem;
-      color: var(--dark);
-      line-height: 1.3;
+      font-size: 2rem;
+      color: var(--navy);
+      line-height: 1.25;
       margin-bottom: 12px;
+      font-weight: 800;
     }
-    .lead {
+    .subtitle {
       font-size: 1.15rem;
-      color: #4a5568;
+      color: #475569;
+      max-width: 680px;
+      margin: 0 auto;
     }
+
+    /* Hero Card */
     .hero-card {
-      background: var(--card);
+      background: var(--card-bg);
       border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      padding: 28px;
+      box-shadow: var(--shadow);
       border: 1px solid var(--border);
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
-    .photo-placeholder {
+    
+    /* Photo Container */
+    .photo-box {
       width: 100%;
-      height: 260px;
-      background: #e2e8f0;
+      height: 280px;
+      background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
       border-radius: 12px;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #64748b;
-      font-weight: 600;
-      margin-bottom: 20px;
+      color: var(--muted);
+      margin-bottom: 24px;
       text-align: center;
-      padding: 16px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      border: 1px dashed #94a3b8;
     }
+    .photo-box svg {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 8px;
+      opacity: 0.7;
+    }
+
+    /* Primary CTA Button */
     .btn-cta {
       display: block;
       width: 100%;
@@ -89,80 +159,168 @@
       padding: 18px 24px;
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(230, 57, 70, 0.35);
-      transition: background 0.2s ease, transform 0.1s ease;
+      transition: all 0.2s ease;
       margin: 20px 0;
+      border: none;
+      cursor: pointer;
     }
     .btn-cta:hover {
       background: var(--primary-hover);
       transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(230, 57, 70, 0.45);
     }
+
+    /* Guarantee Callout */
+    .guarantee-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      padding: 16px 20px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .guarantee-box span { font-size: 1.3rem; }
+
+    /* Info Grid */
     .info-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
-    .info-box {
-      background: #f1f5f9;
-      padding: 16px;
-      border-radius: 10px;
-      border-left: 4px solid var(--dark);
+    .info-card {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      border-left: 5px solid var(--navy);
     }
-    .info-box h3 {
-      font-size: 1.05rem;
-      color: var(--dark);
-      margin-bottom: 6px;
+    .info-card h3 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    .info-box p {
+    .info-card p {
       font-size: 0.95rem;
       color: #334155;
     }
-    .security-notice {
-      background: #ecfdf5;
-      border: 1px solid #a7f3d0;
-      color: #065f46;
-      padding: 14px 16px;
-      border-radius: 10px;
-      font-size: 0.9rem;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+
+    /* Budget Breakdown Table */
+    .budget-section {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
     }
-    /* Legal Section */
+    .budget-section h2 {
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .budget-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    .budget-table th, .budget-table td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .budget-table th {
+      background: #f1f5f9;
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .budget-table tr:last-child td {
+      font-weight: 700;
+      color: var(--primary);
+      border-bottom: none;
+      font-size: 1.05rem;
+    }
+
+    /* FAQ Accordion */
+    .faq-section {
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+    .faq-section h2 {
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    details {
+      margin-bottom: 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 14px 16px;
+      background: #f8fafc;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--navy);
+      user-select: none;
+    }
+    details p {
+      padding: 14px 16px;
+      font-size: 0.95rem;
+      color: #334155;
+      background: #fff;
+    }
+
+    /* Legal & Transparency Footer Card */
     .legal-card {
-      background: var(--card);
+      background: var(--card-bg);
       border-radius: 12px;
-      padding: 20px;
+      padding: 24px;
       border: 1px solid var(--border);
       font-size: 0.85rem;
       color: var(--muted);
       margin-bottom: 24px;
     }
     .legal-card h3 {
-      color: var(--dark);
+      color: var(--navy);
       margin-bottom: 10px;
       font-size: 1rem;
     }
     .legal-card p {
       margin-bottom: 8px;
     }
-    .legal-nav {
+    .legal-links {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       justify-content: center;
       margin-top: 16px;
-      padding-top: 12px;
+      padding-top: 14px;
       border-top: 1px solid var(--border);
     }
-    .legal-nav a {
-      color: var(--dark);
+    .legal-links button {
+      background: none;
+      border: none;
+      color: var(--navy);
       text-decoration: underline;
       cursor: pointer;
-      font-weight: 500;
+      font-size: 0.85rem;
+      font-weight: 600;
     }
-    /* Modal styles */
+
+    /* Dialog Modals */
     dialog {
       max-width: 600px;
       width: 90%;
@@ -170,37 +328,32 @@
       border: 1px solid var(--border);
       padding: 24px;
       margin: auto;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
     }
     dialog::backdrop {
-      background: rgba(0,0,0,0.5);
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(2px);
     }
-    dialog h2 {
-      margin-bottom: 12px;
-      color: var(--dark);
-    }
-    dialog p {
-      font-size: 0.9rem;
-      color: #334155;
-      margin-bottom: 10px;
-    }
-    .dialog-close {
+    dialog h2 { margin-bottom: 12px; color: var(--navy); font-size: 1.25rem; }
+    dialog p { font-size: 0.9rem; color: #334155; margin-bottom: 10px; }
+    .dialog-close-btn {
       margin-top: 16px;
-      padding: 8px 16px;
-      background: var(--dark);
+      padding: 8px 18px;
+      background: var(--navy);
       color: #fff;
       border: none;
       border-radius: 6px;
       cursor: pointer;
       font-weight: 600;
     }
+
     /* Cookie Banner */
     #cookie-banner {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      background: #1e293b;
+      background: #0f172a;
       color: #f8fafc;
       padding: 16px;
       display: flex;
@@ -208,170 +361,270 @@
       align-items: center;
       justify-content: space-between;
       gap: 12px;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
       z-index: 9999;
       font-size: 0.85rem;
     }
     @media (min-width: 640px) {
       #cookie-banner {
         flex-direction: row;
-        padding: 16px 24px;
+        padding: 16px 28px;
       }
     }
-    .cookie-buttons {
+    .cookie-actions {
       display: flex;
-      gap: 8px;
+      gap: 10px;
     }
-    .cookie-btn {
-      padding: 8px 16px;
+    .btn-cookie {
+      padding: 8px 18px;
       border-radius: 6px;
       border: none;
       cursor: pointer;
       font-weight: 600;
       font-size: 0.85rem;
+      white-space: nowrap;
     }
-    .cookie-btn-accept {
+    .btn-cookie-accept {
       background: #10b981;
       color: #ffffff;
     }
-    .cookie-btn-reject {
+    .btn-cookie-reject {
       background: #475569;
       color: #ffffff;
     }
+
     footer {
       text-align: center;
       font-size: 0.85rem;
       color: var(--muted);
-      padding: 24px 0;
+      padding: 16px 0;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    
+    <!-- Trust Header Badges -->
+    <div class="trust-bar">
+      <div class="trust-item">🛡️ Úřední garance soudu a OSPOD</div>
+      <div class="trust-item">🔒 Přímá platba pronajímateli</div>
+      <div class="trust-item">⚖️ Zákon o veřejných sbírkách č. 117/2001 Sb.</div>
+    </div>
+
+    <!-- Header / Hero Title -->
     <header>
-      <span class="badge">Oficiální výzva pro návrat dětí</span>
-      <h1>Vraťme děti domů: Pomozte nám splnit podmínku soudu pro bezpečné bydlení</h1>
-      <p class="lead">Děti musely být dočasně umístěny do zařízení z jediného důvodu – ztráty domova. Jakmile doložíme nájemní smlouvu, vrací se zpět k rodičům.</p>
+      <span class="badge">Oficiální výzva pro návrat rodiny</span>
+      <h1>Vraťme děti domů: Pomozte nám splnit jedinou podmínku soudu pro bezpečný domov</h1>
+      <p class="subtitle">Děti musely být dočasně umístěny do zařízení z jediného důvodu – ztráty bydlení. Jakmile doložíme platnou nájemní smlouvu a pokojíček, vrací se okamžitě domů k rodičům.</p>
     </header>
 
+    <!-- Main Story Card -->
     <div class="hero-card">
-      <div class="photo-placeholder">
-        [Zde bude fotografie rodiny / dětí zezadu či dětská kresba nového domova]
+      <div class="photo-box">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        <strong>[Zde vložte fotografii rodiny / dětí zezadu nebo dětskou kresbu nového domova]</strong>
+        <p style="font-size: 0.8rem; margin-top: 4px;">Důstojná fotografie bez odhalení tváří dětí v souladu s doporučením OSPOD</p>
       </div>
 
-      <a href="https://www.znesnaze21.cz" target="_blank" class="btn-cta" id="cta-button-top">
+      <a href="https://www.znesnaze21.cz" target="_blank" class="btn-cta" id="cta-main-top">
         Chci pomoci vrátit děti domů &rarr;
       </a>
 
-      <div class="security-notice">
+      <!-- Direct Payout Guarantee -->
+      <div class="guarantee-box">
         <span>🛡️</span>
-        <div><strong>100% jistota dárců:</strong> Vybrané prostředky nejdou na soukromý účet, ale jsou zasílány přímo majiteli bytu na úhradu kauce a nájemného.</div>
+        <div>
+          <strong>100% jistota pro dárce:</strong>
+          Vybrané prostředky neprochází soukromým bankovním účtem rodiny. Jsou v plné výši a transparentně zasílány přímo majiteli bytu na úhradu kauce a nájmu. Dary jsou chráněny před jakoukoliv exekucí.
+        </div>
       </div>
 
+      <!-- Core 3 Pillars -->
       <div class="info-grid">
-        <div class="info-box">
-          <h3>⚖️ Stanovisko soudu a OSPOD</h3>
-          <p>Máme úředně stanovenou jasnou podmínku: zajištění stabilního bydlení s vlastní postelí pro každé dítě znamená okamžité zrušení ústavní péče.</p>
+        <div class="info-card">
+          <h3>⚖️ Oficiální podmínka soudu a OSPOD</h3>
+          <p>Máme v usnesení soudu i individuálním plánu OSPOD (IPOD) stanoveno: jediným důvodem odloučení je chybějící bydlení. Zajištění nájmu a vlastních postelí pro děti znamená okamžité zrušení ústavní péče.</p>
         </div>
 
-        <div class="info-box">
-          <h3>🛠️ Vlastní aktivita rodičů</h3>
-          <p>Máme stálý příjem a nalezený vhodný byt. Vstupní překážkou je pouze složení jistoty (kauce) a prvního nájmu, které naráz neuhradíme.</p>
+        <div class="info-card">
+          <h3>🛠️ Vlastní aktivita a úsilí rodičů</h3>
+          <p>Nesedíme se založenýma rukama. Máme pravidelný příjem a spolupracujeme se sociálními pracovníky. Našli jsme vyhovující nájemní byt – jedinou nepřekonatelnou překážkou je složení jistoty (kauce) naráz.</p>
         </div>
 
-        <div class="info-box">
-          <h3>🎯 Přesné využití darů</h3>
-          <p>Kauce majiteli bytu (35 000 Kč), první nájemné (15 000 Kč) a základní postele a matrace pro děti (15 000 Kč).</p>
+        <div class="info-card">
+          <h3>🎯 Přímý a měřitelný dopad daru</h3>
+          <p>Každý příspěvek přímo zkracuje čas, který děti musí trávit v ústavní péči. Dárce nekupuje sliby, ale konkrétní metry čtvereční bezpečí a nábytek pro děti.</p>
         </div>
       </div>
 
-      <a href="https://www.znesnaze21.cz" target="_blank" class="btn-cta" id="cta-button-bottom">
-        Přejít na sbírku a podpořit rodinu &rarr;
+      <a href="https://www.znesnaze21.cz" target="_blank" class="btn-cta" id="cta-main-bottom">
+        Přejít na sbírku na Znesnáze21 &rarr;
       </a>
     </div>
 
-    <!-- Právní náležitosti povinné pro Google Ads a Sklik -->
-    <div class="legal-card" id="pravni-informace">
-      <h3>Transparentnost a zákonné náležitosti</h3>
-      <p><strong>Provozovatel webu:</strong> Iniciativa pro podporu rodiny, Česká republika | Kontakt: <a href="mailto:pomoc.rodine.sbirka@gmail.com">pomoc.rodine.sbirka@gmail.com</a></p>
-      <p><strong>Právní povaha sbírky:</strong> Tato stránka je nezávislou informační prezentací rodiny. Finanční dary nejsou přijímány na této stránce, ale jsou vybírány prostřednictvím veřejné sbírky na licencované platformě <strong>Znesnáze21 (Nadační fond pomoci)</strong> v souladu se zákonem č. 117/2001 Sb. o veřejných sbírkách.</p>
-      <p><strong>Vyloučení odpovědnosti:</strong> Informace zde uvedené vycházejí ze skutečných rodinných poměrů a rozhodnutí příslušných orgánů sociálně-právní ochrany dětí a soudu.</p>
-      
-      <div class="legal-nav">
-        <a onclick="document.getElementById('modal-terms').showModal()">Podmínky užití</a>
-        <a onclick="document.getElementById('modal-privacy').showModal()">Ochrana soukromí (GDPR)</a>
-        <a onclick="document.getElementById('modal-cookies').showModal()">Zásady cookies</a>
-        <a onclick="document.getElementById('modal-contact').showModal()">Kontakt</a>
+    <!-- Transparent Budget Breakdown -->
+    <div class="budget-section">
+      <h2>Položkový rozpočet sbírky (Kde každá koruna pomáhá)</h2>
+      <table class="budget-table">
+        <thead>
+          <tr>
+            <th>Položka</th>
+            <th>Způsob úhrady</th>
+            <th>Částka</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vratná jistota (kauce na byt)</td>
+            <td>Přímá platba pronajímateli</td>
+            <td>35 000 Kč</td>
+          </tr>
+          <tr>
+            <td>První nájemné předem</td>
+            <td>Přímá platba pronajímateli</td>
+            <td>15 000 Kč</td>
+          </tr>
+          <tr>
+            <td>Postele, matrace a lůžkoviny pro děti</td>
+            <td>Proplacení faktury dodavateli nábytku</td>
+            <td>15 000 Kč</td>
+          </tr>
+          <tr>
+            <td>Základní spotřebiče (pračka, lednice)</td>
+            <td>Proplacení faktury dodavateli elektro</td>
+            <td>10 000 Kč</td>
+          </tr>
+          <tr>
+            <td><strong>Celková cílová částka</strong></td>
+            <td><strong>100% účelově vázáno</strong></td>
+            <td><strong>75 000 Kč</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <div class="faq-section">
+      <h2>Časté dotazy dárců</h2>
+      <details>
+        <summary>Kam přesně putují vybrané peníze?</summary>
+        <p>Peníze nejdou na soukromý účet rodičů. Platforma Znesnáze21 (Nadační fond pomoci) proplácí kauci a nájemné přímo na účet pronajímatele na základě nájemní smlouvy. Vybavení pokoje je hrazeno přímo obchodům na fakturu.</p>
+      </details>
+      <details>
+        <summary>Mohou být peníze zabaveny exekutorem?</summary>
+        <p>Ne. Vzhledem k tomu, že finance vůbec nevstupují na účet rodiny a jsou vypláceny třetím stranám jako účelový příspěvek na bydlení, exekuce na ně ze zákona nemůže dosáhnout.</p>
+      </details>
+      <details>
+        <summary>Co se stane, když se nevybere 100 % částky?</summary>
+        <p>Platforma Znesnáze21 předává i částečně vybranou částku. Každá koruna pomůže zaplatit alespoň část kauce nebo základní vybavení.</p>
+      </details>
+      <details>
+        <summary>Mohu darovat anonymně a získat potvrzení o daru?</summary>
+        <p>Ano. Na oficiální stránce Znesnáze21 můžete zaškrtnout anonymní dar. Potvrzení pro daňové účely obdržíte automaticky e-mailem.</p>
+      </details>
+    </div>
+
+    <!-- Mandatory Legal Footer Card (Google Ads & Sklik Compliance) -->
+    <div class="legal-card" id="legal">
+      <h3>Transparentnost, provozovatel a právní soulad</h3>
+      <p><strong>Provozovatel informačního webu:</strong> Zástupce rodiny pro koordinaci pomoci, Česká republika | Kontakt: <a href="mailto:pomoc.rodine.sbirka@gmail.com" style="color:var(--navy); font-weight:600;">pomoc.rodine.sbirka@gmail.com</a></p>
+      <p><strong>Právní povaha sbírky:</strong> Tato stránka je nezávislým informačním představením situace. Finanční prostředky nejsou vybírány na tomto webu. Veškeré dary jsou shromažďovány v rámci veřejné sbírky vedené na oficiální a licencované platformě <strong>Znesnáze21 (Nadační fond pomoci)</strong> v plném souladu se zákonem č. 117/2001 Sb. o veřejných sbírkách.</p>
+      <p><strong>Daňové informace:</strong> Výtěžek sbírky je pro rodinu v nouzi 100% osvobozen od daně z příjmů dle § 4a zákona č. 586/1992 Sb. Dárci mohou uplatnit odpočet ze základu daně dle potvrzení vystaveného Nadačním fondem pomoci.</p>
+
+      <div class="legal-links">
+        <button onclick="document.getElementById('modal-terms').showModal()">Podmínky užití webu</button>
+        <button onclick="document.getElementById('modal-privacy').showModal()">Ochrana soukromí (GDPR)</button>
+        <button onclick="document.getElementById('modal-cookies').showModal()">Zásady cookies</button>
+        <button onclick="document.getElementById('modal-contact').showModal()">Kontakt a Impressum</button>
       </div>
     </div>
 
     <footer>
       <p>&copy; 2026 Transparentní informační iniciativa pro návrat dětí do rodiny. Všechna práva vyhrazena.</p>
     </footer>
+
   </div>
 
-  <!-- Modály pro právní náležitosti -->
+  <!-- Interactive Modals for Full Legal Coverage -->
   <dialog id="modal-terms">
     <h2>Podmínky užití webu</h2>
-    <p>1. Web slouží výhradně k informování veřejnosti o situaci rodiny a k odkazu na oficiální sbírku na platformě Znesnáze21.</p>
-    <p>2. Provozovatel webu nepřijímá na této doméně žádné finanční transakce ani platby kartou.</p>
-    <p>3. Všechny finanční dary jsou poskytovány dobrovolně dle obchodních podmínek platformy Znesnáze21.</p>
-    <button class="dialog-close" onclick="document.getElementById('modal-terms').close()">Zavřít</button>
+    <p>1. Tento web plní funkci informačního mostu a představení příběhu pro veřejnou sbírku.</p>
+    <p>2. Provozovatel na tomto webu neprovozuje žádnou platební bránu ani nepřijímá finanční prostředky.</p>
+    <p>3. Všechna tlačítka pro darování přesměrovávají uživatele na zabezpečené rozhraní platformy Znesnáze21.</p>
+    <p>4. Veškerý obsah vychází ze skutečných úředních podkladů a rozhodnutí soudu.</p>
+    <button class="dialog-close-btn" onclick="document.getElementById('modal-terms').close()">Zavřít</button>
   </dialog>
 
   <dialog id="modal-privacy">
-    <h2>Ochrana osobních údajů (GDPR)</h2>
-    <p>1. Správcem případných kontaktních údajů je zástupce rodiny (kontakt: pomoc.rodine.sbirka@gmail.com).</p>
-    <p>2. Tento web neshromažďuje žádná bankovní ani platební data návštěvníků.</p>
-    <p>3. Pokud udělíte souhlas, web může využívat anonymní analytické a remarketingové cookies pro reklamní systémy Google Ads a Sklik (Seznam.cz).</p>
-    <p>4. Návštěvník má právo svůj souhlas kdykoliv odvolat smazáním cookies v prohlížeči.</p>
-    <button class="dialog-close" onclick="document.getElementById('modal-privacy').close()">Zavřít</button>
+    <h2>Zásady ochrany osobních údajů (GDPR)</h2>
+    <p>1. Správcem kontaktních údajů je zástupce rodiny pro koordinaci iniciativy (kontakt: pomoc.rodine.sbirka@gmail.com).</p>
+    <p>2. Tento web nezpracovává bankovní údaje, čísla karet ani rodná čísla návštěvníků.</p>
+    <p>3. Zpracování technických údajů (IP adresa, cookies) probíhá pouze pro zajištění provozu webu a analytiku reklamních systémů Google Ads a Seznam Sklik.</p>
+    <p>4. Návštěvník má právo na přístup, opravu či výmaz svých osobních údajů kontaktováním správce.</p>
+    <button class="dialog-close-btn" onclick="document.getElementById('modal-privacy').close()">Zavřít</button>
   </dialog>
 
   <dialog id="modal-cookies">
-    <h2>Zásady používání souborů cookies</h2>
-    <p>Na našich stránkách využíváme technické cookies nutné pro funkčnost a volitelně analytické a marketingové cookies pro měření efektivity reklamních kampaní v systémech Google Ads a Sklik.</p>
-    <p>Používání marketingových cookies je aktivováno pouze na základě vašeho dobrovolného souhlasu.</p>
-    <button class="dialog-close" onclick="document.getElementById('modal-cookies').close()">Zavřít</button>
+    <h2>Informace o souborech cookies</h2>
+    <p>Web používá nezbytné technické cookies pro své fungování.</p>
+    <p>Marketingové a měřicí cookies systémů Google Ads a Sklik (Seznam.cz) jsou spouštěny výhradně po udělení vašeho aktivního souhlasu na liště cookies v souladu s legislativou ČR a Google Consent Mode v2.</p>
+    <button class="dialog-close-btn" onclick="document.getElementById('modal-cookies').close()">Zavřít</button>
   </dialog>
 
   <dialog id="modal-contact">
-    <h2>Kontaktní informace</h2>
-    <p><strong>Účel webu:</strong> Podpora rodiny v nouzi a zajištění bydlení pro návrat dětí.</p>
+    <h2>Kontaktní údaje a Impressum</h2>
+    <p><strong>Název iniciativy:</strong> Vraťme děti domů</p>
+    <p><strong>Účel:</strong> Transparentní pomoc rodině v nouzi k zajištění bydlení pro splnění podmínky soudu</p>
     <p><strong>E-mail:</strong> pomoc.rodine.sbirka@gmail.com</p>
-    <p><strong>Země původu:</strong> Česká republika</p>
-    <p><strong>Garant sbírky:</strong> Nadační fond pomoci (Znesnáze21.cz)</p>
-    <button class="dialog-close" onclick="document.getElementById('modal-contact').close()">Zavřít</button>
+    <p><strong>Lokalita:</strong> Česká republika</p>
+    <p><strong>Zastřešující sbírková platforma:</strong> Znesnáze21 (Nadační fond pomoci Karla Janečka)</p>
+    <button class="dialog-close-btn" onclick="document.getElementById('modal-contact').close()">Zavřít</button>
   </dialog>
 
-  <!-- Cookie Banner splňující požadavky EU / Google Consent Mode / Sklik -->
+  <!-- Complete Cookie Banner -->
   <div id="cookie-banner">
     <div>
-      Tento web používá nezbytné a analytické cookies ke správnému zobrazení a měření návštěvnosti z reklam Sklik a Google Ads.
+      Tento web používá cookies pro zajištění správného zobrazení a měření úspěšnosti kampaní v systémech Google Ads a Seznam Sklik v souladu se zákonem č. 127/2005 Sb.
     </div>
-    <div class="cookie-buttons">
-      <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Rozumím a souhlasím</button>
-      <button class="cookie-btn cookie-btn-reject" id="cookie-reject">Odmítnout</button>
+    <div class="cookie-actions">
+      <button class="btn-cookie btn-cookie-accept" id="btn-accept-cookie">Povolit vše</button>
+      <button class="btn-cookie btn-cookie-reject" id="btn-reject-cookie">Odmítnout</button>
     </div>
   </div>
 
   <script>
-    // Cookie banner handling
+    // Functional Cookie Consent Handler with Google Consent Mode v2
     const banner = document.getElementById('cookie-banner');
-    const acceptBtn = document.getElementById('cookie-accept');
-    const rejectBtn = document.getElementById('cookie-reject');
+    const btnAccept = document.getElementById('btn-accept-cookie');
+    const btnReject = document.getElementById('btn-reject-cookie');
 
-    if (localStorage.getItem('cookie_consent')) {
+    const consentStatus = localStorage.getItem('site_cookie_consent');
+
+    if (consentStatus) {
       banner.style.display = 'none';
+      if (consentStatus === 'granted') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+      }
     }
 
-    acceptBtn.addEventListener('click', () => {
-      localStorage.setItem('cookie_consent', 'accepted');
+    btnAccept.addEventListener('click', function() {
+      localStorage.setItem('site_cookie_consent', 'granted');
       banner.style.display = 'none';
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted'
+      });
     });
 
-    rejectBtn.addEventListener('click', () => {
-      localStorage.setItem('cookie_consent', 'rejected');
+    btnReject.addEventListener('click', function() {
+      localStorage.setItem('site_cookie_consent', 'denied');
       banner.style.display = 'none';
     });
   </script>
