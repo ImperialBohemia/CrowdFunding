@@ -65,3 +65,8 @@
 3. **Založení na Znesnáze21 / Donio:** Vyplnění formuláře, nahrání fotky a podkladů.
 4. **Konzultace s týmem:** Specifikovat požadavek na přímé proplacení nájmu majiteli.
 5. **Spuštění a medializace:** Okamžité sdílení, kontaktování sociálních organizací.
+
+---
+
+* **Kompletní manuál psychologie a textu:** [PSYCHOLOGIE_A_STRATEGIE.md](file:///home/q/CrowdFunding/PSYCHOLOGIE_A_STRATEGIE.md)
+
