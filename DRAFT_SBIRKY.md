@@ -26,9 +26,14 @@ Pracujeme, máme pravidelný příjem a spolupracujeme se sociálními pracovní
 
 ### 4. Na co budou finance použity (Položkový rozpočet)
 * **Kauce na byt (jistota pronajímateli):** 35 000 Kč (placeno přímo majiteli).
-* **První nájemné:** 15 000 Kč (placeno přímo majiteli).
-* **Postele, matrace a lůžkoviny pro děti:** 15 000 Kč (dle požadavků OSPOD).
-* **Základní spotřebiče a vybavení:** 10 000 Kč.
+* **První nájemné předem:** 15 000 Kč (placeno přímo majiteli).
+* **Dětský pokoj (postele, matrace, lůžkoviny):** 15 000 Kč (přímá faktura nábytku).
+* **Dětský studijní koutek (psací stůl a židle pro děti):** 6 000 Kč.
+* **Jídelní stůl a židle pro rodinu:** 7 000 Kč.
+* **Obývací sedačka a konferenční stolek:** 10 000 Kč.
+* **Základní spotřebiče (pračka, lednice):** 12 000 Kč.
+* **Celková cílová částka:** **100 000 Kč**.
+
 
 ### 5. Co bude následovat
 Peníze nejdou na náš osobní účet, ale přímo pronajímateli. Jakmile podepíšeme nájemní smlouvu a připravíme pokojíček, OSPOD a soud mohou rozhodnout o okamžitém návratu dětí domů. V aktualitách vám ukážeme zařízený byt i šťastný návrat dětí.
