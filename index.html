@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vraťme děti domů | Zajištění stabilního bydlení</title>
+  <title>Vraťme děti domů | Zajištění stabilního bydlení pro rodinu</title>
   
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Pomozte rodině splnit jedinou podmínku soudu pro návrat dětí z ústavní péče – zajištění kauce na nájemní byt.">
+  <meta name="description" content="Informační iniciativa pro návrat dětí z ústavu. Splnění podmínky soudu zajištěním nájemního bytu a základního vybavení.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Vraťme děti domů | Zajištění stabilního bydlení">
-  <meta property="og:description" content="Oficiální výzva na kauci a zázemí pro děti. Dary jdou přímo majiteli bytu.">
+  <meta property="og:title" content="Vraťme děti domů | Zajištění stabilního bydlení pro rodinu">
+  <meta property="og:description" content="Oficiální výzva na kauci a vybavení pokojíčku. Dary jdou přímo pronajímateli.">
   <meta property="og:locale" content="cs_CZ">
   
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e63946'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ea580c'><path d='M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z'/></svg>">
 
   <!-- Google Consent Mode v2 -->
   <script>
@@ -29,119 +29,132 @@
   </script>
 
   <style>
+    /* Psychologicky ověřená barevná paleta: Důvěra (Navy), Naděje/Růst (Smaragd), Akce/Teplo (Terakota/Oranžová) */
     :root {
-      --primary: #e63946;
-      --primary-hover: #d62828;
-      --navy: #1d3557;
-      --blue-light: #f1faee;
-      --teal: #2a9d8f;
-      --bg: #f8fafc;
-      --text: #1e293b;
+      --navy-900: #0f172a;
+      --navy-800: #1e293b;
+      --navy-700: #334155;
+      --emerald-600: #059669;
+      --emerald-700: #047857;
+      --emerald-50: #ecfdf5;
+      --emerald-100: #d1fae5;
+      --action-orange: #ea580c;
+      --action-hover: #c2410c;
+      --warm-bg: #f8fafc;
       --card-bg: #ffffff;
-      --border: #cbd5e1;
-      --muted: #64748b;
-      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      --border-subtle: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 25px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
     }
     
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      color: var(--text);
-      background-color: var(--bg);
+      color: var(--text-main);
+      background-color: var(--warm-bg);
       line-height: 1.6;
-      padding-bottom: 120px;
+      padding-bottom: 110px;
       -webkit-font-smoothing: antialiased;
     }
     
     .container {
-      max-width: 780px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 24px 16px;
+      padding: 20px 16px;
     }
 
-    /* Trust Header Bar */
+    /* Trust Authority Header Bar */
     .trust-bar {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       margin-bottom: 20px;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: var(--navy);
+      color: var(--navy-800);
     }
-    .trust-item {
-      display: flex;
+    .trust-pill {
+      display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: var(--blue-light);
-      padding: 6px 14px;
+      background: #ffffff;
+      padding: 6px 12px;
       border-radius: 9999px;
-      border: 1px solid #cce3de;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
     }
 
+    /* Header & Hero Text */
     header {
       text-align: center;
       margin-bottom: 24px;
     }
-    .badge {
-      display: inline-block;
-      background: #fee2e2;
-      color: #991b1b;
+    .badge-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--emerald-50);
+      color: var(--emerald-700);
+      border: 1px solid var(--emerald-100);
       font-weight: 700;
       font-size: 0.8rem;
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 9999px;
       margin-bottom: 12px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
     h1 {
-      font-size: 1.95rem;
-      color: var(--navy);
+      font-size: 2rem;
+      color: var(--navy-900);
       line-height: 1.25;
       margin-bottom: 12px;
       font-weight: 800;
+      letter-spacing: -0.02em;
     }
     .subtitle {
       font-size: 1.1rem;
-      color: #475569;
-      max-width: 660px;
+      color: var(--navy-700);
+      max-width: 680px;
       margin: 0 auto;
     }
 
-    /* Hero Card & Interactive Funnel */
+    /* Hero Card & Visual */
     .hero-card {
       background: var(--card-bg);
-      border-radius: 16px;
+      border-radius: 20px;
       padding: 24px;
-      box-shadow: var(--shadow);
-      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-subtle);
       margin-bottom: 24px;
     }
-    
-    .photo-box {
-      width: 100%;
-      height: 260px;
-      background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
-      border-radius: 12px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      margin-bottom: 20px;
-      text-align: center;
-      padding: 20px;
-      border: 1px dashed #94a3b8;
-    }
-    .photo-box svg { width: 44px; height: 44px; margin-bottom: 8px; opacity: 0.7; }
 
-    /* Funnel Step 1: Donation Selector */
-    .funnel-box {
+    /* Demo Visual: Warm SVG Illustration of Family Walking into Home */
+    .visual-hero-container {
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-subtle);
+      background: #fff;
+    }
+    .visual-hero-container svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Funnel Stage 2: Micro-Commitment Amount Selector */
+    .funnel-selector-box {
       background: #f8fafc;
       border: 2px solid #e2e8f0;
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 20px;
       margin-bottom: 20px;
       text-align: center;
@@ -149,206 +162,282 @@
     .funnel-title {
       font-size: 1.05rem;
       font-weight: 700;
-      color: var(--navy);
+      color: var(--navy-900);
       margin-bottom: 12px;
     }
     .amount-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
     .amount-btn {
       background: #ffffff;
-      border: 2px solid var(--border);
-      padding: 12px 8px;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--navy);
+      border: 2px solid var(--border-subtle);
+      padding: 12px 6px;
+      border-radius: 12px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--navy-800);
       cursor: pointer;
       transition: all 0.15s ease;
+      box-shadow: var(--shadow-sm);
     }
-    .amount-btn:hover, .amount-btn.active {
-      border-color: var(--primary);
-      background: #fff5f5;
-      color: var(--primary);
-      transform: scale(1.02);
+    .amount-btn:hover {
+      border-color: var(--action-orange);
+      color: var(--action-orange);
+      transform: translateY(-1px);
     }
-    .impact-desc {
+    .amount-btn.active {
+      border-color: var(--action-orange);
+      background: #fff7ed;
+      color: var(--action-orange);
+      box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.15);
+    }
+    .impact-caption {
       font-size: 0.9rem;
-      color: #334155;
-      font-weight: 600;
+      color: var(--emerald-700);
+      font-weight: 700;
       min-height: 24px;
     }
 
-    /* Primary CTA Button */
-    .btn-cta {
+    /* Psychological Action Button (CTA) */
+    .btn-action-cta {
       display: block;
       width: 100%;
-      background: var(--primary);
+      background: var(--action-orange);
       color: #ffffff;
       text-align: center;
       text-decoration: none;
-      font-size: 1.25rem;
-      font-weight: 700;
-      padding: 18px 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(230, 57, 70, 0.35);
+      font-size: 1.3rem;
+      font-weight: 800;
+      padding: 18px 24px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(234, 88, 12, 0.35);
       transition: all 0.2s ease;
-      margin: 16px 0;
+      margin: 18px 0;
       border: none;
       cursor: pointer;
     }
-    .btn-cta:hover {
-      background: var(--primary-hover);
+    .btn-action-cta:hover {
+      background: var(--action-hover);
       transform: translateY(-2px);
-      box-shadow: 0 10px 28px rgba(230, 57, 70, 0.45);
+      box-shadow: 0 12px 28px rgba(234, 88, 12, 0.45);
     }
 
-    /* Guarantee */
-    .guarantee-box {
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      color: #166534;
+    /* Risk-Free Institutional Guarantee Callout */
+    .guarantee-pill-box {
+      background: var(--emerald-50);
+      border: 1px solid #a7f3d0;
+      color: #065f46;
       padding: 14px 18px;
       border-radius: 12px;
       font-size: 0.9rem;
       margin-bottom: 20px;
       display: flex;
       align-items: flex-start;
-      gap: 10px;
+      gap: 12px;
     }
+    .guarantee-pill-box svg { flex-shrink: 0; width: 22px; height: 22px; margin-top: 2px; }
 
-    /* Lead Generation Capture Form */
-    .lead-gen-card {
-      background: linear-gradient(135deg, #1d3557 0%, #0f172a 100%);
-      color: #ffffff;
-      border-radius: 16px;
+    /* Visual Roadmap Milestones (Psychological Progress Journey) */
+    .roadmap-section {
+      background: var(--card-bg);
+      border-radius: 18px;
       padding: 24px;
-      margin-bottom: 28px;
-      box-shadow: var(--shadow);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 24px;
     }
-    .lead-gen-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 8px;
-      color: #f8fafc;
-    }
-    .lead-gen-card p {
-      font-size: 0.9rem;
-      color: #cbd5e1;
+    .roadmap-section h2 {
+      font-size: 1.25rem;
+      color: var(--navy-900);
       margin-bottom: 16px;
+      font-weight: 800;
     }
-    .lead-form {
+    .milestone-track {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 600px) {
+      .milestone-track { grid-template-columns: repeat(4, 1fr); }
+    }
+    .milestone-card {
+      background: #f8fafc;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 14px;
+      text-align: center;
+      position: relative;
+    }
+    .milestone-card.active {
+      border-color: var(--action-orange);
+      background: #fff7ed;
+    }
+    .milestone-card.done {
+      border-color: var(--emerald-600);
+      background: var(--emerald-50);
+    }
+    .milestone-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--navy-800);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 8px;
+    }
+    .milestone-card.active .milestone-num { background: var(--action-orange); }
+    .milestone-card.done .milestone-num { background: var(--emerald-600); }
+    .milestone-title { font-size: 0.85rem; font-weight: 700; color: var(--navy-900); }
+    .milestone-status { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; }
+
+    /* Equipment Visual Cards Grid */
+    .equipment-grid-section {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 24px;
+    }
+    .equipment-grid-section h2 {
+      font-size: 1.25rem;
+      color: var(--navy-900);
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+    .equip-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 540px) {
+      .equip-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    .equip-item {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      gap: 12px;
+      align-items: center;
+      background: #f8fafc;
+      border: 1px solid var(--border-subtle);
+      padding: 14px;
+      border-radius: 12px;
     }
-    @media (min-width: 520px) {
-      .lead-form { flex-direction: row; }
+    .equip-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--navy-800);
     }
+    .equip-info h4 { font-size: 0.95rem; color: var(--navy-900); margin-bottom: 2px; }
+    .equip-info p { font-size: 0.8rem; color: var(--text-muted); }
+    .equip-info span { font-size: 0.85rem; font-weight: 700; color: var(--emerald-700); }
+
+    /* Budget Breakdown Table */
+    .budget-section {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 24px;
+    }
+    .budget-section h2 {
+      font-size: 1.25rem;
+      color: var(--navy-900);
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+    .budget-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .budget-table th, .budget-table td { padding: 11px 12px; border-bottom: 1px solid #e2e8f0; text-align: left; }
+    .budget-table th { background: #f1f5f9; color: var(--navy-900); font-weight: 700; }
+    .budget-table tr:last-child td { font-weight: 800; color: var(--action-orange); font-size: 1.05rem; border-bottom: none; }
+
+    /* Lead Generation Capture Card */
+    .lead-gen-card {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-lg);
+    }
+    .lead-gen-card h3 { font-size: 1.25rem; margin-bottom: 6px; font-weight: 800; }
+    .lead-gen-card p { font-size: 0.9rem; color: #cbd5e1; margin-bottom: 16px; }
+    .lead-form { display: flex; flex-direction: column; gap: 10px; }
+    @media (min-width: 520px) { .lead-form { flex-direction: row; } }
     .lead-input {
       flex: 1;
       padding: 12px 16px;
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid #475569;
       font-size: 0.95rem;
       background: #ffffff;
       color: #0f172a;
     }
     .lead-submit {
-      background: var(--primary);
+      background: var(--emerald-600);
       color: #ffffff;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 12px 22px;
+      border-radius: 10px;
       border: none;
       font-weight: 700;
       cursor: pointer;
       transition: background 0.2s;
       white-space: nowrap;
     }
-    .lead-submit:hover { background: var(--primary-hover); }
+    .lead-submit:hover { background: var(--emerald-700); }
 
-    /* 1-Click Social Share Kit */
-    .share-section {
+    /* Share Multiplier */
+    .share-card {
       background: var(--card-bg);
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 20px;
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-subtle);
       text-align: center;
       margin-bottom: 24px;
     }
-    .share-section h4 {
-      font-size: 1rem;
-      color: var(--navy);
-      margin-bottom: 12px;
-    }
-    .share-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-    .share-btn {
-      padding: 8px 14px;
+    .share-card h4 { font-size: 1rem; color: var(--navy-900); margin-bottom: 12px; }
+    .share-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .btn-share {
+      padding: 9px 16px;
       border-radius: 8px;
       font-size: 0.85rem;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
       color: #ffffff;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 6px;
     }
-    .btn-wa { background: #25D366; }
-    .btn-fb { background: #1877F2; }
-    .btn-copy { background: #475569; cursor: pointer; border: none; }
-
-    /* Content Cards */
-    .info-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-    .info-card {
-      background: #f8fafc;
-      padding: 18px;
-      border-radius: 12px;
-      border: 1px solid #e2e8f0;
-      border-left: 5px solid var(--navy);
-    }
-    .info-card h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 6px; }
-    .info-card p { font-size: 0.95rem; color: #334155; }
-
-    /* Budget Table */
-    .budget-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 20px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      margin-bottom: 24px;
-    }
-    .budget-card h3 { font-size: 1.2rem; color: var(--navy); margin-bottom: 14px; }
-    .budget-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-    .budget-table th, .budget-table td { padding: 10px 12px; border-bottom: 1px solid #e2e8f0; text-align: left; }
-    .budget-table th { background: #f1f5f9; color: var(--navy); font-weight: 700; }
-    .budget-table tr:last-child td { font-weight: 700; color: var(--primary); font-size: 1rem; border-bottom: none; }
+    .btn-share-wa { background: #25D366; }
+    .btn-share-fb { background: #1877F2; }
+    .btn-share-copy { background: #475569; cursor: pointer; border: none; }
 
     /* FAQ */
-    .faq-card {
+    .faq-section {
       background: var(--card-bg);
-      border-radius: 16px;
-      padding: 20px;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
       margin-bottom: 24px;
     }
-    .faq-card h3 { font-size: 1.2rem; color: var(--navy); margin-bottom: 12px; }
-    details { margin-bottom: 10px; border: 1px solid #e2e8f0; border-radius: 8px; }
-    summary { padding: 12px 14px; background: #f8fafc; font-weight: 600; cursor: pointer; color: var(--navy); }
-    details p { padding: 12px 14px; font-size: 0.9rem; color: #334155; background: #fff; }
+    .faq-section h3 { font-size: 1.25rem; color: var(--navy-900); margin-bottom: 14px; font-weight: 800; }
+    details { margin-bottom: 10px; border: 1px solid #e2e8f0; border-radius: 10px; }
+    summary { padding: 12px 16px; background: #f8fafc; font-weight: 700; cursor: pointer; color: var(--navy-900); }
+    details p { padding: 12px 16px; font-size: 0.9rem; color: #334155; background: #fff; }
 
     /* Sticky Bottom Mobile Bar */
     .sticky-bar {
@@ -356,37 +445,38 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(8px);
-      border-top: 1px solid var(--border);
-      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid var(--border-subtle);
+      padding: 12px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
       z-index: 1000;
-      box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
     }
-    .sticky-text { font-size: 0.85rem; font-weight: 700; color: var(--navy); line-height: 1.2; }
+    .sticky-text { font-size: 0.85rem; font-weight: 800; color: var(--navy-900); line-height: 1.2; }
     .sticky-btn {
-      background: var(--primary);
+      background: var(--action-orange);
       color: #fff;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 10px;
+      font-weight: 800;
       text-decoration: none;
       font-size: 0.95rem;
       white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
     }
 
     /* Legal Footer */
     .legal-card {
       background: var(--card-bg);
-      border-radius: 12px;
-      padding: 20px;
-      border: 1px solid var(--border);
-      font-size: 0.85rem;
-      color: var(--muted);
+      border-radius: 14px;
+      padding: 22px;
+      border: 1px solid var(--border-subtle);
+      font-size: 0.82rem;
+      color: var(--text-muted);
       margin-bottom: 24px;
     }
     .legal-links {
@@ -396,45 +486,45 @@
       justify-content: center;
       margin-top: 14px;
       padding-top: 12px;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--border-subtle);
     }
     .legal-links button {
       background: none;
       border: none;
-      color: var(--navy);
+      color: var(--navy-800);
       text-decoration: underline;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 600;
     }
 
     /* Dialog Modals */
     dialog {
-      max-width: 560px;
+      max-width: 580px;
       width: 90%;
-      border-radius: 12px;
-      border: 1px solid var(--border);
+      border-radius: 16px;
+      border: 1px solid var(--border-subtle);
       padding: 24px;
       margin: auto;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     }
-    dialog::backdrop { background: rgba(15, 23, 42, 0.6); }
-    dialog h2 { margin-bottom: 12px; color: var(--navy); font-size: 1.2rem; }
-    dialog p { font-size: 0.85rem; color: #334155; margin-bottom: 8px; }
-    .dialog-close-btn { margin-top: 14px; padding: 6px 16px; background: var(--navy); color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+    dialog::backdrop { background: rgba(15, 23, 42, 0.65); }
+    dialog h2 { margin-bottom: 12px; color: var(--navy-900); font-size: 1.25rem; font-weight: 800; }
+    dialog p { font-size: 0.88rem; color: #334155; margin-bottom: 10px; }
+    .dialog-close-btn { margin-top: 14px; padding: 8px 18px; background: var(--navy-900); color: #fff; border: none; border-radius: 8px; cursor: pointer; font-weight: 700; }
 
     /* Cookie Banner */
     #cookie-banner {
       position: fixed;
-      bottom: 60px;
+      bottom: 66px;
       left: 12px;
       right: 12px;
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto;
       background: #0f172a;
       color: #f8fafc;
-      padding: 14px 18px;
-      border-radius: 12px;
+      padding: 14px 20px;
+      border-radius: 14px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -446,253 +536,378 @@
       #cookie-banner { flex-direction: row; align-items: center; justify-content: space-between; }
     }
     .cookie-actions { display: flex; gap: 8px; }
-    .btn-cookie { padding: 6px 14px; border-radius: 6px; border: none; cursor: pointer; font-weight: 600; font-size: 0.8rem; }
-    .btn-cookie-accept { background: #10b981; color: #fff; }
+    .btn-cookie { padding: 6px 14px; border-radius: 6px; border: none; cursor: pointer; font-weight: 700; font-size: 0.8rem; }
+    .btn-cookie-accept { background: var(--emerald-600); color: #fff; }
     .btn-cookie-reject { background: #475569; color: #fff; }
 
-    footer { text-align: center; font-size: 0.85rem; color: var(--muted); padding: 12px 0; }
+    footer { text-align: center; font-size: 0.85rem; color: var(--text-muted); padding: 10px 0; }
   </style>
 </head>
 <body>
   <div class="container">
     
-    <!-- Trust Header -->
+    <!-- Trust Authority Header Bar -->
     <div class="trust-bar">
-      <div class="trust-item">🛡️ Úřední podmínka soudu a OSPOD</div>
-      <div class="trust-item">🔒 Přímá platba pronajímateli</div>
-      <div class="trust-item">⚖️ Zákon č. 117/2001 Sb.</div>
+      <div class="trust-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        Podmínka soudu a OSPOD
+      </div>
+      <div class="trust-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+        Přímá platba pronajímateli
+      </div>
+      <div class="trust-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+        Zákon č. 117/2001 Sb.
+      </div>
     </div>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
-      <span class="badge">Oficiální výzva pro návrat dětí</span>
+      <div class="badge-hero">
+        <span>✨</span> Oficiální iniciativa pro návrat rodiny
+      </div>
       <h1>Vraťme děti domů: Pomozte nám splnit jedinou podmínku soudu pro bezpečný domov</h1>
       <p class="subtitle">Děti musely být dočasně umístěny do zařízení z jediného důvodu – ztráty bydlení. Jakmile doložíme platnou nájemní smlouvu a pokojíček, vrací se okamžitě domů k rodičům.</p>
     </header>
 
-    <!-- Main Hero Funnel Card -->
+    <!-- Main Funnel Hero Card -->
     <div class="hero-card">
-      <div class="photo-box">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-        <strong>[Fotografie rodiny / dětí zezadu či kresba nového domova]</strong>
-        <p style="font-size: 0.8rem; margin-top: 4px;">Důstojná fotografie chránící soukromí dětí dle doporučení OSPOD</p>
+      
+      <!-- Demo Visual: Clean Warm SVG Graphic of Family Reunion -->
+      <div class="visual-hero-container">
+        <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ecfdf5"/>
+              <stop offset="100%" stop-color="#fff7ed"/>
+            </linearGradient>
+            <linearGradient id="homeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ea580c"/>
+              <stop offset="100%" stop-color="#c2410c"/>
+            </linearGradient>
+          </defs>
+          <!-- Background sky and ground -->
+          <rect width="800" height="360" fill="url(#skyGrad)"/>
+          <path d="M0,280 Q400,240 800,280 L800,360 L0,360 Z" fill="#d1fae5"/>
+          
+          <!-- Sun of hope -->
+          <circle cx="680" cy="90" r="50" fill="#fef08a" opacity="0.85"/>
+          
+          <!-- Safe Home in Distance -->
+          <polygon points="620,170 700,100 780,170" fill="#1e293b"/>
+          <rect x="635" y="170" width="130" height="90" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3"/>
+          <rect x="650" y="185" width="30" height="30" fill="#fef08a" stroke="#cbd5e1" stroke-width="2"/>
+          <rect x="710" y="185" width="30" height="30" fill="#fef08a" stroke="#cbd5e1" stroke-width="2"/>
+          <rect x="680" y="215" width="35" height="45" fill="url(#homeGrad)"/>
+          
+          <!-- Family Walking Hand in Hand Towards Home (Silhouettes) -->
+          <!-- Father -->
+          <circle cx="180" cy="180" r="16" fill="#1e293b"/>
+          <path d="M165,200 C165,195 195,195 195,200 L198,255 L188,255 L185,290 L175,290 L172,255 L162,255 Z" fill="#1e293b"/>
+          
+          <!-- Mother -->
+          <circle cx="340" cy="185" r="15" fill="#334155"/>
+          <path d="M326,205 C326,200 354,200 354,205 L356,260 L346,260 L344,290 L336,290 L334,260 L324,260 Z" fill="#334155"/>
+          
+          <!-- Child 1 (Older boy) -->
+          <circle cx="230" cy="210" r="13" fill="#059669"/>
+          <path d="M218,226 C218,222 242,222 242,226 L244,275 L236,275 L234,295 L226,295 L224,275 L216,275 Z" fill="#059669"/>
+          
+          <!-- Child 2 (Little girl) -->
+          <circle cx="285" cy="225" r="12" fill="#ea580c"/>
+          <path d="M274,240 C274,236 296,236 296,240 L300,285 L270,285 Z" fill="#ea580c"/>
+          
+          <!-- Connecting Hands Lines -->
+          <path d="M190,215 L222,235 M238,235 L278,245 M292,245 L330,225" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+          
+          <!-- Motivational Banner in Illustration -->
+          <rect x="20" y="20" width="340" height="42" rx="8" fill="#ffffff" opacity="0.92" stroke="#cbd5e1"/>
+          <text x="36" y="47" font-family="-apple-system, sans-serif" font-size="15" font-weight="700" fill="#0f172a">🏡 Cíl: Děti spí ve svém novém domově</text>
+        </svg>
       </div>
 
-      <!-- Funnel Step: Interactive Micro-Commitment Amount Selector -->
-      <div class="funnel-box">
-        <div class="funnel-title">Zvolte, jak chcete dětem pomoci:</div>
+      <!-- Funnel Step 2: Interactive Micro-Commitment Amount Selector -->
+      <div class="funnel-selector-box">
+        <div class="funnel-title">Vyberte, jak konkrétně chcete dětem pomoci:</div>
         <div class="amount-grid">
-          <button class="amount-btn" onclick="selectAmount(300, 'Zajistí školní potřeby a lůžkoviny pro jedno dítě')">300 Kč</button>
-          <button class="amount-btn active" onclick="selectAmount(500, 'Zajistí matraci a polštář do nového pokojíčku')">500 Kč</button>
-          <button class="amount-btn" onclick="selectAmount(1000, 'Přímo hradí část kauce na nájemní byt')">1 000 Kč</button>
+          <button class="amount-btn" onclick="setFunnelAmount(300, 'Zajistí školní potřeby a lůžkoviny pro jedno dítě')">300 Kč</button>
+          <button class="amount-btn active" onclick="setFunnelAmount(500, 'Zajistí dětskou matraci a polštář do nového pokoje')">500 Kč</button>
+          <button class="amount-btn" onclick="setFunnelAmount(1000, 'Přímo hradí část jistoty (kauce) pronajímateli')">1 000 Kč</button>
         </div>
-        <div class="impact-desc" id="impact-text">Zajistí matraci a polštář do nového pokojíčku</div>
+        <div class="impact-caption" id="funnel-impact">Zajistí dětskou matraci a polštář do nového pokoje</div>
       </div>
 
-      <a href="https://www.znesnaze21.cz" target="_blank" class="btn-cta" id="cta-main">
-        Přispět <span id="cta-amount">500 Kč</span> na návrat dětí domů &rarr;
+      <!-- Primary Psychological CTA -->
+      <a href="https://www.znesnaze21.cz" target="_blank" class="btn-action-cta" id="cta-button-main">
+        Darovat <span id="cta-amount-display">500 Kč</span> na návrat dětí domů &rarr;
       </a>
 
-      <!-- Direct Payout Guarantee -->
-      <div class="guarantee-box">
-        <span>🛡️</span>
+      <!-- Institutional Risk-Free Guarantee -->
+      <div class="guarantee-pill-box">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
         <div>
-          <strong>100% jistota pro dárce:</strong>
-          Finance neprochází soukromým účtem rodiny. Znesnáze21 hradí kauci a nájem přímo pronajímateli na základě smlouvy. Peníze jsou plně chráněny před exekucí.
+          <strong>Garance 100% přímého využití daru:</strong>
+          Peníze neprochází soukromým bankovním účtem rodiny. Znesnáze21 (Nadační fond pomoci) proplácí kauci a nájemné přímo pronajímateli na základě nájemní smlouvy. Finance jsou chráněny před exekucí.
         </div>
       </div>
 
-      <!-- Core 3 Pillars -->
-      <div class="info-grid">
-        <div class="info-card">
-          <h3>⚖️ Oficiální podmínka soudu a OSPOD</h3>
-          <p>Máme v usnesení soudu i individuálním plánu OSPOD (IPOD) stanoveno: jediným důvodem odloučení je chybějící bydlení. Zajištění nájemního bytu, vlastních lůžek, dětského stolu pro učení a základního vybavení pro rodinu znamená okamžité zrušení ústavní péče.</p>
+    </div>
+
+    <!-- Visual Roadmap: 4 Stages to Family Reunion -->
+    <div class="roadmap-section">
+      <h2>Právní a reálný plán návratu dětí krok za krokem</h2>
+      <div class="milestone-track">
+        <div class="milestone-card done">
+          <div class="milestone-num">✓</div>
+          <div class="milestone-title">1. Byt nalezen</div>
+          <div class="milestone-status">Smlouva připravena</div>
         </div>
-
-
-        <div class="info-card">
-          <h3>🛠️ Vlastní aktivita a úsilí rodičů</h3>
-          <p>Nesedíme se založenýma rukama. Máme pravidelný příjem a spolupracujeme se sociálními pracovníky. Našli jsme vyhovující nájemní byt – jedinou nepřekonatelnou překážkou je složení jistoty (kauce) naráz.</p>
+        <div class="milestone-card active">
+          <div class="milestone-num">2</div>
+          <div class="milestone-title">2. Složení kauce</div>
+          <div class="milestone-status">Probíhá sbírka</div>
         </div>
-
-        <div class="info-card">
-          <h3>🎯 Přímý a měřitelný dopad daru</h3>
-          <p>Každý příspěvek přímo zkracuje čas, který děti musí trávit v ústavní péči. Dárce nekupuje sliby, ale konkrétní metry čtvereční bezpečí a nábytek pro děti.</p>
+        <div class="milestone-card">
+          <div class="milestone-num">3</div>
+          <div class="milestone-title">3. Šetření OSPOD</div>
+          <div class="milestone-status">Kontrola pokojíčku</div>
+        </div>
+        <div class="milestone-card">
+          <div class="milestone-num">4</div>
+          <div class="milestone-title">4. Zrušení ústavu</div>
+          <div class="milestone-status">Děti jsou doma</div>
         </div>
       </div>
     </div>
 
-    <!-- Lead Generation Capture Form (For users not ready to donate right now) -->
-    <div class="lead-gen-card">
-      <h3>Nemůžete nyní přispět? Sledujte náš příběh</h3>
-      <p>Zadejte svůj e-mail. Pošleme vám zprávu a fotografie ihned, jakmile děti překročí práh nového domova.</p>
-      <form class="lead-form" onsubmit="handleLeadSubmit(event)">
-        <input type="email" class="lead-input" id="lead-email" placeholder="Váš e-mail..." required>
-        <button type="submit" class="lead-submit">Chci vědět, jak to dopadlo &rarr;</button>
-      </form>
-      <div id="lead-success" style="display:none; color:#34d399; font-weight:600; margin-top:10px;">Děkujeme! Budeme vás informovat o posunech v návratu dětí.</div>
-    </div>
+    <!-- Equipment Visual Cards Grid (Demo Graphic Showcase) -->
+    <div class="equipment-grid-section">
+      <h2>Konkrétní položky pro schválení bytu OSPODem</h2>
+      <div class="equip-cards">
+        
+        <div class="equip-item">
+          <div class="equip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
+          </div>
+          <div class="equip-info">
+            <h4>Dětské postele a lůžkoviny</h4>
+            <p>Vlastní postel pro každé dítě (podmínka soudu)</p>
+            <span>15 000 Kč</span>
+          </div>
+        </div>
 
-    <!-- Social Share Funnel Multiplier -->
-    <div class="share-section">
-      <h4>Pomozte nám sdílením – i jedno sdílení může najít dárce</h4>
-      <div class="share-buttons">
-        <a href="https://api.whatsapp.com/send?text=Pomozte%20vr%C3%A1tit%20d%C4%9Bti%20dom%C5%AF%20k%20rodi%C4%8D%C5%AFm%3A%20https%3A%2F%2Fwww.znesnaze21.cz" target="_blank" class="share-btn btn-wa">WhatsApp</a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.znesnaze21.cz" target="_blank" class="share-btn btn-fb">Facebook</a>
-        <button class="share-btn btn-copy" onclick="copyShareLink()">Kopírovat odkaz</button>
+        <div class="equip-item">
+          <div class="equip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 18v-4h-3v1h-2v-1H9v1H7v-1H4v4H2v2h20v-2h-2zM4 12h16v-2H4v2zm14-8H6L4 8h16l-2-4z"/></svg>
+          </div>
+          <div class="equip-info">
+            <h4>Dětský stůl a židle na učení</h4>
+            <p>Prostor na školní úkoly a kreslení</p>
+            <span>6 000 Kč</span>
+          </div>
+        </div>
+
+        <div class="equip-item">
+          <div class="equip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M2 19h20v2H2zM4 7h16v2H4zm2 4h12v2H6zm-3 8l3-6h14l3 6z"/></svg>
+          </div>
+          <div class="equip-info">
+            <h4>Jídelní stůl a židle</h4>
+            <p>Zázemí pro společné rodinné obědy a večeře</p>
+            <span>7 000 Kč</span>
+          </div>
+        </div>
+
+        <div class="equip-item">
+          <div class="equip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 10V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v3c-1.1 0-2 .9-2 2v5h1.33L4 19h1l.67-2h12.67l.66 2h1l.67-2H22v-5c0-1.1-.9-2-2-2zm-9 0H6V7h5v3zm7 0h-5V7h5v3z"/></svg>
+          </div>
+          <div class="equip-info">
+            <h4>Obývací sedačka a stolek</h4>
+            <p>Společný prostor pro rodinné soužití</p>
+            <span>10 000 Kč</span>
+          </div>
+        </div>
+
       </div>
-      <div id="copy-msg" style="display:none; font-size:0.8rem; color:var(--teal); margin-top:8px; font-weight:700;">Odkaz zkopírován do schránky!</div>
     </div>
 
-    <!-- Transparent Budget Breakdown -->
-    <div class="budget-card">
-      <h3>Položkový rozpočet sbírky na kompletní zázemí pro rodinu a děti</h3>
+    <!-- Transparent Budget Breakdown Table -->
+    <div class="budget-section">
+      <h2>Transparentní položkový rozpočet (100 000 Kč)</h2>
       <table class="budget-table">
         <thead>
-          <tr><th>Položka</th><th>Účel pro OSPOD a rodinu</th><th>Částka</th></tr>
+          <tr><th>Položka</th><th>Účel schválení OSPOD</th><th>Částka</th></tr>
         </thead>
         <tbody>
           <tr><td>Vratná jistota (kauce na byt)</td><td>Podmínka nájemní smlouvy</td><td>35 000 Kč</td></tr>
           <tr><td>První nájemné předem</td><td>Přímá platba pronajímateli</td><td>15 000 Kč</td></tr>
           <tr><td>Dětský pokoj (postele, matrace, lůžkoviny)</td><td>Vlastní lůžko pro každé dítě</td><td>15 000 Kč</td></tr>
-          <tr><td>Dětský psací stůl a ergonomické židle</td><td>Koutek pro školní přípravu dětí</td><td>6 000 Kč</td></tr>
-          <tr><td>Jídelní stůl a židle pro rodinu</td><td>Zázemí pro společné rodinné stolování</td><td>7 000 Kč</td></tr>
-          <tr><td>Obývací sedačka a konferenční stolek</td><td>Společný rodinný prostor pro život</td><td>10 000 Kč</td></tr>
-          <tr><td>Základní spotřebiče (pračka, lednice)</td><td>Hygienické a stravovací zázemí</td><td>12 000 Kč</td></tr>
-          <tr><td><strong>Celková cílová částka</strong></td><td><strong>100% účelově vázáno (proplaceno fakturami)</strong></td><td><strong>100 000 Kč</strong></td></tr>
+          <tr><td>Dětský psací stůl a židle</td><td>Koutek pro školní přípravu</td><td>6 000 Kč</td></tr>
+          <tr><td>Jídelní stůl a židle pro rodinu</td><td>Společné stolování</td><td>7 000 Kč</td></tr>
+          <tr><td>Obývací sedačka a stolek</td><td>Společný prostor rodiny</td><td>10 000 Kč</td></tr>
+          <tr><td>Pračka a lednice</td><td>Základní hygiena a stravování</td><td>12 000 Kč</td></tr>
+          <tr><td><strong>Celková cílová částka</strong></td><td><strong>100% účelově vázáno</strong></td><td><strong>100 000 Kč</strong></td></tr>
         </tbody>
       </table>
     </div>
 
+    <!-- Lead Generation Form (Secondary Funnel Exit Catch) -->
+    <div class="lead-gen-card">
+      <h3>Nemůžete nyní přispět? Sledujte náš příběh</h3>
+      <p>Zadejte svůj e-mail. Pošleme vám zprávu a fotografie ihned, jakmile děti překročí práh nového domova.</p>
+      <form class="lead-form" onsubmit="handleLeadCapture(event)">
+        <input type="email" class="lead-input" id="subscriber-email" placeholder="Váš e-mail..." required>
+        <button type="submit" class="lead-submit">Chci vědět, jak to dopadlo &rarr;</button>
+      </form>
+      <div id="lead-status-msg" style="display:none; color:#34d399; font-weight:700; margin-top:10px;">Děkujeme! Budeme vás informovat o posunech v návratu dětí.</div>
+    </div>
 
-    <!-- FAQ -->
-    <div class="faq-card">
+    <!-- 1-Click Social Share Multiplier -->
+    <div class="share-card">
+      <h4>Pomozte nám sdílením – i jedno sdílení může najít dárce</h4>
+      <div class="share-buttons">
+        <a href="https://api.whatsapp.com/send?text=Pomozte%20vr%C3%A1tit%20d%C4%9Bti%20dom%C5%AF%20k%20rodi%C4%8D%C5%AFm%3A%20https%3A%2F%2Fwww.znesnaze21.cz" target="_blank" class="btn-share btn-share-wa">WhatsApp</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.znesnaze21.cz" target="_blank" class="btn-share btn-share-fb">Facebook</a>
+        <button class="btn-share btn-share-copy" onclick="copyCurrentUrl()">Kopírovat odkaz</button>
+      </div>
+      <div id="copy-confirmation" style="display:none; font-size:0.8rem; color:var(--emerald-600); margin-top:8px; font-weight:700;">Odkaz byl zkopírován do schránky!</div>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <div class="faq-section">
       <h3>Časté dotazy dárců</h3>
       <details>
         <summary>Kam přesně putují vybrané peníze?</summary>
-        <p>Peníze nejdou na účet rodičů. Platforma Znesnáze21 (Nadační fond pomoci) proplácí kauci a nájemné přímo na účet pronajímatele na základě nájemní smlouvy.</p>
+        <p>Peníze nejdou na osobní účet rodičů. Platforma Znesnáze21 (Nadační fond pomoci) proplácí kauci a nájemné přímo na účet pronajímatele na základě nájemní smlouvy.</p>
       </details>
       <details>
         <summary>Mohou být peníze zabaveny exekutorem?</summary>
-        <p>Ne. Finance nevstupují na účet rodiny a jsou propláceny přímo majiteli bytu jako účelový příspěvek na bydlení.</p>
+        <p>Ne. Finance nevstupují na účet rodiny a jsou propláceny přímo majiteli bytu jako účelový příspěvek na bydlení dle zákona.</p>
       </details>
       <details>
         <summary>Co se stane, když se nevybere 100 % částky?</summary>
         <p>Znesnáze21 vyplácí i částečně vybranou částku. Každá koruna pomůže zaplatit alespoň část kauce.</p>
       </details>
+      <details>
+        <summary>Mohu darovat anonymně a získat potvrzení o daru?</summary>
+        <p>Ano. Na oficiální stránce Znesnáze21 můžete zvolit anonymní dar. Potvrzení pro odpočet daně obdržíte automaticky.</p>
+      </details>
     </div>
 
-    <!-- Legal & Compliance Card -->
+    <!-- Legal Compliance Card (Google Ads & Sklik Mandate) -->
     <div class="legal-card" id="legal">
-      <p><strong>Provozovatel webu:</strong> Zástupce rodiny pro koordinaci iniciativy, ČR | Kontakt: <a href="mailto:pomoc.rodine.sbirka@gmail.com" style="color:var(--navy); font-weight:600;">pomoc.rodine.sbirka@gmail.com</a></p>
+      <p><strong>Provozovatel webu:</strong> Zástupce rodiny pro koordinaci iniciativy, ČR | Kontakt: <a href="mailto:pomoc.rodine.sbirka@gmail.com" style="color:var(--navy-900); font-weight:700;">pomoc.rodine.sbirka@gmail.com</a></p>
       <p><strong>Právní povaha sbírky:</strong> Informační představení. Dary jsou vybírány v rámci veřejné sbírky na licencované platformě <strong>Znesnáze21 (Nadační fond pomoci)</strong> dle zákona č. 117/2001 Sb. Dary jsou pro příjemce osvobozeny od daně z příjmů dle § 4a zákona č. 586/1992 Sb.</p>
 
       <div class="legal-links">
-        <button onclick="document.getElementById('modal-terms').showModal()">Podmínky užití webu</button>
-        <button onclick="document.getElementById('modal-privacy').showModal()">Ochrana soukromí (GDPR)</button>
-        <button onclick="document.getElementById('modal-cookies').showModal()">Zásady cookies</button>
-        <button onclick="document.getElementById('modal-contact').showModal()">Kontakt a Impressum</button>
+        <button onclick="document.getElementById('dialog-terms').showModal()">Podmínky užití webu</button>
+        <button onclick="document.getElementById('dialog-privacy').showModal()">Ochrana soukromí (GDPR)</button>
+        <button onclick="document.getElementById('dialog-cookies').showModal()">Zásady cookies</button>
+        <button onclick="document.getElementById('dialog-contact').showModal()">Kontakt a Impressum</button>
       </div>
     </div>
 
     <footer>
       <p>&copy; 2026 Transparentní informační iniciativa pro návrat dětí do rodiny. Všechna práva vyhrazena.</p>
     </footer>
+
   </div>
 
   <!-- Sticky Mobile Bottom Funnel Bar -->
   <div class="sticky-bar">
     <div class="sticky-text">
-      Pomozte vrátit děti domů<br>
-      <span style="color:var(--primary); font-size:0.75rem;">Zbývá vybrat kauci na byt</span>
+      Vraťme děti domů<br>
+      <span style="color:var(--emerald-600); font-size:0.75rem;">Zbývá vybrat kauci na byt</span>
     </div>
     <a href="https://www.znesnaze21.cz" target="_blank" class="sticky-btn">
       Podpořit sbírku &rarr;
     </a>
   </div>
 
-  <!-- Modals -->
-  <dialog id="modal-terms">
+  <!-- Dialog Modals -->
+  <dialog id="dialog-terms">
     <h2>Podmínky užití webu</h2>
     <p>1. Tento web plní funkci informačního mostu a představení příběhu pro veřejnou sbírku.</p>
     <p>2. Provozovatel na tomto webu neprovozuje žádnou platební bránu ani nepřijímá finanční prostředky.</p>
     <p>3. Všechna tlačítka přesměrovávají na zabezpečené rozhraní platformy Znesnáze21.</p>
-    <button class="dialog-close-btn" onclick="document.getElementById('modal-terms').close()">Zavřít</button>
+    <button class="dialog-close-btn" onclick="document.getElementById('dialog-terms').close()">Zavřít</button>
   </dialog>
 
-  <dialog id="modal-privacy">
+  <dialog id="dialog-privacy">
     <h2>Zásady ochrany osobních údajů (GDPR)</h2>
     <p>1. Správcem kontaktních údajů je zástupce rodiny (kontakt: pomoc.rodine.sbirka@gmail.com).</p>
-    <p>2. Tento web nezpracovává bankovní údaje ani čísla karet.</p>
-    <p>3. E-mailové adresy zadané do formuláře pro odběr novinek slouží výhradně k zaslání informace o návratu dětí.</p>
-    <button class="dialog-close-btn" onclick="document.getElementById('modal-privacy').close()">Zavřít</button>
+    <p>2. Tento web nezpracovává bankovní údaje ani čísla platebních karet.</p>
+    <p>3. E-mailové adresy zadané do formuláře slouží výhradně k zaslání informace o návratu dětí a nejsou předávány třetím stranám.</p>
+    <button class="dialog-close-btn" onclick="document.getElementById('dialog-privacy').close()">Zavřít</button>
   </dialog>
 
-  <dialog id="modal-cookies">
+  <dialog id="dialog-cookies">
     <h2>Informace o souborech cookies</h2>
     <p>Web používá nezbytné technické cookies pro své fungování.</p>
     <p>Marketingové a měřicí cookies Google Ads a Sklik (Seznam.cz) jsou spouštěny pouze po udělení souhlasu.</p>
-    <button class="dialog-close-btn" onclick="document.getElementById('modal-cookies').close()">Zavřít</button>
+    <button class="dialog-close-btn" onclick="document.getElementById('dialog-cookies').close()">Zavřít</button>
   </dialog>
 
-  <dialog id="modal-contact">
+  <dialog id="dialog-contact">
     <h2>Kontaktní údaje a Impressum</h2>
     <p><strong>Iniciativa:</strong> Vraťme děti domů</p>
     <p><strong>E-mail:</strong> pomoc.rodine.sbirka@gmail.com</p>
     <p><strong>Garant sbírky:</strong> Nadační fond pomoci (Znesnáze21.cz)</p>
-    <button class="dialog-close-btn" onclick="document.getElementById('modal-contact').close()">Zavřít</button>
+    <button class="dialog-close-btn" onclick="document.getElementById('dialog-contact').close()">Zavřít</button>
   </dialog>
 
-  <!-- Cookie Banner -->
+  <!-- Cookie Consent Banner -->
   <div id="cookie-banner">
     <div>
-      Tento web používá cookies pro správné fungování a měření kampaní v Google Ads a Sklik dle zákona č. 127/2005 Sb.
+      Tento web používá cookies pro správné fungování a anonymní měření kampaní v Google Ads a Sklik dle zákona č. 127/2005 Sb.
     </div>
     <div class="cookie-actions">
-      <button class="btn-cookie btn-cookie-accept" id="btn-accept-cookie">Povolit vše</button>
-      <button class="btn-cookie btn-cookie-reject" id="btn-reject-cookie">Odmítnout</button>
+      <button class="btn-cookie btn-cookie-accept" id="cookie-consent-accept">Povolit vše</button>
+      <button class="btn-cookie btn-cookie-reject" id="cookie-consent-reject">Odmítnout</button>
     </div>
   </div>
 
   <script>
     // Micro-Commitment Amount Selector
-    function selectAmount(amount, impact) {
-      document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('active'));
+    function setFunnelAmount(amount, impact) {
+      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
       event.target.classList.add('active');
-      document.getElementById('impact-text').innerText = impact;
-      document.getElementById('cta-amount').innerText = amount + ' Kč';
+      document.getElementById('funnel-impact').innerText = impact;
+      document.getElementById('cta-amount-display').innerText = amount + ' Kč';
     }
 
-    // Lead Capture Form Handler
-    function handleLeadSubmit(e) {
+    // Lead Capture
+    function handleLeadCapture(e) {
       e.preventDefault();
-      const email = document.getElementById('lead-email').value;
+      const email = document.getElementById('subscriber-email').value;
       if (email) {
         localStorage.setItem('lead_subscriber_' + Date.now(), email);
-        document.getElementById('lead-email').style.display = 'none';
+        document.getElementById('subscriber-email').style.display = 'none';
         document.querySelector('.lead-submit').style.display = 'none';
-        document.getElementById('lead-success').style.display = 'block';
+        document.getElementById('lead-status-msg').style.display = 'block';
       }
     }
 
     // Copy Share Link
-    function copyShareLink() {
+    function copyCurrentUrl() {
       navigator.clipboard.writeText(window.location.href).then(() => {
-        const msg = document.getElementById('copy-msg');
+        const msg = document.getElementById('copy-confirmation');
         msg.style.display = 'block';
         setTimeout(() => { msg.style.display = 'none'; }, 3000);
       });
     }
 
-    // Cookie Consent Handler (Google Consent Mode v2)
+    // Cookie Banner Handling with Google Consent Mode v2
     const banner = document.getElementById('cookie-banner');
-    const btnAccept = document.getElementById('btn-accept-cookie');
-    const btnReject = document.getElementById('btn-reject-cookie');
+    const btnAccept = document.getElementById('cookie-consent-accept');
+    const btnReject = document.getElementById('cookie-consent-reject');
 
-    const consentStatus = localStorage.getItem('site_cookie_consent');
-    if (consentStatus) {
+    const consentVal = localStorage.getItem('site_cookie_consent');
+    if (consentVal) {
       banner.style.display = 'none';
-      if (consentStatus === 'granted') {
+      if (consentVal === 'granted') {
         gtag('consent', 'update', {
           'ad_storage': 'granted',
           'ad_user_data': 'granted',
