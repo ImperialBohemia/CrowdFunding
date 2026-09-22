@@ -15,3 +15,14 @@
 * **Zobrazení zdarma:** Reklamu uvidí tisíce lidí, ale platíte jen za ty, kteří kliknou.
 * **Cílení na dárce:** Algoritmus Skliku hledá lidi ochotné rozkliknout příběh.
 * **Kontrola rozpočtu:** Každá koruna přivede potenciálního dárce přímo na sbírku.
+
+---
+
+## Statický HTML web a Sklik
+* **100% povolený:** Čisté HTML/CSS je základem webu a plnohodnotný formát.
+* **Výhody pro Sklik:**
+  * Blesková rychlost načtení (zvyšuje skóre kvality reklamy).
+  * Nižší cena za proklik (CPC) díky okamžité odezvě.
+  * Možnost vložení všech měřicích kódů Seznamu.
+  * Nulové riziko výpadků nebo napadení (oproti redakčním systémům).
+
