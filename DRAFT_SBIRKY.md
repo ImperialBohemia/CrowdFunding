@@ -16,11 +16,12 @@
 ### 1. Úvod (Děti a rodina)
 Děti patří k rodičům. Naše děti jsou pro nás vším, ale kvůli ztrátě bydlení musely být dočasně umístěny do ústavní péče. Každý den bez nich je nesmírně těžký. Naším jediným cílem je mít děti zpátky doma u sebe.
 
-### 2. Důvod krize
-Krizová situace nastala náhle po nečekané ztrátě bydlení a souběhu nepříznivých událostí. Neměli jsme finanční rezervu na okamžitou kauci nového bytu. Úřady rozhodly o dočasném umístění dětí do zařízení, dokud nevyřešíme bytovou situaci.
+### 2. Byt jako jediná zákonná podmínka soudu
+Děti nám byly odebrány z jediného důvodu: ztráta bydlení. Soud i OSPOD stanovily jasnou podmínku: jakmile zajistíme stabilní bydlení s vlastní postelí pro každé dítě, ústavní výchova bude zrušena a děti se okamžitě vrací domů. Nemáme problémy se závislostmi ani zanedbáváním péče – jedinou překážkou je chybějící kauce na nájemní byt.
 
 ### 3. Co už děláme (Aktivní snaha)
-Nesedíme se založenýma rukama. Aktivně pracujeme, máme zajištěný příjem a úzce spolupracujeme s OSPODem i sociálními službami. Máme vyhlédnutý vhodný pronájem, kde bude mít každé dítě svůj bezpečný prostor. Jedinou překážkou je vstupní kauce a platba prvního nájmu, kterou z běžného příjmu naráz neuhradíme.
+Pracujeme, máme pravidelný příjem a spolupracujeme se sociálními pracovníky. Našli jsme vhodný byt a majitel je připraven podepsat smlouvu. Jediné, co chybí k podpisu a návratu dětí, je složení vratné kauce a prvního nájmu.
+
 
 ### 4. Na co budou finance použity (Položkový rozpočet)
 * **Kauce na byt (jistota pronajímateli):** 35 000 Kč (placeno přímo majiteli).
