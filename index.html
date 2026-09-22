@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vraťme děti domů: Pomoc se zajištěním bydlení</title>
-  <meta name="description" content="Oficiální sbírka na kauci a zázemí pro návrat dětí z ústavní péče zpět k rodičům.">
+  <meta name="description" content="Informační stránka rodiny: Sbírka na kauci a vybavení pro splnění podmínky soudu k návratu dětí z ústavní péče.">
   <style>
     :root {
       --primary: #e63946;
@@ -14,6 +14,7 @@
       --text: #2b2d42;
       --card: #ffffff;
       --border: #e2e8f0;
+      --muted: #64748b;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -21,9 +22,10 @@
       color: var(--text);
       background-color: var(--light);
       line-height: 1.6;
+      padding-bottom: 80px;
     }
     .container {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
       padding: 24px 16px;
     }
@@ -94,9 +96,6 @@
       background: var(--primary-hover);
       transform: translateY(-2px);
     }
-    .btn-cta:active {
-      transform: translateY(0);
-    }
     .info-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -130,10 +129,119 @@
       align-items: center;
       gap: 10px;
     }
+    /* Legal Section */
+    .legal-card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .legal-card h3 {
+      color: var(--dark);
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    .legal-card p {
+      margin-bottom: 8px;
+    }
+    .legal-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .legal-nav a {
+      color: var(--dark);
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    /* Modal styles */
+    dialog {
+      max-width: 600px;
+      width: 90%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    dialog::backdrop {
+      background: rgba(0,0,0,0.5);
+    }
+    dialog h2 {
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+    dialog p {
+      font-size: 0.9rem;
+      color: #334155;
+      margin-bottom: 10px;
+    }
+    .dialog-close {
+      margin-top: 16px;
+      padding: 8px 16px;
+      background: var(--dark);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    /* Cookie Banner */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #1e293b;
+      color: #f8fafc;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.2);
+      z-index: 9999;
+      font-size: 0.85rem;
+    }
+    @media (min-width: 640px) {
+      #cookie-banner {
+        flex-direction: row;
+        padding: 16px 24px;
+      }
+    }
+    .cookie-buttons {
+      display: flex;
+      gap: 8px;
+    }
+    .cookie-btn {
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .cookie-btn-accept {
+      background: #10b981;
+      color: #ffffff;
+    }
+    .cookie-btn-reject {
+      background: #475569;
+      color: #ffffff;
+    }
     footer {
       text-align: center;
       font-size: 0.85rem;
-      color: #94a3b8;
+      color: var(--muted);
       padding: 24px 0;
     }
   </style>
@@ -141,9 +249,9 @@
 <body>
   <div class="container">
     <header>
-      <span class="badge">Oficiální výzva pro návrat rodiny</span>
+      <span class="badge">Oficiální výzva pro návrat dětí</span>
       <h1>Vraťme děti domů: Pomozte nám splnit podmínku soudu pro bezpečné bydlení</h1>
-      <p class="lead">Děti byly dočasně umístěny do zařízení z jediného důvodu – ztráty domova. Jakmile doložíme nájemní smlouvu, vrací se zpět k rodičům.</p>
+      <p class="lead">Děti musely být dočasně umístěny do zařízení z jediného důvodu – ztráty domova. Jakmile doložíme nájemní smlouvu, vrací se zpět k rodičům.</p>
     </header>
 
     <div class="hero-card">
@@ -180,20 +288,92 @@
       <a href="https://www.znesnaze21.cz" target="_blank" class="btn-cta" id="cta-button-bottom">
         Přejít na sbírku a podpořit rodinu &rarr;
       </a>
+    </div>
 
-      <!-- Google Ads & Legal Compliance Section -->
-      <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.85rem; color: #64748b;">
-        <h4 style="color: var(--dark); margin-bottom: 8px;">Transparentnost a právní informace</h4>
-        <p style="margin-bottom: 8px;"><strong>Provozovatel informační stránky:</strong> Zástupce rodiny pro koordinaci pomoci, Česká republika | Kontakt: <a href="mailto:pomoc.rodine.sbirka@gmail.com" style="color: var(--dark);">pomoc.rodine.sbirka@gmail.com</a></p>
-        <p style="margin-bottom: 8px;"><strong>Právní povaha darů:</strong> Tato stránka slouží výhradně jako informační představení příběhu. Veškeré finanční příspěvky jsou přijímány a spravovány licencovanou sbírkovou platformou Znesnáze21 (Nadační fond pomoci). Veřejná sbírka je řádně vedena v souladu se zákonem č. 117/2001 Sb. o veřejných sbírkách.</p>
-        <p style="margin-bottom: 8px;"><strong>Ochrana osobních údajů (GDPR):</strong> Tato stránka neshromažďuje žádné platební údaje ani citlivá osobní data. Případná analytická data slouží výhradně k vyhodnocení návštěvnosti a zobrazení reklamy v souladu se zásadami Google a Seznam.cz.</p>
+    <!-- Právní náležitosti povinné pro Google Ads a Sklik -->
+    <div class="legal-card" id="pravni-informace">
+      <h3>Transparentnost a zákonné náležitosti</h3>
+      <p><strong>Provozovatel webu:</strong> Iniciativa pro podporu rodiny, Česká republika | Kontakt: <a href="mailto:pomoc.rodine.sbirka@gmail.com">pomoc.rodine.sbirka@gmail.com</a></p>
+      <p><strong>Právní povaha sbírky:</strong> Tato stránka je nezávislou informační prezentací rodiny. Finanční dary nejsou přijímány na této stránce, ale jsou vybírány prostřednictvím veřejné sbírky na licencované platformě <strong>Znesnáze21 (Nadační fond pomoci)</strong> v souladu se zákonem č. 117/2001 Sb. o veřejných sbírkách.</p>
+      <p><strong>Vyloučení odpovědnosti:</strong> Informace zde uvedené vycházejí ze skutečných rodinných poměrů a rozhodnutí příslušných orgánů sociálně-právní ochrany dětí a soudu.</p>
+      
+      <div class="legal-nav">
+        <a onclick="document.getElementById('modal-terms').showModal()">Podmínky užití</a>
+        <a onclick="document.getElementById('modal-privacy').showModal()">Ochrana soukromí (GDPR)</a>
+        <a onclick="document.getElementById('modal-cookies').showModal()">Zásady cookies</a>
+        <a onclick="document.getElementById('modal-contact').showModal()">Kontakt</a>
       </div>
     </div>
 
     <footer>
       <p>&copy; 2026 Transparentní informační iniciativa pro návrat dětí do rodiny. Všechna práva vyhrazena.</p>
     </footer>
-
   </div>
+
+  <!-- Modály pro právní náležitosti -->
+  <dialog id="modal-terms">
+    <h2>Podmínky užití webu</h2>
+    <p>1. Web slouží výhradně k informování veřejnosti o situaci rodiny a k odkazu na oficiální sbírku na platformě Znesnáze21.</p>
+    <p>2. Provozovatel webu nepřijímá na této doméně žádné finanční transakce ani platby kartou.</p>
+    <p>3. Všechny finanční dary jsou poskytovány dobrovolně dle obchodních podmínek platformy Znesnáze21.</p>
+    <button class="dialog-close" onclick="document.getElementById('modal-terms').close()">Zavřít</button>
+  </dialog>
+
+  <dialog id="modal-privacy">
+    <h2>Ochrana osobních údajů (GDPR)</h2>
+    <p>1. Správcem případných kontaktních údajů je zástupce rodiny (kontakt: pomoc.rodine.sbirka@gmail.com).</p>
+    <p>2. Tento web neshromažďuje žádná bankovní ani platební data návštěvníků.</p>
+    <p>3. Pokud udělíte souhlas, web může využívat anonymní analytické a remarketingové cookies pro reklamní systémy Google Ads a Sklik (Seznam.cz).</p>
+    <p>4. Návštěvník má právo svůj souhlas kdykoliv odvolat smazáním cookies v prohlížeči.</p>
+    <button class="dialog-close" onclick="document.getElementById('modal-privacy').close()">Zavřít</button>
+  </dialog>
+
+  <dialog id="modal-cookies">
+    <h2>Zásady používání souborů cookies</h2>
+    <p>Na našich stránkách využíváme technické cookies nutné pro funkčnost a volitelně analytické a marketingové cookies pro měření efektivity reklamních kampaní v systémech Google Ads a Sklik.</p>
+    <p>Používání marketingových cookies je aktivováno pouze na základě vašeho dobrovolného souhlasu.</p>
+    <button class="dialog-close" onclick="document.getElementById('modal-cookies').close()">Zavřít</button>
+  </dialog>
+
+  <dialog id="modal-contact">
+    <h2>Kontaktní informace</h2>
+    <p><strong>Účel webu:</strong> Podpora rodiny v nouzi a zajištění bydlení pro návrat dětí.</p>
+    <p><strong>E-mail:</strong> pomoc.rodine.sbirka@gmail.com</p>
+    <p><strong>Země původu:</strong> Česká republika</p>
+    <p><strong>Garant sbírky:</strong> Nadační fond pomoci (Znesnáze21.cz)</p>
+    <button class="dialog-close" onclick="document.getElementById('modal-contact').close()">Zavřít</button>
+  </dialog>
+
+  <!-- Cookie Banner splňující požadavky EU / Google Consent Mode / Sklik -->
+  <div id="cookie-banner">
+    <div>
+      Tento web používá nezbytné a analytické cookies ke správnému zobrazení a měření návštěvnosti z reklam Sklik a Google Ads.
+    </div>
+    <div class="cookie-buttons">
+      <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Rozumím a souhlasím</button>
+      <button class="cookie-btn cookie-btn-reject" id="cookie-reject">Odmítnout</button>
+    </div>
+  </div>
+
+  <script>
+    // Cookie banner handling
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const rejectBtn = document.getElementById('cookie-reject');
+
+    if (localStorage.getItem('cookie_consent')) {
+      banner.style.display = 'none';
+    }
+
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('cookie_consent', 'accepted');
+      banner.style.display = 'none';
+    });
+
+    rejectBtn.addEventListener('click', () => {
+      localStorage.setItem('cookie_consent', 'rejected');
+      banner.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
