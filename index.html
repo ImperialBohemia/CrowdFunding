@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vraťme děti domů | Zajištění stabilního bydlení pro rodinu</title>
+  <title>Vraťme děti domů | Zajištění stabilního bydlení pro Jolanku a Marušku</title>
   
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Informační iniciativa pro návrat dětí z ústavu. Splnění podmínky soudu zajištěním nájemního bytu a základního vybavení pro Tomáška a Elišku.">
+  <meta name="description" content="Iniciativa pro návrat Jolanky (3) a Marušky (12) domů k rodičům. Splnění podmínky soudu zajištěním nájemního bytu a kauce.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Vraťme děti domů | Zajištění stabilního bydlení pro rodinu">
-  <meta property="og:description" content="Tomášek (7) a Eliška (5) čekají na návrat k rodičům. Váš dar přímo zajistí kauci na byt a bezpečný pokojíček.">
+  <meta property="og:title" content="Vraťme děti domů | Pomoc pro Jolanku (3 roky) a Marušku (12 let)">
+  <meta property="og:description" content="Děti čekají na návrat k rodičům. Váš dar přímo zajistí kauci na byt a pokojíček. Dary jdou přímo pronajímateli.">
   <meta property="og:image" content="https://navratdetidomu.cz/logo.jpg">
   <meta property="og:url" content="https://navratdetidomu.cz/">
   <meta property="og:locale" content="cs_CZ">
@@ -31,7 +31,7 @@
   </script>
 
   <style>
-    /* Design System & High-Converting Charity Palette */
+    /* Design System: Čistý, prostorný a důvěryhodný styl */
     :root {
       --navy-950: #090d16;
       --navy-900: #0f172a;
@@ -50,8 +50,8 @@
       --text-main: #0f172a;
       --text-muted: #64748b;
       --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 10px -2px rgba(15, 23, 42, 0.08);
-      --shadow-lg: 0 12px 28px -4px rgba(15, 23, 42, 0.1);
+      --shadow-md: 0 4px 12px -2px rgba(15, 23, 42, 0.07);
+      --shadow-lg: 0 14px 30px -4px rgba(15, 23, 42, 0.1);
     }
     
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -68,121 +68,93 @@
     .container {
       max-width: 820px;
       margin: 0 auto;
-      padding: 16px 16px;
+      padding: 24px 18px;
     }
 
-    /* Top Trust Authority Pill Bar */
-    .trust-bar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      margin-bottom: 18px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: var(--navy-800);
+    /* Čisté, prostorné záhlaví s velkým logem */
+    .hero-header {
+      text-align: center;
+      margin-bottom: 28px;
     }
-    .trust-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #ffffff;
-      padding: 6px 12px;
-      border-radius: 9999px;
-      border: 1px solid var(--border-subtle);
-      box-shadow: var(--shadow-sm);
-    }
-    .trust-pill svg { color: var(--emerald-600); }
-
-    /* Brand Header with Real Logo */
-    .brand-header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
+    .brand-logo-container {
       margin-bottom: 16px;
     }
     .brand-logo-img {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
+      width: 130px;
+      height: 130px;
+      border-radius: 24px;
       object-fit: cover;
-      border: 2px solid #ffffff;
-      box-shadow: var(--shadow-sm);
+      border: 3px solid #ffffff;
+      box-shadow: var(--shadow-lg);
+      display: inline-block;
     }
-    .brand-name {
+    .brand-title {
       font-size: 1.15rem;
       font-weight: 800;
-      color: var(--navy-900);
-      letter-spacing: -0.01em;
-    }
-    .brand-verified {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: var(--emerald-700);
-      background: var(--emerald-50);
-      padding: 2px 8px;
-      border-radius: 6px;
-      border: 1px solid var(--emerald-100);
-    }
-
-    /* Main Hero Headline */
-    header {
-      text-align: center;
-      margin-bottom: 22px;
-    }
-    .badge-hero {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #fff7ed;
-      color: #c2410c;
-      border: 1px solid #ffedd5;
-      font-weight: 800;
-      font-size: 0.8rem;
-      padding: 5px 14px;
-      border-radius: 9999px;
-      margin-bottom: 12px;
+      color: var(--navy-700);
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
     }
     h1 {
-      font-size: 1.85rem;
+      font-size: 1.95rem;
       color: var(--navy-900);
       line-height: 1.25;
-      margin-bottom: 12px;
-      font-weight: 800;
+      margin-bottom: 14px;
+      font-weight: 900;
       letter-spacing: -0.02em;
     }
     @media (min-width: 640px) {
-      h1 { font-size: 2.2rem; }
+      h1 { font-size: 2.35rem; }
+      .brand-logo-img { width: 140px; height: 140px; }
     }
     .subtitle {
       font-size: 1.05rem;
       color: var(--navy-700);
-      max-width: 700px;
-      margin: 0 auto;
+      max-width: 720px;
+      margin: 0 auto 16px auto;
+      line-height: 1.65;
     }
 
-    /* Hero Main Card */
+    /* Profesionální, přehledná garanční lišta */
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 14px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--navy-800);
+    }
+    .trust-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      padding: 7px 14px;
+      border-radius: 9999px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+    .trust-tag svg { color: var(--emerald-600); }
+
+    /* Hlavní karta */
     .hero-card {
       background: var(--card-bg);
       border-radius: 20px;
-      padding: 22px;
+      padding: 24px;
       box-shadow: var(--shadow-lg);
       border: 1px solid var(--border-subtle);
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
 
-    /* Family Visual Illustration Hero */
+    /* Vizuál rodiny */
     .visual-hero-container {
       width: 100%;
       border-radius: 14px;
       overflow: hidden;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
       box-shadow: var(--shadow-sm);
       border: 1px solid var(--border-subtle);
       background: #fff;
@@ -193,73 +165,40 @@
       display: block;
     }
 
-    /* Live Fundraising Progress Bar Card (Gamification & Social Proof) */
-    .progress-box {
+    /* Transparentní cílová karta (reálná a ověřená) */
+    .target-box {
       background: #f8fafc;
       border: 1px solid var(--border-subtle);
       border-radius: 16px;
       padding: 18px 20px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+      text-align: center;
     }
-    .progress-stats-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 8px;
-    }
-    .progress-amount {
-      font-size: 1.55rem;
-      font-weight: 900;
-      color: var(--navy-900);
-    }
-    .progress-target {
+    .target-title {
       font-size: 0.9rem;
       font-weight: 700;
       color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
     }
-    .progress-bar-bg {
-      width: 100%;
-      height: 14px;
-      background: #e2e8f0;
-      border-radius: 9999px;
-      overflow: hidden;
-      margin-bottom: 10px;
-      position: relative;
+    .target-amount {
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: var(--navy-900);
+      margin-bottom: 6px;
     }
-    .progress-bar-fill {
-      width: 41.5%;
-      height: 100%;
-      background: linear-gradient(90deg, #059669 0%, #10b981 100%);
-      border-radius: 9999px;
-      transition: width 1s ease-in-out;
-    }
-    .progress-meta-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 8px;
-      font-size: 0.82rem;
+    .target-desc {
+      font-size: 0.88rem;
       color: var(--navy-700);
-      font-weight: 600;
-    }
-    .progress-donors-count {
-      color: var(--emerald-700);
-      font-weight: 700;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .progress-urgency-note {
-      color: var(--action-orange);
-      font-weight: 700;
     }
 
-    /* Behavioral Micro-Commitment Amount Selector & Custom Amount */
+    /* Volba výše daru včetně vlastní částky */
     .funnel-selector-box {
       background: #ffffff;
       border: 2px solid #e2e8f0;
       border-radius: 16px;
-      padding: 18px;
+      padding: 20px;
       margin-bottom: 20px;
       text-align: center;
     }
@@ -267,7 +206,7 @@
       font-size: 1.05rem;
       font-weight: 800;
       color: var(--navy-900);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
     .amount-grid {
       display: grid;
@@ -302,8 +241,8 @@
       color: var(--action-orange);
       box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.15);
     }
-    
-    /* Custom Amount Input Row */
+
+    /* Pole pro vlastní částku */
     .custom-amount-box {
       display: none;
       align-items: center;
@@ -334,13 +273,13 @@
       color: var(--emerald-700);
       font-weight: 700;
       min-height: 24px;
-      padding: 4px 8px;
+      padding: 4px 10px;
       background: var(--emerald-50);
       border-radius: 8px;
       display: inline-block;
     }
 
-    /* High-Impact Primary Donation CTA */
+    /* Hlavní darovací tlačítko */
     .btn-action-cta {
       display: flex;
       align-items: center;
@@ -368,7 +307,7 @@
       box-shadow: 0 12px 30px rgba(234, 88, 12, 0.45);
     }
 
-    /* Institutional Risk-Free Guarantee Callout */
+    /* Garance bezpečného daru */
     .guarantee-pill-box {
       background: var(--emerald-50);
       border: 1px solid #a7f3d0;
@@ -382,7 +321,7 @@
     }
     .guarantee-pill-box svg { flex-shrink: 0; width: 22px; height: 22px; margin-top: 2px; }
 
-    /* The Emotional Children Story Section (Identifiable Victim Effect) */
+    /* Příběh dětí */
     .story-section {
       background: var(--card-bg);
       border-radius: 18px;
@@ -443,7 +382,7 @@
       margin: 0;
     }
 
-    /* 4-Stage Legal Roadmap Funnel */
+    /* 4 fáze plánu */
     .roadmap-section {
       background: var(--card-bg);
       border-radius: 18px;
@@ -500,7 +439,7 @@
     .milestone-title { font-size: 0.85rem; font-weight: 700; color: var(--navy-900); }
     .milestone-status { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; }
 
-    /* Interactive Item Sponsorship Cards Grid */
+    /* Položky vybavení a sponzorství */
     .equipment-grid-section {
       background: var(--card-bg);
       border-radius: 18px;
@@ -581,7 +520,7 @@
       border-color: var(--action-orange);
     }
 
-    /* Transparent Itemized Budget */
+    /* Transparentní položkový rozpočet */
     .budget-section {
       background: var(--card-bg);
       border-radius: 18px;
@@ -601,70 +540,7 @@
     .budget-table th { background: #f1f5f9; color: var(--navy-900); font-weight: 700; }
     .budget-table tr:last-child td { font-weight: 800; color: var(--action-orange); font-size: 1.05rem; border-bottom: none; }
 
-    /* Recent Donor Social Proof Wall */
-    .donor-wall-section {
-      background: var(--card-bg);
-      border-radius: 18px;
-      padding: 24px;
-      border: 1px solid var(--border-subtle);
-      box-shadow: var(--shadow-md);
-      margin-bottom: 24px;
-    }
-    .donor-wall-section h3 {
-      font-size: 1.25rem;
-      color: var(--navy-900);
-      margin-bottom: 14px;
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .donor-items-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .donor-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      background: #f8fafc;
-      padding: 12px 14px;
-      border-radius: 10px;
-      border: 1px solid var(--border-subtle);
-    }
-    .donor-avatar {
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background: #e2e8f0;
-      color: var(--navy-800);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 800;
-      font-size: 0.85rem;
-      flex-shrink: 0;
-    }
-    .donor-content { flex: 1; }
-    .donor-header-line {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      margin-bottom: 2px;
-    }
-    .donor-name { font-weight: 700; color: var(--navy-900); }
-    .donor-time { font-size: 0.75rem; color: var(--text-muted); }
-    .donor-message { font-size: 0.82rem; color: #475569; font-style: italic; }
-    .donor-pledge {
-      display: inline-block;
-      font-weight: 800;
-      color: var(--emerald-700);
-      font-size: 0.82rem;
-      margin-top: 2px;
-    }
-
-    /* 1-Click Viral Social Share */
+    /* Sdílení */
     .share-card {
       background: var(--card-bg);
       border-radius: 16px;
@@ -706,7 +582,7 @@
     summary { padding: 12px 16px; background: #f8fafc; font-weight: 700; cursor: pointer; color: var(--navy-900); }
     details p { padding: 12px 16px; font-size: 0.9rem; color: #334155; background: #fff; }
 
-    /* Sticky Bottom Mobile Bar */
+    /* Fixní mobilní lišta */
     .sticky-bar {
       position: fixed;
       bottom: 0;
@@ -740,7 +616,7 @@
       box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
     }
 
-    /* Legal Footer */
+    /* Právní patička */
     .legal-card {
       background: var(--card-bg);
       border-radius: 14px;
@@ -776,7 +652,7 @@
     }
     .legal-links button:hover { background: #e2e8f0; }
 
-    /* Dialog Modals */
+    /* Modální okna */
     dialog {
       max-width: 580px;
       width: 90%;
@@ -824,44 +700,36 @@
 <body>
   <div class="container">
     
-    <!-- Trust Authority Pill Bar -->
-    <div class="trust-bar">
-      <div class="trust-pill">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-        Podmínka soudu a OSPOD
+    <!-- Prostorné a profesionální záhlaví s velkým logem -->
+    <header class="hero-header">
+      <div class="brand-logo-container">
+        <img src="logo.jpg" alt="Logo Iniciativa Vraťme děti domů" class="brand-logo-img">
       </div>
-      <div class="trust-pill">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
-        100% přímá platba pronajímateli
+      <div class="brand-title">Iniciativa Vraťme děti domů</div>
+      <h1>Vraťme Jolanku (3) a Marušku (12) domů k mámě a tátovi</h1>
+      <p class="subtitle">Děti jsou v ústavním zařízení kvůli náhlé ztrátě bydlení. Rodina má vybraný bezpečný byt. Schází jediné: složit kauci a zařídit pokojíček, aby soud nařídil okamžitý návrat dětí k rodičům.</p>
+      
+      <!-- Jednoduchá, čistá lišta důvěryhodnosti -->
+      <div class="trust-strip">
+        <div class="trust-tag">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          Podmínka soudu a OSPOD
+        </div>
+        <div class="trust-tag">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          100% přímá platba pronajímateli
+        </div>
+        <div class="trust-tag">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+          Zákon č. 117/2001 Sb. (Znesnáze21)
+        </div>
       </div>
-      <div class="trust-pill">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
-        Zákon č. 117/2001 Sb.
-      </div>
-    </div>
-
-    <!-- Official Brand Header -->
-    <div class="brand-header">
-      <img src="logo.jpg" alt="Logo Vraťme děti domů" class="brand-logo-img">
-      <div>
-        <div class="brand-name">Iniciativa Vraťme děti domů</div>
-        <div class="brand-verified">✓ Oficiální ověřená výzva 2026</div>
-      </div>
-    </div>
-
-    <!-- Hero Section -->
-    <header>
-      <div class="badge-hero">
-        <span>🏡</span> Poslední krok: Splnění podmínky soudu pro návrat dětí
-      </div>
-      <h1>Dnes můžete vrátit Tomáška a Elišku domů k mámě a tátovi</h1>
-      <p class="subtitle">Děti skončily v ústavním zařízení z jediného důvodu – náhlé ztráty bydlení. Rodina má vybraný bezpečný nájemní byt. Schází jediné: složit kauci a zařídit pokojíček, aby soud nařídil okamžitý návrat dětí domů.</p>
     </header>
 
-    <!-- Main Hero Card -->
+    <!-- Hlavní akční karta -->
     <div class="hero-card">
       
-      <!-- Demo Visual: Clean Warm SVG Graphic of Family Reunion -->
+      <!-- Teplá grafika návratu rodiny -->
       <div class="visual-hero-container">
         <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -884,110 +752,96 @@
           <rect x="710" y="185" width="30" height="30" fill="#fef08a" stroke="#cbd5e1" stroke-width="2"/>
           <rect x="680" y="215" width="35" height="45" fill="url(#homeGrad)"/>
           
-          <!-- Parents and Children Silhouettes -->
+          <!-- Rodiče a dcery: Táta, Máma, Maruška (12), Jolanka (3) -->
           <circle cx="180" cy="180" r="16" fill="#1e293b"/>
           <path d="M165,200 C165,195 195,195 195,200 L198,255 L188,255 L185,290 L175,290 L172,255 L162,255 Z" fill="#1e293b"/>
           
           <circle cx="340" cy="185" r="15" fill="#334155"/>
           <path d="M326,205 C326,200 354,200 354,205 L356,260 L346,260 L344,290 L336,290 L334,260 L324,260 Z" fill="#334155"/>
           
-          <circle cx="230" cy="210" r="13" fill="#059669"/>
-          <path d="M218,226 C218,222 242,222 242,226 L244,275 L236,275 L234,295 L226,295 L224,275 L216,275 Z" fill="#059669"/>
+          <!-- Maruška (12 let - vyšší dívka) -->
+          <circle cx="230" cy="200" r="14" fill="#059669"/>
+          <path d="M217,216 C217,212 243,212 243,216 L245,275 L237,275 L235,295 L227,295 L225,275 L217,275 Z" fill="#059669"/>
           
-          <circle cx="285" cy="225" r="12" fill="#ea580c"/>
-          <path d="M274,240 C274,236 296,236 296,240 L300,285 L270,285 Z" fill="#ea580c"/>
+          <!-- Jolanka (3 roky - malá holčička) -->
+          <circle cx="285" cy="235" r="11" fill="#ea580c"/>
+          <path d="M275,248 C275,244 295,244 295,248 L298,290 L272,290 Z" fill="#ea580c"/>
           
-          <path d="M190,215 L222,235 M238,235 L278,245 M292,245 L330,225" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+          <path d="M190,215 L222,230 M238,230 L278,250 M292,250 L330,225" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
           
-          <rect x="20" y="20" width="370" height="42" rx="8" fill="#ffffff" opacity="0.94" stroke="#cbd5e1"/>
-          <text x="36" y="47" font-family="-apple-system, sans-serif" font-size="15" font-weight="800" fill="#0f172a">🏡 Váš dar = Tomášek a Eliška spí doma</text>
+          <rect x="20" y="20" width="380" height="42" rx="8" fill="#ffffff" opacity="0.94" stroke="#cbd5e1"/>
+          <text x="36" y="47" font-family="-apple-system, sans-serif" font-size="15" font-weight="800" fill="#0f172a">🏡 Váš dar = Jolanka a Maruška spí doma</text>
         </svg>
       </div>
 
-      <!-- Live Gamified Progress Bar (Social Proof & Urgency) -->
-      <div class="progress-box">
-        <div class="progress-stats-row">
-          <div>
-            <span class="progress-amount" id="collected-amount">41 500 Kč</span>
-            <span style="font-size:0.9rem; color:var(--emerald-700); font-weight:800; margin-left:6px;">(41 % splněno)</span>
-          </div>
-          <div class="progress-target">Cíl: 100 000 Kč</div>
-        </div>
-        <div class="progress-bar-bg">
-          <div class="progress-bar-fill" id="progress-fill-bar"></div>
-        </div>
-        <div class="progress-meta-row">
-          <div class="progress-donors-count">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-            <span>74 štědrých dárců</span> již podpořilo rodinu
-          </div>
-          <div class="progress-urgency-note">
-            Zbývá: 58 500 Kč do podpisu nájmu
-          </div>
-        </div>
+      <!-- Transparentní cíl sbírky bez smyšlených čísel -->
+      <div class="target-box">
+        <div class="target-title">Cíl transparentní sbírky</div>
+        <div class="target-amount">100 000 Kč</div>
+        <div class="target-desc">Účelově vázáno na kauci bytu a vybavení pokojíčku pro Jolanku a Marušku</div>
       </div>
 
-      <!-- Behavioral Micro-Commitment Amount Selector & Custom Amount -->
+      <!-- Volba výše daru s volitelnou částkou -->
       <div class="funnel-selector-box">
-        <div class="funnel-title">Zvolte výši vašeho daru pro Tomáška a Elišku:</div>
+        <div class="funnel-title">Zvolte výši vašeho daru pro návrat dětí:</div>
         <div class="amount-grid">
-          <button class="amount-btn" onclick="setFunnelAmount(300, 'Zajistí školní potřeby a lůžkoviny pro jedno dítě')">300 Kč</button>
-          <button class="amount-btn active" onclick="setFunnelAmount(500, 'Zajistí dětskou matraci a polštář do nového pokoje')">500 Kč</button>
-          <button class="amount-btn" onclick="setFunnelAmount(1000, 'Přímo hradí část vratné jistoty (kauce) pronajímateli')">1 000 Kč</button>
-          <button class="amount-btn" onclick="setFunnelAmount(2500, 'Zajistí dětskou postel a psací stůl pro školáka')">2 500 Kč</button>
+          <button class="amount-btn" onclick="setFunnelAmount(300, 'Zajistí lůžkoviny a polštářky pro malou Jolanku')">300 Kč</button>
+          <button class="amount-btn active" onclick="setFunnelAmount(500, 'Zajistí dětskou matraci do nového pokoje')">500 Kč</button>
+          <button class="amount-btn" onclick="setFunnelAmount(1000, 'Přímo hradí část kauce na byt pronajímateli')">1 000 Kč</button>
+          <button class="amount-btn" onclick="setFunnelAmount(2500, 'Zajistí psací stůl pro dvanáctiletou Marušku na učení')">2 500 Kč</button>
           <button class="amount-btn" id="btn-custom-amount" onclick="enableCustomAmount()">Vlastní částka</button>
         </div>
 
-        <!-- Custom Amount Input -->
+        <!-- Pole pro vlastní částku -->
         <div class="custom-amount-box" id="custom-amount-container">
           <input type="number" class="custom-amount-input" id="custom-amount-input" placeholder="Zadejte částku v Kč..." min="50" step="50" oninput="handleCustomAmountChange(this.value)">
         </div>
 
-        <div class="impact-caption" id="funnel-impact">Zajistí dětskou matraci a polštář do nového pokoje</div>
+        <div class="impact-caption" id="funnel-impact">Zajistí dětskou matraci do nového pokoje</div>
       </div>
 
-      <!-- Primary Action CTA -->
+      <!-- Hlavní darovací tlačítko -->
       <a href="https://www.znesnaze21.cz" target="_blank" class="btn-action-cta" id="cta-button-main">
         <span>Darovat <span id="cta-amount-display">500 Kč</span> a pomoci dětem domů</span>
         <span>&rarr;</span>
       </a>
 
-      <!-- Institutional Risk-Free Guarantee -->
+      <!-- Garance -->
       <div class="guarantee-pill-box">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
         <div>
           <strong>100% garance přímého účelového využití daru:</strong>
-          Finanční prostředky nevstupují na soukromý účet rodičů. Licencovaná platforma <strong>Znesnáze21 (Nadační fond pomoci)</strong> proplácí kauci a nájemné přímo majiteli bytu na základě řádné nájemní smlouvy. Dary jsou chráněny před exekucí.
+          Peníze nevstupují na soukromý účet rodiny. Licencovaná platforma <strong>Znesnáze21 (Nadační fond pomoci)</strong> proplácí kauci a nájemné přímo majiteli bytu na základě řádné nájemní smlouvy. Dary jsou chráněny před exekucí.
         </div>
       </div>
 
     </div>
 
-    <!-- The Children Story (Identifiable Victim Effect) -->
+    <!-- Reálný příběh Jolanky (3) a Marušky (12) -->
     <div class="story-section">
-      <h2>Příběh Tomáška (7) a Elišky (5)</h2>
+      <h2>Příběh Jolanky (3 roky) a Marušky (12 let)</h2>
       <div class="story-intro-quote">
-        „Mami, tati, kdy už budeme spát zase spolu v našem pokojíčku?“ ptá se sedmiletý Tomášek při každé sobotní návštěvě v ústavním zařízení.
+        „Mami, tati, kdy už budeme zase všichni spolu doma?“ ptají se dvanáctiletá Maruška a tříletá Jolanka při každé víkendové návštěvě.
       </div>
       <div class="story-body">
-        <p>Tomášek letos nastoupil do první třídy a malá Eliška má pět let. Jsou to zvídavé, hodné děti, které nadevše milují své rodiče. Do dětského centra se nedostaly kvůli zanedbání péče ani násilí – jejich rodiče nepijí a řádně pracují. Důvodem bylo jediné: majitel domu náhle neprodloužil nájemní smlouvu a rodina se v době bytové krize ocitla bez střechy nad hlavou.</p>
-        <p>Soud a OSPOD stanovily jasné a jediné pravidlo: <strong>Až rodiče předloží platnou nájemní smlouvu k bytu a zařízený pokojíček s vlastní postelí pro každé dítě, soud okamžitě děti vrátí domů.</strong></p>
-        <p>Tatínek pracuje na plný úvazek ve skladu a maminka má ranní brigády. Běžné měsíční nájemné jsou schopni ze své výplaty bez problémů hradit. Co však po náhlém stěhování nedokážou jednorázově zaplatit, je vysoká tříměsíční kauce (vratná jistota) a nákup základního vybavení.</p>
+        <p>Jolanka má 3 roky a její starší sestra Maruška 12 let. Jsou to hodné dcery, které nadevše milují své rodiče. Do ústavního zařízení se nedostaly kvůli zanedbání péče ani alkoholu – jejich rodiče nepijí a poctivě pracují. Důvodem byla náhlá výpověď z nájmu a ztráta bydlení v době bytové krize.</p>
+        <p>Soud a OSPOD stanovily jasné pravidlo: <strong>Až rodiče předloží platnou nájemní smlouvu k bytu a zařízený pokojíček s vlastní postelí pro každé dítě, soud okamžitě nařídí návrat Jolanky i Marušky domů k rodičům.</strong></p>
+        <p>Tatínek pracuje na plný úvazek ve skladu a maminka má ranní brigády. Běžné měsíční nájemné jsou schopni ze svých platů bez potíží hradit. Po náhlém stěhování však nedokážou jednorázově složit tříměsíční kauci a nákup základního vybavení bytu.</p>
       </div>
 
       <div class="story-highlights">
         <div class="story-highlight-card">
           <h4>💼 Pracující rodiče</h4>
-          <p>Otec má stálou práci ve skladu, matka brigádu. Měsíční nájem uhradí z vlastních platů.</p>
+          <p>Otec pracuje ve skladu, matka má brigádu. Měsíční nájemné zvládnou platit sami.</p>
         </div>
         <div class="story-highlight-card">
           <h4>⚖️ Poslední podmínka soudu</h4>
-          <p>Soud požaduje pouze stabilní byt s vlastním lůžkem pro každé dítě k okamžitému návratu.</p>
+          <p>Soud vyžaduje pouze stabilní nájemní byt s vlastním lůžkem pro každé dítě k návratu.</p>
         </div>
       </div>
     </div>
 
-    <!-- Visual Roadmap: 4 Stages to Family Reunion -->
+    <!-- 4 fáze právního plánu -->
     <div class="roadmap-section">
       <h2>Právní a reálný plán návratu dětí krok za krokem</h2>
       <div class="milestone-track">
@@ -1014,7 +868,7 @@
       </div>
     </div>
 
-    <!-- Item Sponsorship Interactive Showcase -->
+    <!-- Konkrétní položky k přímému sponzorování -->
     <div class="equipment-grid-section">
       <h2>Konkrétní položky pro schválení bytu OSPODem</h2>
       <p class="equipment-desc">Můžete vybrat konkrétní položku, kterou rodině přímo zasponzorujete:</p>
@@ -1026,12 +880,12 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>
             </div>
             <div class="equip-info">
-              <h4>Dětské postele a matrace</h4>
-              <p>Vlastní postel a lůžkoviny pro Tomáška a Elišku</p>
+              <h4>Postýlka pro Jolanku a postel pro Marušku</h4>
+              <p>Vlastní postel a lůžkoviny pro obě dcery</p>
               <span>15 000 Kč</span>
             </div>
           </div>
-          <button class="btn-sponsor-item" onclick="setFunnelAmount(1000, 'Příspěvek na dětské postele a matrace pro obě děti')">Sponzorovat částí 1 000 Kč</button>
+          <button class="btn-sponsor-item" onclick="setFunnelAmount(1000, 'Příspěvek na postýlku a lůžkoviny pro Jolanku a Marušku')">Sponzorovat částí 1 000 Kč</button>
         </div>
 
         <div class="equip-item">
@@ -1040,12 +894,12 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 18v-4h-3v1h-2v-1H9v1H7v-1H4v4H2v2h20v-2h-2zM4 12h16v-2H4v2zm14-8H6L4 8h16l-2-4z"/></svg>
             </div>
             <div class="equip-info">
-              <h4>Dětský stůl a židle na učení</h4>
-              <p>Prostor pro Tomáška na psaní úkolů a kreslení</p>
+              <h4>Psací stůl a židle pro Marušku</h4>
+              <p>Prostor pro dvanáctiletou školačku na učení</p>
               <span>6 000 Kč</span>
             </div>
           </div>
-          <button class="btn-sponsor-item" onclick="setFunnelAmount(500, 'Příspěvek na dětský psací stůl pro školáka Tomáška')">Sponzorovat částí 500 Kč</button>
+          <button class="btn-sponsor-item" onclick="setFunnelAmount(500, 'Příspěvek na školní stůl pro dvanáctiletou Marušku')">Sponzorovat částí 500 Kč</button>
         </div>
 
         <div class="equip-item">
@@ -1079,7 +933,7 @@
       </div>
     </div>
 
-    <!-- Transparent Budget Breakdown Table -->
+    <!-- Transparentní položkový rozpočet -->
     <div class="budget-section">
       <h2>Transparentní položkový rozpočet (100 000 Kč)</h2>
       <table class="budget-table">
@@ -1089,8 +943,8 @@
         <tbody>
           <tr><td>Vratná jistota (kauce na byt)</td><td>Podmínka nájemní smlouvy</td><td>35 000 Kč</td></tr>
           <tr><td>První nájemné předem</td><td>Přímá platba pronajímateli</td><td>15 000 Kč</td></tr>
-          <tr><td>Dětský pokoj (postele, matrace, lůžkoviny)</td><td>Vlastní lůžko pro každé dítě</td><td>15 000 Kč</td></tr>
-          <tr><td>Dětský psací stůl a židle</td><td>Koutek pro školní přípravu</td><td>6 000 Kč</td></tr>
+          <tr><td>Dětský pokoj (postýlka, postel, lůžkoviny)</td><td>Vlastní lůžko pro Jolanku i Marušku</td><td>15 000 Kč</td></tr>
+          <tr><td>Psací stůl a židle na učení</td><td>Koutek pro školní přípravu Marušky</td><td>6 000 Kč</td></tr>
           <tr><td>Jídelní stůl a židle pro rodinu</td><td>Společné stolování</td><td>7 000 Kč</td></tr>
           <tr><td>Obývací sedačka a stolek</td><td>Společný prostor rodiny</td><td>10 000 Kč</td></tr>
           <tr><td>Pračka a lednice</td><td>Základní hygiena a stravování</td><td>12 000 Kč</td></tr>
@@ -1099,75 +953,18 @@
       </table>
     </div>
 
-    <!-- Recent Donors Social Proof Feed -->
-    <div class="donor-wall-section">
-      <h3>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:var(--emerald-600);"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-        Poslední dárci, kteří pomohli rodině
-      </h3>
-      <div class="donor-items-list">
-        <div class="donor-item">
-          <div class="donor-avatar">JM</div>
-          <div class="donor-content">
-            <div class="donor-header-line">
-              <span class="donor-name">Jana M.</span>
-              <span class="donor-time">Před 18 minutami</span>
-            </div>
-            <div class="donor-message">„Držím vám i dětem všechny palce. Každé dítě patří ke svým rodičům!“</div>
-            <span class="donor-pledge">Darovala 1 000 Kč</span>
-          </div>
-        </div>
-
-        <div class="donor-item">
-          <div class="donor-avatar">?</div>
-          <div class="donor-content">
-            <div class="donor-header-line">
-              <span class="donor-name">Anonymní dárce</span>
-              <span class="donor-time">Před 45 minutami</span>
-            </div>
-            <div class="donor-message">„Ať mají Tomášek a Eliška co nejdříve svůj krásný pokojíček.“</div>
-            <span class="donor-pledge">Daroval 500 Kč</span>
-          </div>
-        </div>
-
-        <div class="donor-item">
-          <div class="donor-avatar">RN</div>
-          <div class="donor-content">
-            <div class="donor-header-line">
-              <span class="donor-name">Rodina Novotných</span>
-              <span class="donor-time">Před 2 hodinami</span>
-            </div>
-            <div class="donor-message">„Rádi pomůžeme s kaucí. Věříme, že to dobře dopadne.“</div>
-            <span class="donor-pledge">Darovali 2 500 Kč</span>
-          </div>
-        </div>
-
-        <div class="donor-item">
-          <div class="donor-avatar">PK</div>
-          <div class="donor-content">
-            <div class="donor-header-line">
-              <span class="donor-name">Petr K.</span>
-              <span class="donor-time">Před 4 hodinami</span>
-            </div>
-            <div class="donor-message">„Posílám alespoň skromný příspěvek na školní stůl pro prvňáka.“</div>
-            <span class="donor-pledge">Daroval 300 Kč</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 1-Click Social Share Multiplier -->
+    <!-- Sdílení -->
     <div class="share-card">
-      <h4>Pomozte nám sdílením – i jedno sdílení může oslovit dárce</h4>
+      <h4>Pomozte nám sdílením – i jedno sdílení může najít dárce</h4>
       <div class="share-buttons">
-        <a href="https://api.whatsapp.com/send?text=Pomozte%20vr%C3%A1tit%20Tom%C3%A1%C5%A1ka%20a%20Eli%C5%A1ku%20dom%C5%AF%20k%20rodi%C4%8D%C5%AFm%3A%20https%3A%2F%2Fnavratdetidomu.cz" target="_blank" class="btn-share btn-share-wa">WhatsApp</a>
+        <a href="https://api.whatsapp.com/send?text=Pomozte%20vr%C3%A1tit%20Jolanku%20a%20Maru%C5%A1ku%20dom%C5%AF%20k%20rodi%C4%8D%C5%AFm%3A%20https%3A%2F%2Fnavratdetidomu.cz" target="_blank" class="btn-share btn-share-wa">WhatsApp</a>
         <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnavratdetidomu.cz" target="_blank" class="btn-share btn-share-fb">Facebook</a>
         <button class="btn-share btn-share-copy" onclick="copyCurrentUrl()">Kopírovat odkaz</button>
       </div>
       <div id="copy-confirmation" style="display:none; font-size:0.8rem; color:var(--emerald-600); margin-top:8px; font-weight:700;">Odkaz byl zkopírován do schránky!</div>
     </div>
 
-    <!-- FAQ Accordion -->
+    <!-- Časté dotazy dárců -->
     <div class="faq-section">
       <h3>Časté dotazy dárců</h3>
       <details>
@@ -1192,7 +989,7 @@
       </details>
     </div>
 
-    <!-- Legal Compliance Card (Google Ads & Sklik Mandate) -->
+    <!-- Právní informace -->
     <div class="legal-card" id="legal">
       <p><strong>Provozovatel webu:</strong> Zástupce rodiny pro koordinaci iniciativy, ČR | Kontakt: <a href="mailto:pomoc.rodine.sbirka@gmail.com" style="color:var(--navy-900); font-weight:700;">pomoc.rodine.sbirka@gmail.com</a></p>
       <p><strong>Právní povaha sbírky:</strong> Informační představení. Dary jsou vybírány v rámci veřejné sbírky na licencované platformě <strong>Znesnáze21 (Nadační fond pomoci)</strong> dle zákona č. 117/2001 Sb. Dary jsou pro příjemce osvobozeny od daně z příjmů dle § 4a zákona č. 586/1992 Sb.</p>
@@ -1206,16 +1003,16 @@
     </div>
 
     <footer>
-      <p>&copy; 2026 Transparentní informační iniciativa pro návrat dětí do rodiny. Všechna práva vyhrazena.</p>
+      <p>&copy; 2026 Transparentní iniciativa pro návrat dětí do rodiny. Všechna práva vyhrazena.</p>
     </footer>
 
   </div>
 
-  <!-- Sticky Mobile Bottom Funnel Bar -->
+  <!-- Fixní mobilní lišta -->
   <div class="sticky-bar">
     <div class="sticky-text">
       Vraťme děti domů<br>
-      <span style="color:var(--emerald-600); font-size:0.75rem;">Zbývá vybrat kauci na byt</span>
+      <span style="color:var(--emerald-600); font-size:0.75rem;">Podmínka soudu pro návrat</span>
     </div>
     <a href="https://www.znesnaze21.cz" target="_blank" class="sticky-btn" id="sticky-btn-link">
       Darovat <span id="sticky-amount-display">500 Kč</span> &rarr;
@@ -1234,7 +1031,7 @@
   <dialog id="dialog-privacy">
     <h2>Zásady ochrany osobních údajů (GDPR)</h2>
     <p>1. Správcem iniciativy je zástupce rodiny (kontakt: pomoc.rodine.sbirka@gmail.com).</p>
-    <p>2. Tento web nezpracovává bankovní údaje ani čísla platebních karet ani neshromažďuje osobní databáze e-mailů.</p>
+    <p>2. Tento web nezpracovává bankovní údaje ani čísla platebních karet ani neshromažďuje databáze e-mailů.</p>
     <p>3. Veškeré dary a finanční transakce probíhají výhradně na licencované platformě Znesnáze21.</p>
     <button class="dialog-close-btn" onclick="document.getElementById('dialog-privacy').close()">Zavřít</button>
   </dialog>
@@ -1266,7 +1063,7 @@
   </div>
 
   <script>
-    // Micro-Commitment Amount Selector
+    // Selektor částky
     function setFunnelAmount(amount, impact) {
       document.getElementById('custom-amount-container').style.display = 'none';
       document.querySelectorAll('.amount-btn').forEach(b => {
@@ -1281,13 +1078,12 @@
       document.getElementById('cta-amount-display').innerText = formatted;
       document.getElementById('sticky-amount-display').innerText = formatted;
       
-      // Smooth scroll back to CTA if clicked from item cards
       if (window.scrollY > 1200) {
         document.querySelector('.funnel-selector-box').scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
 
-    // Enable Custom Amount Input
+    // Aktivace pole pro vlastní částku
     function enableCustomAmount() {
       document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('btn-custom-amount').classList.add('active');
@@ -1301,21 +1097,21 @@
       }
     }
 
-    // Custom Amount Input Handler
+    // Obsluha vlastní částky
     function handleCustomAmountChange(val) {
       const num = parseInt(val, 10);
       if (num && num > 0) {
         const formatted = num.toLocaleString('cs-CZ') + ' Kč';
         document.getElementById('cta-amount-display').innerText = formatted;
         document.getElementById('sticky-amount-display').innerText = formatted;
-        document.getElementById('funnel-impact').innerText = 'Váš dar ' + formatted + ' pomůže zajistit kauci a pokojíček pro děti';
+        document.getElementById('funnel-impact').innerText = 'Váš dar ' + formatted + ' pomůže zajistit kauci a pokojíček pro Jolanku a Marušku';
       } else {
         document.getElementById('cta-amount-display').innerText = 'libovolnou částku';
         document.getElementById('sticky-amount-display').innerText = 'libovolnou částku';
       }
     }
 
-    // Copy Share Link
+    // Kopírování odkazu
     function copyCurrentUrl() {
       navigator.clipboard.writeText(window.location.href).then(() => {
         const msg = document.getElementById('copy-confirmation');
@@ -1324,7 +1120,7 @@
       });
     }
 
-    // Cookie Banner Handling with Google Consent Mode v2
+    // Cookie Banner Handling s Google Consent Mode v2
     const banner = document.getElementById('cookie-banner');
     const btnAccept = document.getElementById('cookie-consent-accept');
     const btnReject = document.getElementById('cookie-consent-reject');
