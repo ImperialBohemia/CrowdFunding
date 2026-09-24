@@ -11,9 +11,13 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vraťme děti domů | Pomoc pro Jolanku (3 roky) a Marušku (12 let)">
   <meta property="og:description" content="Byty na trhu nečekají – potřebujeme složit kauci, abychom mohli okamžitě podepsat nájem a soud nám vrátil dcerky domů.">
-  <meta property="og:image" content="https://navratdetidomu.cz/logo.jpg">
+  <meta property="og:image" content="https://navratdetidomu.cz/images/family/mama-dcery-srdce.jpg">
   <meta property="og:url" content="https://navratdetidomu.cz/">
   <meta property="og:locale" content="cs_CZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vraťme děti domů | Pomoc pro Jolanku (3) a Marušku (12)">
+  <meta name="twitter:description" content="Byty na trhu nečekají – potřebujeme složit kauci, abychom mohli okamžitě podepsat nájem a soud nám vrátil dcerky domů.">
+  <meta name="twitter:image" content="https://navratdetidomu.cz/images/family/mama-dcery-srdce.jpg">
   
   <!-- Favicon -->
   <link rel="icon" href="logo.jpg" type="image/jpeg">
@@ -385,6 +389,70 @@
       font-size: 0.85rem;
       color: var(--text-muted);
       margin: 0;
+    }
+
+    /* Foto galerie rodiny */
+    .photo-gallery-section {
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 24px;
+    }
+    .photo-gallery-section h2 {
+      font-size: 1.25rem;
+      color: var(--navy-900);
+      font-weight: 700;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+    .gallery-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .photo-item {
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 4/3;
+      background: #e2e8f0;
+    }
+    .photo-item.wide {
+      grid-column: span 2;
+      aspect-ratio: 16/9;
+    }
+    .photo-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .photo-item:hover img {
+      transform: scale(1.03);
+    }
+    .photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(15,23,42,0.72));
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 18px 10px 8px;
+      font-weight: 500;
+    }
+    @media (max-width: 480px) {
+      .photo-grid { grid-template-columns: 1fr; gap: 8px; }
+      .photo-item.wide { grid-column: span 1; aspect-ratio: 4/3; }
     }
 
     /* 4 fáze plánu */
@@ -845,6 +913,38 @@
         <div class="story-highlight-card">
           <h4>⏳ Půlroční výpadek byrokracie</h4>
           <p>Důchod přiznán v 3/2026, ale vyplacen až v 9/2026. Na příspěvek na péči čekáme přes rok.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fotografie rodiny -->
+    <div class="photo-gallery-section">
+      <h2>📷 Naše rodina</h2>
+      <p class="gallery-subtitle">Jolanka (3 roky) a Maruška (12 let) se svými rodiči</p>
+      <div class="photo-grid">
+        <div class="photo-item wide">
+          <img src="images/family/mama-dcery-srdce.jpg" alt="Maminka s Jolankou a Maruškou v srdci" loading="lazy" width="1200" height="675">
+          <span class="photo-caption">Maminka s dcerkami Jolankou a Maruškou</span>
+        </div>
+        <div class="photo-item">
+          <img src="images/family/tata-dcery-srdce.jpg" alt="Tatínek s Jolankou a Maruškou" loading="lazy" width="800" height="600">
+          <span class="photo-caption">Tatínek s dcerkami u jezera</span>
+        </div>
+        <div class="photo-item">
+          <img src="images/family/mama-dcery-jezero.jpg" alt="Maminka objímá Jolanku a Marušku" loading="lazy" width="800" height="600">
+          <span class="photo-caption">Společná chvíle maminky s dcerkami</span>
+        </div>
+        <div class="photo-item">
+          <img src="images/family/rodina-selfie.jpg" alt="Celá rodina pohromadě" loading="lazy" width="800" height="600">
+          <span class="photo-caption">Celá naše rodina – pohromadě</span>
+        </div>
+        <div class="photo-item">
+          <img src="images/family/dcery-schodiste.jpg" alt="Jolanka a Maruška – sestřičky" loading="lazy" width="800" height="600">
+          <span class="photo-caption">Sestřičky Jolanka a Maruška</span>
+        </div>
+        <div class="photo-item">
+          <img src="images/family/jolanka-pesek.jpg" alt="Tříletá Jolanka s pejskem" loading="lazy" width="800" height="600">
+          <span class="photo-caption">Malá Jolanka (3 roky)</span>
         </div>
       </div>
     </div>
