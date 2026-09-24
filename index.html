@@ -415,19 +415,15 @@
     }
     .photo-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
     }
     .photo-item {
       border-radius: 12px;
       overflow: hidden;
       position: relative;
-      aspect-ratio: 4/3;
+      aspect-ratio: 3/4;
       background: #e2e8f0;
-    }
-    .photo-item.wide {
-      grid-column: span 2;
-      aspect-ratio: 16/9;
     }
     .photo-item img {
       width: 100%;
@@ -435,6 +431,15 @@
       object-fit: cover;
       display: block;
       transition: transform 0.3s ease;
+    }
+    .photo-item.pos-top img {
+      object-position: top center;
+    }
+    .photo-item.pos-heart img {
+      object-position: center 25%;
+    }
+    .photo-item.pos-center img {
+      object-position: center 20%;
     }
     .photo-item:hover img {
       transform: scale(1.03);
@@ -444,15 +449,18 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background: linear-gradient(transparent, rgba(15,23,42,0.72));
+      background: linear-gradient(transparent, rgba(15,23,42,0.78));
       color: #fff;
-      font-size: 0.78rem;
-      padding: 18px 10px 8px;
+      font-size: 0.8rem;
+      padding: 22px 10px 8px;
       font-weight: 500;
     }
-    @media (max-width: 480px) {
-      .photo-grid { grid-template-columns: 1fr; gap: 8px; }
-      .photo-item.wide { grid-column: span 1; aspect-ratio: 4/3; }
+    @media (max-width: 640px) {
+      .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .photo-item { aspect-ratio: 3/4; }
+    }
+    @media (max-width: 360px) {
+      .photo-grid { grid-template-columns: 1fr; gap: 10px; }
     }
 
     /* 4 fáze plánu */
@@ -922,28 +930,28 @@
       <h2>📷 Naše rodina</h2>
       <p class="gallery-subtitle">Jolanka (3 roky) a Maruška (12 let) se svými rodiči</p>
       <div class="photo-grid">
-        <div class="photo-item wide">
-          <img src="images/family/mama-dcery-srdce.jpg" alt="Maminka s Jolankou a Maruškou v srdci" loading="lazy" width="1200" height="675">
+        <div class="photo-item pos-heart">
+          <img src="images/family/mama-dcery-srdce.jpg" alt="Maminka s Jolankou a Maruškou v srdci" loading="lazy" width="900" height="1200">
           <span class="photo-caption">Maminka s dcerkami Jolankou a Maruškou</span>
         </div>
-        <div class="photo-item">
-          <img src="images/family/tata-dcery-srdce.jpg" alt="Tatínek s Jolankou a Maruškou" loading="lazy" width="800" height="600">
+        <div class="photo-item pos-heart">
+          <img src="images/family/tata-dcery-srdce.jpg" alt="Tatínek s Jolankou a Maruškou" loading="lazy" width="900" height="1200">
           <span class="photo-caption">Tatínek s dcerkami u jezera</span>
         </div>
-        <div class="photo-item">
-          <img src="images/family/mama-dcery-jezero.jpg" alt="Maminka objímá Jolanku a Marušku" loading="lazy" width="800" height="600">
+        <div class="photo-item pos-center">
+          <img src="images/family/mama-dcery-jezero.jpg" alt="Maminka objímá Jolanku a Marušku" loading="lazy" width="900" height="1200">
           <span class="photo-caption">Společná chvíle maminky s dcerkami</span>
         </div>
-        <div class="photo-item">
-          <img src="images/family/rodina-selfie.jpg" alt="Celá rodina pohromadě" loading="lazy" width="800" height="600">
+        <div class="photo-item pos-top">
+          <img src="images/family/rodina-selfie.jpg" alt="Celá rodina pohromadě" loading="lazy" width="900" height="1200">
           <span class="photo-caption">Celá naše rodina – pohromadě</span>
         </div>
-        <div class="photo-item">
-          <img src="images/family/dcery-schodiste.jpg" alt="Jolanka a Maruška – sestřičky" loading="lazy" width="800" height="600">
+        <div class="photo-item pos-top">
+          <img src="images/family/dcery-schodiste.jpg" alt="Jolanka a Maruška – sestřičky" loading="lazy" width="900" height="1200">
           <span class="photo-caption">Sestřičky Jolanka a Maruška</span>
         </div>
-        <div class="photo-item">
-          <img src="images/family/jolanka-pesek.jpg" alt="Tříletá Jolanka s pejskem" loading="lazy" width="800" height="600">
+        <div class="photo-item pos-top">
+          <img src="images/family/jolanka-pesek.jpg" alt="Tříletá Jolanka s pejskem" loading="lazy" width="900" height="1200">
           <span class="photo-caption">Malá Jolanka (3 roky)</span>
         </div>
       </div>
