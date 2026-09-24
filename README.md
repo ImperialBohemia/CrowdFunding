@@ -70,6 +70,22 @@
 5. **Spuštění a medializace:** Okamžité sdílení a informování sociálního kurátora.
 
 
+
+---
+
+## 7. Nástroje pro monitoring a vyhledávání nájemních bytů
+
+Repozitář obsahuje automatizované skripty pro hledání pronájmů přímo od majitelů bez provizí realitním kancelářím:
+
+* **Přímý vyhledávač Bezrealitky.cz:**
+  ```bash
+  python3 scripts/find_bezrealitky.py --location Praha --max-price 18000
+  ```
+* **Multisearch agregátor (Bezrealitky + Domonaut API + Bazoš):**
+  ```bash
+  python3 scripts/multisearch_rentals.py --max-price 15000 --limit 10
+  ```
+
 ---
 
 * **Kompletní manuál psychologie a textu:** [PSYCHOLOGIE_A_STRATEGIE.md](file:///home/q/CrowdFunding/PSYCHOLOGIE_A_STRATEGIE.md)
