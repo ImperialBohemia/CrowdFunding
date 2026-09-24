@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vraťme děti domů | Zajištění stabilního bydlení pro Jolanku a Marušku</title>
+  <title>Vraťme děti domů | Zajištění financí na bydlení pro Jolanku a Marušku</title>
   
   <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="Iniciativa pro návrat Jolanky (3) a Marušky (12) domů k rodičům. Splnění podmínky soudu zajištěním nájemního bytu a kauce.">
+  <meta name="description" content="Iniciativa pro návrat Jolanky (3) a Marušky (12) domů k rodičům. Zajištění financí na kauci bytu a pokojíček pro splnění podmínky soudu.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vraťme děti domů | Pomoc pro Jolanku (3 roky) a Marušku (12 let)">
-  <meta property="og:description" content="Děti čekají na návrat k rodičům. Váš dar přímo zajistí kauci na byt a pokojíček. Dary jdou přímo pronajímateli.">
+  <meta property="og:description" content="Děti čekají na návrat k rodičům. Byty nečekají – potřebujeme finance na kauci, abychom mohli okamžitě podepsat nájem.">
   <meta property="og:image" content="https://navratdetidomu.cz/logo.jpg">
   <meta property="og:url" content="https://navratdetidomu.cz/">
   <meta property="og:locale" content="cs_CZ">
@@ -80,8 +80,8 @@
       margin-bottom: 16px;
     }
     .brand-logo-img {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 24px;
       object-fit: cover;
       border: 3px solid #ffffff;
@@ -106,7 +106,6 @@
     }
     @media (min-width: 640px) {
       h1 { font-size: 2.35rem; }
-      .brand-logo-img { width: 140px; height: 140px; }
     }
     .subtitle {
       font-size: 1.05rem;
@@ -279,32 +278,38 @@
       display: inline-block;
     }
 
-    /* Hlavní darovací tlačítko */
-    .btn-action-cta {
+    /* Hlavní darovací tlačítko – Zvětšené a vycentrované */
+    .cta-container {
       display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 24px 0 18px 0;
+    }
+    .btn-action-cta {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       width: 100%;
+      max-width: 580px;
       background: var(--action-orange);
       color: #ffffff;
       text-align: center;
       text-decoration: none;
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       font-weight: 900;
-      padding: 18px 20px;
-      min-height: 58px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(234, 88, 12, 0.35);
+      padding: 20px 28px;
+      min-height: 68px;
+      border-radius: 16px;
+      box-shadow: 0 10px 28px rgba(234, 88, 12, 0.38);
       transition: all 0.2s ease;
-      margin: 18px 0;
       border: none;
       cursor: pointer;
     }
     .btn-action-cta:hover {
       background: var(--action-hover);
       transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(234, 88, 12, 0.45);
+      box-shadow: 0 14px 34px rgba(234, 88, 12, 0.48);
     }
 
     /* Garance bezpečného daru */
@@ -707,7 +712,7 @@
       </div>
       <div class="brand-title">Iniciativa Vraťme děti domů</div>
       <h1>Vraťme Jolanku (3) a Marušku (12) domů k mámě a tátovi</h1>
-      <p class="subtitle">Děti jsou v ústavním zařízení kvůli náhlé ztrátě bydlení. Rodina má vybraný bezpečný byt. Schází jediné: složit kauci a zařídit pokojíček, aby soud nařídil okamžitý návrat dětí k rodičům.</p>
+      <p class="subtitle">Děti jsou v ústavním zařízení kvůli náhlé ztrátě bydlení. Byty na trhu nečekají – rodina nejdříve potřebuje mít připravené finance na kauci a první nájem. Až s těmito penězi může okamžitě podepsat nájemní smlouvu a zařídit pokojíček, aby soud nařídil návrat dcer domů.</p>
       
       <!-- Jednoduchá, čistá lišta důvěryhodnosti -->
       <div class="trust-strip">
@@ -778,7 +783,7 @@
       <div class="target-box">
         <div class="target-title">Cíl transparentní sbírky</div>
         <div class="target-amount">100 000 Kč</div>
-        <div class="target-desc">Účelově vázáno na kauci bytu a vybavení pokojíčku pro Jolanku a Marušku</div>
+        <div class="target-desc">Peníze na kauci a pokojíček – majitelé bytů vyžadují složení kauce ihned při podpisu smlouvy.</div>
       </div>
 
       <!-- Volba výše daru s volitelnou částkou -->
@@ -800,11 +805,13 @@
         <div class="impact-caption" id="funnel-impact">Zajistí dětskou matraci do nového pokoje</div>
       </div>
 
-      <!-- Hlavní darovací tlačítko -->
-      <a href="https://www.znesnaze21.cz" target="_blank" class="btn-action-cta" id="cta-button-main">
-        <span>Darovat <span id="cta-amount-display">500 Kč</span> a pomoci dětem domů</span>
-        <span>&rarr;</span>
-      </a>
+      <!-- Hlavní darovací tlačítko – Zvětšené, vycentrované, s mezerou -->
+      <div class="cta-container">
+        <a href="https://www.znesnaze21.cz" target="_blank" class="btn-action-cta" id="cta-button-main">
+          <span>Darovat <span id="cta-amount-display">500 Kč</span> a pomoci dětem domů</span>
+          <span>&rarr;</span>
+        </a>
+      </div>
 
       <!-- Garance -->
       <div class="guarantee-pill-box">
@@ -826,7 +833,7 @@
       <div class="story-body">
         <p>Jolanka má 3 roky a její starší sestra Maruška 12 let. Jsou to hodné dcery, které nadevše milují své rodiče. Do ústavního zařízení se nedostaly kvůli zanedbání péče ani alkoholu – jejich rodiče nepijí a poctivě pracují. Důvodem byla náhlá výpověď z nájmu a ztráta bydlení v době bytové krize.</p>
         <p>Soud a OSPOD stanovily jasné pravidlo: <strong>Až rodiče předloží platnou nájemní smlouvu k bytu a zařízený pokojíček s vlastní postelí pro každé dítě, soud okamžitě nařídí návrat Jolanky i Marušky domů k rodičům.</strong></p>
-        <p>Tatínek pracuje na plný úvazek ve skladu a maminka má ranní brigády. Běžné měsíční nájemné jsou schopni ze svých platů bez potíží hradit. Po náhlém stěhování však nedokážou jednorázově složit tříměsíční kauci a nákup základního vybavení bytu.</p>
+        <p>Tatínek pracuje na plný úvazek ve skladu a maminka má ranní brigády. Běžné měsíční nájemné jsou schopni ze svých platů bez potíží hradit. Problémem je, že volné nájemní byty na trhu nečekají – bez peněz na kauci v ruce nelze žádný byt podepsat. Až rodina díky této sbírce složí kauci k uvolněnému bytu, soud na základě doložené nájemní smlouvy okamžitě vrátí děti domů.</p>
       </div>
 
       <div class="story-highlights">
@@ -845,15 +852,15 @@
     <div class="roadmap-section">
       <h2>Právní a reálný plán návratu dětí krok za krokem</h2>
       <div class="milestone-track">
-        <div class="milestone-card done">
-          <div class="milestone-num">✓</div>
-          <div class="milestone-title">1. Byt nalezen</div>
-          <div class="milestone-status">Smlouva připravena</div>
-        </div>
         <div class="milestone-card active">
+          <div class="milestone-num">1</div>
+          <div class="milestone-title">1. Zajištění financí</div>
+          <div class="milestone-status">Probíhá sbírka na kauci</div>
+        </div>
+        <div class="milestone-card">
           <div class="milestone-num">2</div>
-          <div class="milestone-title">2. Složení kauce</div>
-          <div class="milestone-status">Probíhá sbírka</div>
+          <div class="milestone-title">2. Okamžitý nájem bytu</div>
+          <div class="milestone-status">Byty nečekají na kauci</div>
         </div>
         <div class="milestone-card">
           <div class="milestone-num">3</div>
@@ -874,6 +881,20 @@
       <p class="equipment-desc">Můžete vybrat konkrétní položku, kterou rodině přímo zasponzorujete:</p>
       <div class="equip-cards">
         
+        <div class="equip-item">
+          <div class="equip-item-top">
+            <div class="equip-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <div class="equip-info">
+              <h4>Vratná jistota (kauce bytu)</h4>
+              <p>Nutná hotovost pro okamžitý podpis nájmu (byty nečekají)</p>
+              <span>35 000 Kč</span>
+            </div>
+          </div>
+          <button class="btn-sponsor-item" onclick="setFunnelAmount(2500, 'Příspěvek na vratnou kauci bytu přímo pronajímateli')">Sponzorovat částí 2 500 Kč</button>
+        </div>
+
         <div class="equip-item">
           <div class="equip-item-top">
             <div class="equip-icon">
@@ -916,20 +937,6 @@
           <button class="btn-sponsor-item" onclick="setFunnelAmount(500, 'Příspěvek na rodinný jídelní stůl se židlemi')">Sponzorovat částí 500 Kč</button>
         </div>
 
-        <div class="equip-item">
-          <div class="equip-item-top">
-            <div class="equip-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-            </div>
-            <div class="equip-info">
-              <h4>Vratná jistota (kauce bytu)</h4>
-              <p>Klíčová podmínka pro předání klíčů od bytu</p>
-              <span>35 000 Kč</span>
-            </div>
-          </div>
-          <button class="btn-sponsor-item" onclick="setFunnelAmount(2500, 'Příspěvek na vratnou kauci bytu přímo pronajímateli')">Sponzorovat částí 2 500 Kč</button>
-        </div>
-
       </div>
     </div>
 
@@ -941,8 +948,8 @@
           <tr><th>Položka</th><th>Účel schválení OSPOD</th><th>Částka</th></tr>
         </thead>
         <tbody>
-          <tr><td>Vratná jistota (kauce na byt)</td><td>Podmínka nájemní smlouvy</td><td>35 000 Kč</td></tr>
-          <tr><td>První nájemné předem</td><td>Přímá platba pronajímateli</td><td>15 000 Kč</td></tr>
+          <tr><td>Vratná jistota (kauce na byt)</td><td>Podmínka nájemní smlouvy (byty nečekají)</td><td>35 000 Kč</td></tr>
+          <tr><td>První nájemné předem</td><td>Přímá platba pronajímateli při podpisu</td><td>15 000 Kč</td></tr>
           <tr><td>Dětský pokoj (postýlka, postel, lůžkoviny)</td><td>Vlastní lůžko pro Jolanku i Marušku</td><td>15 000 Kč</td></tr>
           <tr><td>Psací stůl a židle na učení</td><td>Koutek pro školní přípravu Marušky</td><td>6 000 Kč</td></tr>
           <tr><td>Jídelní stůl a židle pro rodinu</td><td>Společné stolování</td><td>7 000 Kč</td></tr>
@@ -1091,7 +1098,7 @@
       box.style.display = 'flex';
       const input = document.getElementById('custom-amount-input');
       input.focus();
-      document.getElementById('funnel-impact').innerText = 'Váš individuální dar pomůže splnit podmínku soudu pro návrat dětí';
+      document.getElementById('funnel-impact').innerText = 'Váš individuální dar pomůže zajistit kauci na bydlení pro návrat dětí';
       if (input.value && parseInt(input.value) > 0) {
         handleCustomAmountChange(input.value);
       }
@@ -1104,7 +1111,7 @@
         const formatted = num.toLocaleString('cs-CZ') + ' Kč';
         document.getElementById('cta-amount-display').innerText = formatted;
         document.getElementById('sticky-amount-display').innerText = formatted;
-        document.getElementById('funnel-impact').innerText = 'Váš dar ' + formatted + ' pomůže zajistit kauci a pokojíček pro Jolanku a Marušku';
+        document.getElementById('funnel-impact').innerText = 'Váš dar ' + formatted + ' pomůže zajistit kauci na byt pro Jolanku a Marušku';
       } else {
         document.getElementById('cta-amount-display').innerText = 'libovolnou částku';
         document.getElementById('sticky-amount-display').innerText = 'libovolnou částku';
