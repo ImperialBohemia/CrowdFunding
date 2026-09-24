@@ -1,39 +1,37 @@
-# Návrh sbírky: Návrat dětí domů k rodičům
+# Návrh sbírky: Návrat dcer Jolanky (3) a Marušky (12) domů k rodičům
 
 ## Základní parametry sbírky
-* **Doporučená platforma:** Znesnáze21 (ochrana před exekucí, podpora sociálních pracovníků).
-* **Alternativa:** Donio.cz (0 % poplatky, nutno domluvit platbu majiteli bytu).
-* **Cílová částka:** 75 000 – 90 000 Kč.
-* **Hlavní sdělení:** Zajištění stabilního domova jako jediná podmínka pro návrat dětí.
+* **Doporučená platforma:** Znesnáze21 (ochrana před exekucí, přímá platba pronajímateli).
+* **Cílová částka:** 100 000 Kč (vratná jistota / kauce a vybavení pokojíčku).
+* **Hlavní sdělení:** Zajištění financí na kauci pro okamžitý nájem bytu a návrat dětí ze zařízení domů k rodičům.
 
 ---
 
 ## Vzorový text sbírky
 
 ### Titulek
-**Vraťme děti domů k mámě a tátovi: Pomozte nám zajistit bezpečný byt**
+**Vraťme Jolanku (3) a Marušku (12) domů k mámě a tátovi: Pomoc s kaucí na bydlení**
 
-### 1. Úvod (Děti a rodina)
-Děti patří k rodičům. Naše děti jsou pro nás vším, ale kvůli ztrátě bydlení musely být dočasně umístěny do ústavní péče. Každý den bez nich je nesmírně těžký. Naším jediným cílem je mít děti zpátky doma u sebe.
+### 1. Úvod (Naše dcerky)
+Jsme dva milující rodiče dvou dcer – tříleté Jolanky a dvanáctileté školačky Marušky. Děti jsou pro nás vším, ale kvůli ztrátě bydlení musely být dočasně umístěny do zařízení. Každý den bez nich je pro nás nesmírně těžký. Naším jediným životním cílem je mít dcery zpátky doma u sebe.
 
-### 2. Oficiální podmínka soudu a OSPOD
-Děti máme umístěné v ústavní péči pouze z důvodu absence vlastního bydlení. V usnesení soudu i v plánu OSPOD (IPOD) máme písemně stanovenou jasnou podmínku: jakmile předložíme platnou nájemní smlouvu a zajistíme dětský pokoj, ústavní výchova se neprodleně ruší a děti se vrací do péče rodičů. Vše máme doloženo úředními dokumenty.
+### 2. Proč ke krizi došlo (Zdraví maminky a byrokracie)
+Maminka trpí vážnou epilepsií a má přiznaný invalidní důchod 2. stupně. Tatínek o ni musí celodenně pečovat a pomáhat jí při záchvatech, proto nemůže odcházet do běžného zaměstnání na směny mimo domov. 
+Do bytové nouze nás uvrhlo selhání byrokracie: invalidní důchod byl mamince přiznán v březnu 2026, ale stát ho reálně začal vyplácet až v září 2026. Zůstali jsme celých 6 měsíců bez peněz a na příspěvek na péči čekáme už přes rok. Z tohoto důvodu jsme nestíhali platit nájem a přišli o bydlení.
 
+### 3. Současný stav a podmínka soudu
+Nyní už invalidní důchod běží a běžný měsíční nájem z něj bez potíží zaplatíme. Volné byty na trhu však nečekají – majitelé vyžadují složení tříměsíční kauce ihned při podpisu smlouvy.
+Soud i OSPOD stanovily jasné pravidlo: jakmile předložíme platnou nájemní smlouvu a pokojíček s vlastní postelí pro každou dceru, soud okamžitě nařídí návrat Jolanky i Marušky domů k nám. Až s těmito penězi ze sbírky můžeme okamžitě podepsat nájemní smlouvu k uvolněnému bytu.
 
-### 3. Co už děláme (Aktivní snaha)
-Pracujeme, máme pravidelný příjem a spolupracujeme se sociálními pracovníky. Našli jsme vhodný byt a majitel je připraven podepsat smlouvu. Jediné, co chybí k podpisu a návratu dětí, je složení vratné kauce a prvního nájmu.
-
-
-### 4. Na co budou finance použity (Položkový rozpočet)
+### 4. Položkový rozpočet (100 000 Kč)
 * **Kauce na byt (jistota pronajímateli):** 35 000 Kč (placeno přímo majiteli).
 * **První nájemné předem:** 15 000 Kč (placeno přímo majiteli).
-* **Dětský pokoj (postele, matrace, lůžkoviny):** 15 000 Kč (přímá faktura nábytku).
-* **Dětský studijní koutek (psací stůl a židle pro děti):** 6 000 Kč.
+* **Dětský pokoj (postýlka pro Jolanku, postel pro Marušku, lůžkoviny):** 15 000 Kč.
+* **Studijní koutek pro Marušku (psací stůl a židle):** 6 000 Kč.
 * **Jídelní stůl a židle pro rodinu:** 7 000 Kč.
 * **Obývací sedačka a konferenční stolek:** 10 000 Kč.
 * **Základní spotřebiče (pračka, lednice):** 12 000 Kč.
-* **Celková cílová částka:** **100 000 Kč**.
+* **Celková cílová částka:** **100 000 Kč** (100% účelově vázáno).
 
-
-### 5. Co bude následovat
-Peníze nejdou na náš osobní účet, ale přímo pronajímateli. Jakmile podepíšeme nájemní smlouvu a připravíme pokojíček, OSPOD a soud mohou rozhodnout o okamžitém návratu dětí domů. V aktualitách vám ukážeme zařízený byt i šťastný návrat dětí.
+### 5. Garance využití financí
+Peníze nejdou na soukromý účet, ale přes Znesnáze21 přímo pronajímateli. Jakmile podepíšeme nájemní smlouvu a připravíme pokojíček, doložíme dokumenty soudu pro návrat dětí. V aktualitách zveřejníme zařízený byt i šťastné shledání celé rodiny.
