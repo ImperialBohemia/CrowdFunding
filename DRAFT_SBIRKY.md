@@ -35,3 +35,8 @@ Soud i OSPOD stanovily jasné pravidlo: jakmile předložíme platnou nájemní 
 
 ### 5. Garance využití financí
 Peníze nejdou na soukromý účet, ale přes Znesnáze21 přímo pronajímateli. Jakmile podepíšeme nájemní smlouvu a připravíme pokojíček, doložíme dokumenty soudu pro návrat dětí. V aktualitách zveřejníme zařízený byt i šťastné shledání celé rodiny.
+
+### 6. Oficiální kontakt
+* **E-mail sbírky a koordinace:** `info@navratdetidomu.cz`
+* **Web iniciativy:** https://navratdetidomu.cz
+
