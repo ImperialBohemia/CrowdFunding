@@ -254,7 +254,7 @@
       font-weight: 700;
     }
 
-    /* Behavioral Micro-Commitment Amount Selector */
+    /* Behavioral Micro-Commitment Amount Selector & Custom Amount */
     .funnel-selector-box {
       background: #ffffff;
       border: 2px solid #e2e8f0;
@@ -276,7 +276,7 @@
       margin-bottom: 12px;
     }
     @media (min-width: 520px) {
-      .amount-grid { grid-template-columns: repeat(4, 1fr); }
+      .amount-grid { grid-template-columns: repeat(5, 1fr); }
     }
     .amount-btn {
       background: #ffffff;
@@ -284,7 +284,7 @@
       padding: 12px 6px;
       min-height: 48px;
       border-radius: 12px;
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 800;
       color: var(--navy-800);
       cursor: pointer;
@@ -302,6 +302,33 @@
       color: var(--action-orange);
       box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.15);
     }
+    
+    /* Custom Amount Input Row */
+    .custom-amount-box {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .custom-amount-input {
+      width: 100%;
+      max-width: 280px;
+      padding: 12px 16px;
+      min-height: 46px;
+      border-radius: 10px;
+      border: 2px solid var(--action-orange);
+      font-size: 16px; /* Zabraňuje iOS auto-zoomu */
+      font-weight: 700;
+      color: var(--navy-900);
+      text-align: center;
+      background: #ffffff;
+    }
+    .custom-amount-input:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.2);
+    }
+
     .impact-caption {
       font-size: 0.92rem;
       color: var(--emerald-700);
@@ -637,43 +664,6 @@
       margin-top: 2px;
     }
 
-    /* Secondary Lead Capture */
-    .lead-gen-card {
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-      color: #ffffff;
-      border-radius: 18px;
-      padding: 24px;
-      margin-bottom: 24px;
-      box-shadow: var(--shadow-lg);
-    }
-    .lead-gen-card h3 { font-size: 1.25rem; margin-bottom: 6px; font-weight: 800; }
-    .lead-gen-card p { font-size: 0.9rem; color: #cbd5e1; margin-bottom: 16px; }
-    .lead-form { display: flex; flex-direction: column; gap: 10px; }
-    @media (min-width: 520px) { .lead-form { flex-direction: row; } }
-    .lead-input {
-      flex: 1;
-      padding: 14px 16px;
-      border-radius: 10px;
-      border: 1px solid #475569;
-      font-size: 16px; /* Zabraňuje nežádoucímu iOS auto-zoomu */
-      background: #ffffff;
-      color: #0f172a;
-    }
-    .lead-submit {
-      background: var(--emerald-600);
-      color: #ffffff;
-      padding: 14px 22px;
-      min-height: 48px;
-      border-radius: 10px;
-      border: none;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background 0.2s;
-      white-space: nowrap;
-      font-size: 0.95rem;
-    }
-    .lead-submit:hover { background: var(--emerald-700); }
-
     /* 1-Click Viral Social Share */
     .share-card {
       background: var(--card-bg);
@@ -937,7 +927,7 @@
         </div>
       </div>
 
-      <!-- Behavioral Micro-Commitment Amount Selector -->
+      <!-- Behavioral Micro-Commitment Amount Selector & Custom Amount -->
       <div class="funnel-selector-box">
         <div class="funnel-title">Zvolte výši vašeho daru pro Tomáška a Elišku:</div>
         <div class="amount-grid">
@@ -945,7 +935,14 @@
           <button class="amount-btn active" onclick="setFunnelAmount(500, 'Zajistí dětskou matraci a polštář do nového pokoje')">500 Kč</button>
           <button class="amount-btn" onclick="setFunnelAmount(1000, 'Přímo hradí část vratné jistoty (kauce) pronajímateli')">1 000 Kč</button>
           <button class="amount-btn" onclick="setFunnelAmount(2500, 'Zajistí dětskou postel a psací stůl pro školáka')">2 500 Kč</button>
+          <button class="amount-btn" id="btn-custom-amount" onclick="enableCustomAmount()">Vlastní částka</button>
         </div>
+
+        <!-- Custom Amount Input -->
+        <div class="custom-amount-box" id="custom-amount-container">
+          <input type="number" class="custom-amount-input" id="custom-amount-input" placeholder="Zadejte částku v Kč..." min="50" step="50" oninput="handleCustomAmountChange(this.value)">
+        </div>
+
         <div class="impact-caption" id="funnel-impact">Zajistí dětskou matraci a polštář do nového pokoje</div>
       </div>
 
@@ -1159,17 +1156,6 @@
       </div>
     </div>
 
-    <!-- Lead Generation Form (Secondary Funnel Exit Catch) -->
-    <div class="lead-gen-card">
-      <h3>Chcete vědět, jak to dopadlo? Sledujte návrat dětí</h3>
-      <p>Zadejte svůj e-mail. Pošleme vám zprávu a fotografii v den, kdy soud zruší pobyt v zařízení a děti dostanou klíče od nového domova.</p>
-      <form class="lead-form" onsubmit="handleLeadCapture(event)">
-        <input type="email" class="lead-input" id="subscriber-email" placeholder="Váš e-mail pro zaslání novinky..." required>
-        <button type="submit" class="lead-submit">Chci vědět, až budou děti doma &rarr;</button>
-      </form>
-      <div id="lead-status-msg" style="display:none; color:#34d399; font-weight:700; margin-top:10px;">Děkujeme! Jakmile soud rozhodne o návratu dětí, obdržíte zprávu.</div>
-    </div>
-
     <!-- 1-Click Social Share Multiplier -->
     <div class="share-card">
       <h4>Pomozte nám sdílením – i jedno sdílení může oslovit dárce</h4>
@@ -1247,9 +1233,9 @@
 
   <dialog id="dialog-privacy">
     <h2>Zásady ochrany osobních údajů (GDPR)</h2>
-    <p>1. Správcem kontaktních údajů je zástupce rodiny (kontakt: pomoc.rodine.sbirka@gmail.com).</p>
-    <p>2. Tento web nezpracovává bankovní údaje ani čísla platebních karet.</p>
-    <p>3. E-mailové adresy zadané do formuláře slouží výhradně k zaslání informace o návratu dětí a nejsou předávány třetím stranám.</p>
+    <p>1. Správcem iniciativy je zástupce rodiny (kontakt: pomoc.rodine.sbirka@gmail.com).</p>
+    <p>2. Tento web nezpracovává bankovní údaje ani čísla platebních karet ani neshromažďuje osobní databáze e-mailů.</p>
+    <p>3. Veškeré dary a finanční transakce probíhají výhradně na licencované platformě Znesnáze21.</p>
     <button class="dialog-close-btn" onclick="document.getElementById('dialog-privacy').close()">Zavřít</button>
   </dialog>
 
@@ -1282,6 +1268,7 @@
   <script>
     // Micro-Commitment Amount Selector
     function setFunnelAmount(amount, impact) {
+      document.getElementById('custom-amount-container').style.display = 'none';
       document.querySelectorAll('.amount-btn').forEach(b => {
         if (b.innerText.includes(amount.toLocaleString('cs-CZ')) || b.innerText.includes(amount)) {
           b.classList.add('active');
@@ -1300,15 +1287,31 @@
       }
     }
 
-    // Lead Capture
-    function handleLeadCapture(e) {
-      e.preventDefault();
-      const email = document.getElementById('subscriber-email').value;
-      if (email) {
-        localStorage.setItem('lead_subscriber_' + Date.now(), email);
-        document.getElementById('subscriber-email').style.display = 'none';
-        document.querySelector('.lead-submit').style.display = 'none';
-        document.getElementById('lead-status-msg').style.display = 'block';
+    // Enable Custom Amount Input
+    function enableCustomAmount() {
+      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('btn-custom-amount').classList.add('active');
+      const box = document.getElementById('custom-amount-container');
+      box.style.display = 'flex';
+      const input = document.getElementById('custom-amount-input');
+      input.focus();
+      document.getElementById('funnel-impact').innerText = 'Váš individuální dar pomůže splnit podmínku soudu pro návrat dětí';
+      if (input.value && parseInt(input.value) > 0) {
+        handleCustomAmountChange(input.value);
+      }
+    }
+
+    // Custom Amount Input Handler
+    function handleCustomAmountChange(val) {
+      const num = parseInt(val, 10);
+      if (num && num > 0) {
+        const formatted = num.toLocaleString('cs-CZ') + ' Kč';
+        document.getElementById('cta-amount-display').innerText = formatted;
+        document.getElementById('sticky-amount-display').innerText = formatted;
+        document.getElementById('funnel-impact').innerText = 'Váš dar ' + formatted + ' pomůže zajistit kauci a pokojíček pro děti';
+      } else {
+        document.getElementById('cta-amount-display').innerText = 'libovolnou částku';
+        document.getElementById('sticky-amount-display').innerText = 'libovolnou částku';
       }
     }
 
