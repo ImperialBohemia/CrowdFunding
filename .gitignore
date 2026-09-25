@@ -1,5 +1,5 @@
-Marketing/
 .env*
 node_modules/
 __pycache__/
 *.pyc
+Marketing/.sklik_cache.json

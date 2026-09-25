@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORLIČAN N-10S | Obytný vojenský návěs, Tiny House & Expediční speciál</title>
+  <meta name="description" content="Originální renovace armádního izotermického návěsu Orličan N-10S. Celoroční luxusní Tiny House na pozemek bez stavebního povolení nebo expediční speciál 6x6.">
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <div class="brand-icon">N</div>
+        <div class="brand-text">
+          <span class="brand-title">ORLIČAN N-10S</span>
+          <span class="brand-subtitle">Overland & Living</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#anatomie" class="nav-link" data-i18n="nav_blueprint">Anatomie</a></li>
+          <li><a href="#vyuziti" class="nav-link" data-i18n="nav_worlds">Využití</a></li>
+          <li><a href="#interier" class="nav-link">Interiér</a></li>
+          <li><a href="#kalkulator" class="nav-link" data-i18n="nav_calc">Konfigurátor</a></li>
+          <li><a href="#magazin" class="nav-link" data-i18n="nav_blog">Magazín & Průvodce</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="cz">CZ</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+        <button class="btn btn-primary btn-sm open-lead-modal" data-i18n="nav_cta">Poptat výrobní slot</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="container hero-layout">
+      <div class="hero-content">
+        <div>
+          <span class="badge-tactical" data-i18n="hero_badge">Originální renovace • Choceň • Izotermický návěs</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-i18n="hero_h1_1">Armádní nezničitelnost.</span><br>
+          <span class="highlight" data-i18n="hero_h1_2">Luxusní soběstačný domov.</span>
+        </h1>
+        <p class="hero-desc" data-i18n="hero_desc">
+          Zrenovovaný vojenský skříňový návěs Orličan N-10S. 23 m² čistého obytného prostoru, patentovaná konstrukce s labutím krkem pro vyvýšenou ložnici a nezávislost bez nutnosti stavebního povolení.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#anatomie" class="btn btn-primary" data-i18n="hero_btn_explore">Prozkoumat model N-10S</a>
+          <a href="#kalkulator" class="btn btn-secondary" data-i18n="hero_btn_calc">Kalkulátor ceny</a>
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="metrics-strip">
+          <div class="metric-item">
+            <span class="metric-val" data-i18n="metric_area_val">23 m²</span>
+            <span class="metric-label" data-i18n="metric_area_lbl">Obytná plocha</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val" data-i18n="metric_insul_val">60 mm</span>
+            <span class="metric-label" data-i18n="metric_insul_lbl">PUR izotermický sendvič</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val" data-i18n="metric_power_val">10 kWh</span>
+            <span class="metric-label" data-i18n="metric_power_lbl">LiFePO4 soběstačnost</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val" data-i18n="metric_legal_val">0 dní</span>
+            <span class="metric-label" data-i18n="metric_legal_lbl">Bez stavebního řízení</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-media">
+        <div class="media-frame">
+          <img src="assets/images/orlican-hero.jpg" alt="Zrenovovaný vojenský návěs Orličan N-10S" fetchpriority="high">
+          <div class="media-badge-tag">
+            <span class="pulse"></span>
+            <span>Realizovaný kus • Vsetín</span>
+          </div>
+          <div class="media-caption-box">
+            <div class="caption-tech">
+              <span class="caption-model">Orličan N-10S Ausbau</span>
+              <span class="caption-specs">9.36 m × 2.50 m × 3.30 m | 6 000 kg</span>
+            </div>
+            <button class="btn btn-secondary btn-sm open-lead-modal">Prohlídka</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLUEPRINT & ANATOMY SECTION -->
+  <section id="anatomie" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tactical" data-i18n="blueprint_tag">Konstrukční dokonalost</span>
+        <h2 class="section-title" data-i18n="blueprint_title">Anatomie vojenského návěsu Orličan N-10S</h2>
+        <p class="section-subtitle" data-i18n="blueprint_sub">Proč armádní chladírenská skříň překonává lodní kontejnery i klasické dřevěné maringotky.</p>
+      </div>
+
+      <div class="blueprint-card">
+        <div class="blueprint-grid">
+          <!-- Interactive Stage -->
+          <div class="blueprint-stage">
+            <img src="assets/images/orlican-hero.jpg" alt="Technické detaily Orličan N-10S" class="blueprint-img">
+            <!-- Hotspots -->
+            <button class="hotspot-btn hs-gooseneck active" data-target="spot-gooseneck" title="Labutí krk">1</button>
+            <button class="hotspot-btn hs-shell" data-target="spot-shell" title="Izotermická skříň">2</button>
+            <button class="hotspot-btn hs-underbelly" data-target="spot-underbelly" title="Technické schrány">3</button>
+            <button class="hotspot-btn hs-legs" data-target="spot-legs" title="Opěrné nohy">4</button>
+            <button class="hotspot-btn hs-steps" data-target="spot-steps" title="Vstupní systém">5</button>
+          </div>
+
+          <!-- Hotspot Descriptions -->
+          <div class="blueprint-details">
+            <div id="spot-gooseneck" class="detail-card active" data-spot="1">
+              <div class="detail-head">
+                <span class="detail-title">1. Labutí krk (Gooseneck)</span>
+                <span class="detail-num">SEKCE A</span>
+              </div>
+              <p class="detail-desc">
+                Vyvýšená přední část vytváří přirozeně oddělené patro s velkým oknem pro luxusní manželskou ložnici. Zvenku pod krkem vzniká chráněná terasa na venkovní sezení nebo stání pro techniku.
+              </p>
+            </div>
+
+            <div id="spot-shell" class="detail-card" data-spot="2">
+              <div class="detail-head">
+                <span class="detail-title">2. Izotermický PUR sendvič Orličan</span>
+                <span class="detail-num">SEKCE B</span>
+              </div>
+              <p class="detail-desc">
+                Vyvinuto pro armádní polní nemocnice. Vstřikovaný polyuretan (60 mm) eliminuje tepelné mosty. V zimě drží teplo při -25 °C, v létě nefunguje jako pec (na rozdíl od plechových lodních kontejnerů).
+              </p>
+            </div>
+
+            <div id="spot-underbelly" class="detail-card" data-spot="3">
+              <div class="detail-head">
+                <span class="detail-title">3. Podpodlahové technologické schrány</span>
+                <span class="detail-num">SEKCE C</span>
+              </div>
+              <p class="detail-desc">
+                LiFePO4 bateriové banky (10 kWh), střídače Victron, nádrže na 300 litrů vody a dieselové nezávislé topení jsou umístěny pod podlahou. Obytný prostor zůstává 100% volný.
+              </p>
+            </div>
+
+            <div id="spot-legs" class="detail-card" data-spot="4">
+              <div class="detail-head">
+                <span class="detail-title">4. Masivní mechanické opěrné nohy</span>
+                <span class="detail-num">SEKCE D</span>
+              </div>
+              <p class="detail-desc">
+                Umožňují bezpečné a stabilní usazení na jakémkoliv terénu. Žádné betonování základových patek ani desky – návěs je z hlediska práva stále mobilním vozidlem.
+              </p>
+            </div>
+
+            <div id="spot-steps" class="detail-card" data-spot="5">
+              <div class="detail-head">
+                <span class="detail-title">5. Integrované schůdky a vstup</span>
+                <span class="detail-num">SEKCE E</span>
+              </div>
+              <p class="detail-desc">
+                Sklopné schody z ocelového profilu s masivními dřevěnými nášlapy a těsněnými armádními dveřmi pro pohodlný a bezpečný vstup za každého počasí.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 WORLDS OF USE -->
+  <section id="vyuziti" class="section" style="background: rgba(21, 27, 23, 0.5);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tactical" data-i18n="worlds_tag">3 Světy využití</span>
+        <h2 class="section-title" data-i18n="worlds_title">Jeden nepřemožitelný základ. Tři způsoby života.</h2>
+        <p class="section-subtitle" data-i18n="worlds_sub">Ať už hledáte útočiště na samotě, luxusní glamping s rychlou návratností, nebo expediční kolos.</p>
+      </div>
+
+      <div class="worlds-grid">
+        <!-- World 1 -->
+        <div class="world-card">
+          <div class="world-media">
+            <img src="assets/images/orlican-hero.jpg" alt="Tiny House na pozemek">
+            <span class="world-badge">Rezidenční / Samota</span>
+          </div>
+          <div class="world-body">
+            <h3 class="world-title">Celoroční Tiny House bez stavebního povolení</h3>
+            <p class="world-desc">
+              Postavte si luxusní dům na louku, zahradu či k lesu. Díky statusu vozidla a absenci základové desky obcházíte zdlouhavé stavební řízení.
+            </p>
+            <ul class="world-features">
+              <li class="world-feature">✓ 23 m² čisté plochy + patro na spaní</li>
+              <li class="world-feature">✓ Možnost instalace rekuperace vzduchu</li>
+              <li class="world-feature">✓ Kdykoliv přepravitelné běžným tahačem</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- World 2 -->
+        <div class="world-card">
+          <div class="world-media">
+            <img src="assets/images/orlican-glamping.jpg" alt="Glamping resort v noci">
+            <span class="world-badge">B2B / Investice</span>
+          </div>
+          <div class="world-body">
+            <h3 class="world-title">Zážitkový Glamping s návratností do 3 let</h3>
+            <p class="world-desc">
+              Vojenský industriální styl s teplým dřevem a krbem generuje na ubytovacích portálech až 3 800 Kč za noc. Virální vizuál přitahuje hosty celoročně.
+            </p>
+            <ul class="world-features">
+              <li class="world-feature">✓ Návratnost investice do 30 měsíců</li>
+              <li class="world-feature">✓ Zůstatková hodnota techniky neklesá</li>
+              <li class="world-feature">✓ Prémiové terasy pod labutím krkem</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- World 3 -->
+        <div class="world-card">
+          <div class="world-media">
+            <img src="assets/images/orlican-expedition.jpg" alt="Expediční souprava 6x6">
+            <span class="world-badge">Expedice / 4x4 / 6x6</span>
+          </div>
+          <div class="world-body">
+            <h3 class="world-title">Těžký expediční speciál za Tatru 815 / MAN</h3>
+            <p class="world-desc">
+              Připojte návěs za terénní tahač 6x6. Získáte dálkový obytný kamion schopný překonat Island, Saharu i sibiřské mrazy bez kompromisů.
+            </p>
+            <ul class="world-features">
+              <li class="world-feature">✓ Standardní armádní čep točny (2")</li>
+              <li class="world-feature">✓ Možnost odpojení a průzkumu samotným autem</li>
+              <li class="world-feature">✓ Testováno na odolnost v extrémním terénu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERIOR SHOWCASE -->
+  <section id="interier" class="section">
+    <div class="container">
+      <div class="blueprint-card" style="padding: 0; overflow: hidden;">
+        <div class="blueprint-grid" style="align-items: stretch;">
+          <div style="position: relative; min-height: 440px;">
+            <img src="assets/images/orlican-interior.jpg" alt="Luxusní dubový interiér Orličan N-10S" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 44px; display: flex; flex-direction: column; justify-content: center; gap: 20px;">
+            <span class="badge-tactical">Architektura prostoru</span>
+            <h2 class="section-title" style="font-size: 2.2rem;">Dvouúrovňový luxus: Dub, černá ocel a výhledy do krajiny</h2>
+            <p style="color: var(--text-muted);">
+              Díky patentovanému lomenému rámu vzniká v přední části přirozená galerie pro manželskou postel s panoramatickým oknem. Spodní úroveň nabízí plnohodnotnou kuchyňskou linku s indukční varnou deskou, sprchový kout, toaletu a obývací kout.
+            </p>
+            <ul class="world-features" style="border: none; padding: 0;">
+              <li class="world-feature">✦ Masivní dubové schodiště s úložnými boxy</li>
+              <li class="world-feature">✦ Teplé náladové LED linie pod postelí i sokly</li>
+              <li class="world-feature">✦ Decentrální rekuperace zabraňující rosení oken</li>
+            </ul>
+            <div style="margin-top: 10px;">
+              <button class="btn btn-primary open-lead-modal">Stáhnout půdorys v PDF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIGURATOR & PRICING CALCULATOR -->
+  <section id="kalkulator" class="section" style="background: rgba(13, 17, 15, 0.7);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tactical" data-i18n="calc_tag">Transparentní kalkulátor</span>
+        <h2 class="section-title" data-i18n="calc_title">Sestavte si svůj Orličan N-10S</h2>
+        <p class="section-subtitle" data-i18n="calc_sub">Okamžitý výpočet rozpočtu dle požadovaného stupně výbavy.</p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-grid">
+          <!-- Options Checklist -->
+          <div class="calc-options">
+            <!-- Base mandatory -->
+            <div class="calc-option selected" style="border-color: var(--brand-gold); cursor: default;">
+              <input type="checkbox" checked disabled>
+              <div class="option-details">
+                <div class="option-head">
+                  <span class="option-title" data-i18n="calc_base_title">Základní zrenovovaná skříň N-10S (9,36 × 2,5 m)</span>
+                  <span class="option-price">880 000 Kč</span>
+                </div>
+                <p class="option-desc" data-i18n="calc_base_desc">
+                  Kompletně ošetřený a nalakovaný návěs (RAL 6031), izotermické panely, nová okna, sklopné schůdky, opěrné nohy.
+                </p>
+              </div>
+            </div>
+
+            <!-- Addon 1: Solar & Off-Grid -->
+            <label class="calc-option">
+              <input type="checkbox" data-price="240000" data-name-cz="Off-Grid Solární balíček (10 kWh LiFePO4 + 1 200W)" data-name-de="Off-Grid Power Pack (10 kWh LiFePO4 + 1.200W Solar)">
+              <div class="option-details">
+                <div class="option-head">
+                  <span class="option-title">Off-Grid energetický paket (10 kWh LiFePO4 + 1 200 W Solar)</span>
+                  <span class="option-price">+240 000 Kč</span>
+                </div>
+                <p class="option-desc">Victron MultiPlus-II 5kVA, 1 200 Wp monokrystalické střešní panely, MPPT měnič, monitoring v mobilní aplikaci.</p>
+              </div>
+            </label>
+
+            <!-- Addon 2: Recuperation -->
+            <label class="calc-option">
+              <input type="checkbox" data-price="65000" data-name-cz="Decentrální rekuperace s keramickým výměníkem" data-name-de="Dezentrale Wohnraumlüftung mit Wärmerückgewinnung">
+              <div class="option-details">
+                <div class="option-head">
+                  <span class="option-title">Decentrální rekuperace s entalpickým výměníkem</span>
+                  <span class="option-price">+65 000 Kč</span>
+                </div>
+                <p class="option-desc">Trvalé větrání bez ztráty tepla, automatické čidlo vlhkosti a CO2, nulová kondenzace na oknech v zimě.</p>
+              </div>
+            </label>
+
+            <!-- Addon 3: Oak Interior -->
+            <label class="calc-option">
+              <input type="checkbox" data-price="380000" data-name-cz="Kompletní dubová vestavba kuchyně, koupelny a ložnice" data-name-de="Vollholz Eichenausbau mit Küche und Duschbad">
+              <div class="option-details">
+                <div class="option-head">
+                  <span class="option-title">Kompletní prémiová vestavba (Kuchyň, Koupelna, Dubový nábytek)</span>
+                  <span class="option-price">+380 000 Kč</span>
+                </div>
+                <p class="option-desc">Masivní dub, sprchový kout, separační bezvodá toaleta, indukční varná deska, schody s úložnými šuplíky.</p>
+              </div>
+            </label>
+
+            <!-- Addon 4: Panoramic Skylight -->
+            <label class="calc-option">
+              <input type="checkbox" data-price="95000" data-name-cz="Panoramatické střešní a boční termo-okno v ložnici" data-name-de="Panorama-Thermoglasfenster im Schwanenhals">
+              <div class="option-details">
+                <div class="option-head">
+                  <span class="option-title">Velké panoramatické okno v ložnici (Labutí krk)</span>
+                  <span class="option-price">+95 000 Kč</span>
+                </div>
+                <p class="option-desc">Trojité bezpečnostní izolační sklo pro nerušené výhledy na hvězdy a přírodu z postele.</p>
+              </div>
+            </label>
+
+            <!-- Addon 5: All-Terrain Axle -->
+            <label class="calc-option">
+              <input type="checkbox" data-price="140000" data-name-cz="Expediční podvozek a náprava pro těžký terén" data-name-de="Expeditions-Schwerlastachse für Offroad-Betrieb">
+              <div class="option-details">
+                <div class="option-head">
+                  <span class="option-title">All-Terrain podvozek a terénní obutí (Expedice)</span>
+                  <span class="option-price">+140 000 Kč</span>
+                </div>
+                <p class="option-desc">Zesílená terénní náprava, nájezdové úhly, pneumatiky pro kamenitý a písečný terén.</p>
+              </div>
+            </label>
+          </div>
+
+          <!-- Price Summary Card -->
+          <div class="calc-summary">
+            <div>
+              <h3 class="summary-title">Kalkulace konfigurace</h3>
+              <ul class="summary-list">
+                <li class="summary-item">
+                  <span class="label">Základní zrenovovaný návěs</span>
+                  <span class="value">880 000 Kč</span>
+                </li>
+              </ul>
+              <ul id="summaryAddonsList" class="summary-list"></ul>
+            </div>
+
+            <div>
+              <div class="summary-total">
+                <span class="total-label">Celkový orientační rozpočet:</span>
+                <div id="totalPriceCZK" class="total-price-czk">880 000 Kč</div>
+                <div id="totalPriceEUR" class="total-price-eur">≈ € 35 200</div>
+              </div>
+
+              <button class="btn btn-primary open-lead-modal" style="width: 100%;">Poptat tento výrobní slot</button>
+              <p style="font-size: 0.75rem; color: var(--text-dim); text-align: center; margin-top: 10px;">
+                * Ceny jsou uvedeny bez DPH. Dodací lhůta 6–10 týdnů dle vytížení dílny.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEEP CONTENT BLOG & TECHNICAL GUIDES (10 ARTICLES) -->
+  <section id="magazin" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tactical" data-i18n="blog_tag">Odborný magazín</span>
+        <h2 class="section-title" data-i18n="blog_title">Průvodce soběstačným bydlením a expedicemi</h2>
+        <p class="section-subtitle" data-i18n="blog_sub">10 do hloubky zpracovaných témat: technická fakta, právní analýza pro ČR i Německo, energetické bilance a expedice.</p>
+      </div>
+
+      <!-- Filter Controls & Live Search -->
+      <div class="blog-controls">
+        <div class="blog-categories">
+          <button class="cat-btn active" data-category="all">Všechny články (10)</button>
+          <button class="cat-btn" data-category="konstrukce">Konstrukce & Výroba</button>
+          <button class="cat-btn" data-category="pravo">Právo & Pozemky</button>
+          <button class="cat-btn" data-category="offgrid">Off-Grid & Baterie</button>
+          <button class="cat-btn" data-category="expedice">Expedice 4x4/6x6</button>
+          <button class="cat-btn" data-category="glamping">Glamping Byznys</button>
+        </div>
+
+        <div class="blog-search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="blogSearchInput" class="blog-search-input" placeholder="Hledat v článcích...">
+        </div>
+      </div>
+
+      <div style="margin-bottom: 20px; font-size: 0.85rem; color: var(--text-dim); display: flex; justify-content: space-between;">
+        <span id="articleCountDisplay">Zobrazeno 10 z 10 článků</span>
+        <span>Kliknutím na kartu otevřete plné znění</span>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Article 1 (Featured) -->
+        <article class="blog-card blog-card-featured" data-article-id="1">
+          <div class="blog-media">
+            <img src="assets/images/orlican-hero.jpg" alt="Orličan N-10S vs Kontejner">
+            <span class="blog-meta-badge">Konstrukční srovnání</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">12. Září 2026 • 7 min čtení</span>
+            <h3 class="blog-title">Orličan N-10S vs. Lodní kontejner: Proč armádní sendvič vyhrává na celé čáře</h3>
+            <p class="blog-excerpt">
+              Plechový kontejner rezne, v zimě se rosí a v létě je v něm 50 °C. Zjistěte, proč polyuretanový sendvič z Chocně nabízí diametrálně odlišný komfort a nulové tepelné mosty.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card" data-article-id="2">
+          <div class="blog-media">
+            <img src="assets/images/orlican-hero.jpg" alt="Bydlení bez stavebního povolení">
+            <span class="blog-meta-badge">Právo & Legislativa</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">8. Září 2026 • 9 min čtení</span>
+            <h3 class="blog-title">Bydlení v návěsu bez stavebního povolení: Rozbor pro ČR a Německo</h3>
+            <p class="blog-excerpt">
+              Jak se stavební úřady dívají na zrenovovaný návěs na opěrných nohách a proč je status mobilního vozidla klíčem k umístění na louku.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card" data-article-id="3">
+          <div class="blog-media">
+            <img src="assets/images/orlican-interior.jpg" alt="Soláry a LiFePO4">
+            <span class="blog-meta-badge">Technologie & Baterie</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">1. Září 2026 • 6 min čtení</span>
+            <h3 class="blog-title">Solární nezávislost v podvozku: Jak napájet 23 m² celoročně ze slunce</h3>
+            <p class="blog-excerpt">
+              Technické schéma zapojení 10,2 kWh LiFePO4 bateriového úložiště Victron integrovaného do spodních schrán bez ztráty obytné plochy.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="blog-card" data-article-id="4">
+          <div class="blog-media">
+            <img src="assets/images/orlican-expedition.jpg" alt="Tatra 815 6x6 a Orličan">
+            <span class="blog-meta-badge">Expedice & 4x4 / 6x6</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">25. Srpna 2026 • 8 min čtení</span>
+            <h3 class="blog-title">Tatra 815 6x6 + N-10S: Stavba expediční soupravy kolem světa</h3>
+            <p class="blog-excerpt">
+              Jak výkyvné polonápravy Tatry chrání návěs před kroucením a proč je výměnný koncept lepší než pevná vestavba.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="blog-card" data-article-id="5">
+          <div class="blog-media">
+            <img src="assets/images/orlican-glamping.jpg" alt="Glamping kalkulace">
+            <span class="blog-meta-badge">Glamping & Investice</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">18. Srpna 2026 • 5 min čtení</span>
+            <h3 class="blog-title">Glamping byznys plán: Výpočet návratnosti při sazbě 3 800 Kč za noc</h3>
+            <p class="blog-excerpt">
+              Detailní finanční model pro majitele pozemků: pořizovací náklady, obsazenost, roční výnos a návratnost do 2,6 roku.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="blog-card" data-article-id="6">
+          <div class="blog-media">
+            <img src="assets/images/orlican-interior.jpg" alt="Rekuperace v návěsu">
+            <span class="blog-meta-badge">Technologie & Mikroklima</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">14. Srpna 2026 • 6 min čtení</span>
+            <h3 class="blog-title">Decentrální rekuperace vs. Vlhkost: Proč v návěsu nezamrzá vzduch</h3>
+            <p class="blog-excerpt">
+              Keramický entalpický výměník vrací zpět až 88 % tepla a udržuje vlhkost vzduchu na optimálních 45–50 % bez nutnosti otevírat okna.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 7 -->
+        <article class="blog-card" data-article-id="7">
+          <div class="blog-media">
+            <img src="assets/images/orlican-workshop.jpg" alt="Renovace v dílně">
+            <span class="blog-meta-badge">Výroba & Řemeslo</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">9. Srpna 2026 • 8 min čtení</span>
+            <h3 class="blog-title">Renovace vojenského návěsu: Od armádního skladu po hotový luxus</h3>
+            <p class="blog-excerpt">
+              Pískování korundem na Sa 2,5, dvousložkový polyuretanový finiš RAL 6031 a kompletní repase vzduchové brzdové soustavy.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 8 -->
+        <article class="blog-card" data-article-id="8">
+          <div class="blog-media">
+            <img src="assets/images/orlican-snow.jpg" alt="Zimní test v Alpách">
+            <span class="blog-meta-badge">Test & Zima</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">2. Srpna 2026 • 7 min čtení</span>
+            <h3 class="blog-title">Zimní test v -25 °C v Alpách: Spotřeba a tepelná bilance</h3>
+            <p class="blog-excerpt">
+              Reálná data z horského testu: dieselovému topení stačilo 1,8 kW výkonu a 2,5 litru nafty na 24 hodin při arktickém mrazu venku.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 9 -->
+        <article class="blog-card" data-article-id="9">
+          <div class="blog-media">
+            <img src="assets/images/orlican-hero.jpg" alt="TÜV Homologace v Německu">
+            <span class="blog-meta-badge">Homologace & Export</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">28. Července 2026 • 6 min čtení</span>
+            <h3 class="blog-title">LKW Wohnauflieger v Německu: TÜV, § 21 StVZO a export do DACH</h3>
+            <p class="blog-excerpt">
+              Proč němečtí zákazníci tolik vyhledávají české vojenské návěsy a jak probíhá zápis kategorie Sonder-Kfz Wohnmobil u TÜV.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+
+        <!-- Article 10 -->
+        <article class="blog-card" data-article-id="10">
+          <div class="blog-media">
+            <img src="assets/images/orlican-interior.jpg" alt="Off-grid sanita a voda">
+            <span class="blog-meta-badge">Soběstačnost & Sanita</span>
+          </div>
+          <div class="blog-body">
+            <span class="blog-date">20. Července 2026 • 6 min čtení</span>
+            <h3 class="blog-title">Off-Grid voda a toaleta bez chemie: Separační vs. Spalovací WC</h3>
+            <p class="blog-excerpt">
+              Suchá kompostovací toaleta šetří až 35 litrů pitné vody denně. Srovnání se spalovací toaletou Cinderella a biologickou filtrací šedé vody.
+            </p>
+            <span class="blog-read-more">Číst celý článek →</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="calc-card" style="background: linear-gradient(135deg, #1c241f, #28372d); border-color: rgba(217, 155, 38, 0.4); text-align: center; padding: 60px 40px;">
+        <span class="badge-tactical" style="margin-bottom: 16px;">Osobní prohlídka v dílně</span>
+        <h2 class="section-title" style="margin-bottom: 16px;" data-i18n="cta_banner_title">Máte pozemek nebo tahač? Rezervujte si prohlídku.</h2>
+        <p style="max-width: 620px; margin: 0 auto 32px; color: #d0ded4;" data-i18n="cta_banner_desc">
+          Přijeďte si prohlédnout hotový kus osobně. Vyzkoušejte prostor, ložnici v labutím krku a zkonzultujte dispozici vestavby na míru.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <button class="btn btn-primary open-lead-modal" data-i18n="cta_banner_btn">Domluvit termín prohlídky</button>
+          <a href="tel:+420777000000" class="btn btn-secondary">📞 +420 777 000 000</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="nav-brand">
+            <div class="brand-icon">N</div>
+            <div class="brand-text">
+              <span class="brand-title">ORLIČAN N-10S</span>
+              <span class="brand-subtitle">Overland & Living</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Manufakturní renovace a zakázková stavba obytných a expedičních návěsů z armádních izotermických skříní Orličan Choceň.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-heading">Navigace</span>
+          <ul class="footer-nav">
+            <li><a href="#anatomie">Konstrukce N-10S</a></li>
+            <li><a href="#vyuziti">Tiny House & Glamping</a></li>
+            <li><a href="#interier">Interiér & Dub</a></li>
+            <li><a href="#kalkulator">Cenový konfigurátor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-heading">Magazín</span>
+          <ul class="footer-nav">
+            <li><a href="#magazin">Orličan vs. Kontejner</a></li>
+            <li><a href="#magazin">Právní rozbor pozemků</a></li>
+            <li><a href="#magazin">Solární energetika</a></li>
+            <li><a href="#magazin">Expedice s Tatrou 6x6</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-heading">Kontakt & Dílna</span>
+          <ul class="footer-nav">
+            <li>📍 Výrobní dílna: Vsetín / Zlínský kraj</li>
+            <li>✉️ info@orlican-overland.cz</li>
+            <li>🇩🇪 Kundenservice DACH: de@orlican-overland.de</li>
+            <li>⏱️ Po–Pá: 8:00 – 17:00 (prohlídky po dohodě)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 ORLIČAN OVERLAND & LIVING. Všechna práva vyhrazena.</span>
+        <span>Militär-Wohnauflieger & Tiny House Manufaktur</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: ARTICLE READER -->
+  <div id="articleModal" class="modal-backdrop">
+    <div class="modal-window">
+      <button id="closeArticleModal" class="modal-close-btn">&times;</button>
+      <div id="modalArticleBody"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: LEAD CAPTURE / QUOTE REQUEST -->
+  <div id="leadModal" class="modal-backdrop">
+    <div class="modal-window" style="max-width: 550px;">
+      <button id="closeLeadModal" class="modal-close-btn">&times;</button>
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="badge-tactical" style="margin-bottom: 10px;">Nezávazná poptávka</span>
+        <h3 style="font-size: 1.6rem; color: #fff;">Poptat výrobní slot / prohlídku</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 6px;">
+          Zanechte kontakt. Ozveme se vám do 24 hodin s detailní technickou specifikací a termínem prohlídky.
+        </p>
+      </div>
+
+      <form id="leadForm" style="display: flex; flex-direction: column; gap: 16px;">
+        <div>
+          <label style="font-size: 0.85rem; color: #cbd5e1; display: block; margin-bottom: 6px;">Vaše Jméno a Příjmení</label>
+          <input type="text" required placeholder="Jan Novák" style="width: 100%; padding: 12px 16px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: #fff; font-size: 1rem; outline: none;">
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; color: #cbd5e1; display: block; margin-bottom: 6px;">Telefonní číslo</label>
+          <input type="tel" required placeholder="+420 777 123 456" style="width: 100%; padding: 12px 16px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: #fff; font-size: 1rem; outline: none;">
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; color: #cbd5e1; display: block; margin-bottom: 6px;">E-mail</label>
+          <input type="email" required placeholder="jan.novak@email.cz" style="width: 100%; padding: 12px 16px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: #fff; font-size: 1rem; outline: none;">
+        </div>
+
+        <div>
+          <label style="font-size: 0.85rem; color: #cbd5e1; display: block; margin-bottom: 6px;">Plánované využití</label>
+          <select style="width: 100%; padding: 12px 16px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: #fff; font-size: 0.95rem; outline: none;">
+            <option>Celoroční Tiny House na pozemek</option>
+            <option>Investiční Glamping pronájem</option>
+            <option>Expediční souprava s tahačem (Tatra / MAN)</option>
+            <option>Pouze zrenovovaná skříň bez vestavby</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Odeslat nezávaznou poptávku</button>
+      </form>
+
+      <div id="leadSuccessMsg" style="display: none; text-align: center; padding: 40px 20px;">
+        <div style="font-size: 3rem; margin-bottom: 12px;">✅</div>
+        <h4 style="font-size: 1.4rem; color: #fff; margin-bottom: 8px;">Poptávka úspěšně odeslána</h4>
+        <p style="color: var(--text-muted);">Děkujeme. Do 24 hodin vás budeme kontaktovat pro upřesnění detailů a termínu prohlídky.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
