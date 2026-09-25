@@ -1185,8 +1185,11 @@
   </div>
 
   <script>
-    // Selektor částky
+    // Selektor částky a dynamická hodnota pro konverze Sklik
+    let currentDonationAmount = 500;
+
     function setFunnelAmount(amount, impact) {
+      currentDonationAmount = amount;
       document.getElementById('custom-amount-container').style.display = 'none';
       document.querySelectorAll('.amount-btn').forEach(b => {
         if (b.innerText.includes(amount.toLocaleString('cs-CZ')) || b.innerText.includes(amount)) {
@@ -1223,11 +1226,13 @@
     function handleCustomAmountChange(val) {
       const num = parseInt(val, 10);
       if (num && num > 0) {
+        currentDonationAmount = num;
         const formatted = num.toLocaleString('cs-CZ') + '\u00A0Kč';
         document.getElementById('cta-amount-display').textContent = formatted;
         document.getElementById('sticky-amount-display').textContent = formatted;
         document.getElementById('funnel-impact').innerText = 'Váš dar ' + formatted + ' pomůže zajistit kauci na byt pro Jolanku a Marušku';
       } else {
+        currentDonationAmount = 500;
         document.getElementById('cta-amount-display').textContent = 'libovolnou částku';
         document.getElementById('sticky-amount-display').textContent = 'libovolnou částku';
       }
@@ -1292,10 +1297,44 @@
       }
     }
 
-    function trackDonationConversion() {
+    // Odeslání konverze Sklik s reálnou zvolenou částkou
+    function trackDonationConversion(source) {
+      const val = currentDonationAmount || 500;
       if (typeof window.SEM === 'function') {
-        window.SEM('track', 'Search', { value: 10, currency: 'CZK' });
-        window.SEM('track', 'Lead', { value: 10, currency: 'CZK' });
+        // 1. Spárováno s primární konverzí v účtu Sklik (ID: 100289271, semEventName: Search)
+        window.SEM('track', 'Search', {
+          value: val,
+          currency: 'CZK',
+          event_source: source || 'cta_button'
+        });
+        // 2. Standardní e-commerce/fundraising události Seznam SEM
+        window.SEM('track', 'Donate', {
+          value: val,
+          currency: 'CZK'
+        });
+        window.SEM('track', 'Lead', {
+          value: val,
+          currency: 'CZK'
+        });
+        window.SEM('track', 'InitiateCheckout', {
+          value: val,
+          currency: 'CZK'
+        });
+      }
+      if (window.rc && typeof window.rc.retargetingHit === 'function') {
+        window.rc.retargetingHit({
+          rtgId: 697549,
+          consent: 1,
+          value: val
+        });
+      }
+    }
+
+    function trackSocialShare(platform) {
+      if (typeof window.SEM === 'function') {
+        window.SEM('track', 'Contact', {
+          platform: platform
+        });
       }
     }
 
@@ -1340,8 +1379,21 @@
       updateSklik(false);
     });
 
-    document.querySelectorAll('#cta-button-main, #sticky-btn-link').forEach(btn => {
-      btn.addEventListener('click', trackDonationConversion);
+    // Navázání konverzí na tlačítka
+    document.getElementById('cta-button-main')?.addEventListener('click', function() {
+      trackDonationConversion('hero_cta');
+    });
+    document.getElementById('sticky-btn-link')?.addEventListener('click', function() {
+      trackDonationConversion('sticky_bar');
+    });
+    document.querySelectorAll('.btn-share-wa').forEach(el => {
+      el.addEventListener('click', () => trackSocialShare('whatsapp'));
+    });
+    document.querySelectorAll('.btn-share-fb').forEach(el => {
+      el.addEventListener('click', () => trackSocialShare('facebook'));
+    });
+    document.querySelectorAll('.btn-share-copy').forEach(el => {
+      el.addEventListener('click', () => trackSocialShare('copy_link'));
     });
   </script>
 </body>
