@@ -183,6 +183,15 @@ class SeznamMasterClient:
     def reindex(self, url: str):
         return self.wm_request("/web/document/reindex", method="POST", query={"url": url})
 
+    def document(self, url: str):
+        return self.wm_request("/web/document", query={"url": url})
+
+    def documents(self):
+        return self.wm_request("/web/documents")
+
+    def history(self, date_from=None, date_to=None):
+        return self.wm_request("/web/documents-history", query={"date_from": date_from, "date_to": date_to})
+
 if __name__ == "__main__":
     client = SeznamMasterClient()
     args = sys.argv[1:]
@@ -192,6 +201,14 @@ if __name__ == "__main__":
         print(json.dumps(client.status(), indent=2, ensure_ascii=False))
     elif cmd == "reindex" and len(args) > 1:
         print(json.dumps(client.reindex(args[1]), indent=2, ensure_ascii=False))
+    elif cmd == "doc" and len(args) > 1:
+        print(json.dumps(client.document(args[1]), indent=2, ensure_ascii=False))
+    elif cmd == "docs":
+        print(json.dumps(client.documents(), indent=2, ensure_ascii=False))
+    elif cmd == "history":
+        d_from = args[1] if len(args) > 1 else None
+        d_to = args[2] if len(args) > 2 else None
+        print(json.dumps(client.history(d_from, d_to), indent=2, ensure_ascii=False))
     elif cmd == "campaigns":
         res = client.drak("campaigns.list", {"isDeleted": False}, {"offset": 0, "limit": 100})
         print(json.dumps(res.get("campaigns", []), indent=2, ensure_ascii=False))
@@ -204,4 +221,4 @@ if __name__ == "__main__":
         body = json.loads(args[3]) if len(args) > 3 else None
         print(json.dumps(client.fenix(m, path, body=body), indent=2, ensure_ascii=False))
     else:
-        print("Usage: python3 seznam_tool.py [status|campaigns|reindex <url>|drak <method>|fenix <GET|POST> <path>]")
+        print("Usage: python3 seznam_tool.py [status|campaigns|reindex <url>|doc <url>|docs|history|drak <method>|fenix <GET|POST> <path>]")
