@@ -44,8 +44,8 @@
 
     <script>
     // Konfigurace sbírky na Znesnáze21
-    const CAMPAIGN_SLUG = "pomozte-nam-vratit-deti-domu"; // <-- ZDE VYPLŇTE PŘESNÝ NÁZEV (SLUG) KAMPANĚ
-    const ZNESNAZE_BASE_URL = `https://www.znesnaze21.cz/sbirka/${CAMPAIGN_SLUG}/darovat`;
+    // const CAMPAIGN_SLUG = "nazev-vasi-sbirky"; // Až bude sbírka vytvořena, použijeme k sestavení přesné URL // <-- ZDE VYPLŇTE PŘESNÝ NÁZEV (SLUG) KAMPANĚ
+    const ZNESNAZE_BASE_URL = "https://www.znesnaze21.cz"; // TODO: Změnit na přesnou URL sbírky
   </script>
 
   <!-- Sklik (Seznam.cz) Měření: Seznam Event Measurement (SEM) -->
@@ -822,7 +822,7 @@
       "@type": "DonateAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.znesnaze21.cz/sbirka/pomozte-nam-vratit-deti-domu/darovat"
+        "urlTemplate": "https://www.znesnaze21.cz"
       }
     }
   }
