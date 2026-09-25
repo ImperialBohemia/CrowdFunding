@@ -34,6 +34,10 @@
     });
   </script>
 
+  <!-- Sklik (Seznam.cz) Měření: Seznam Event Measurement (SEM) & Retargeting -->
+  <script async src="https://l.seznam.cz/sul.js?id=hmaf4eme3mgcuspokyh7dpoc"></script>
+  <script async src="https://c.seznam.cz/js/rc.js"></script>
+
   <style>
     /* Design System: Čistý, prostorný a důvěryhodný styl */
     :root {
@@ -1236,7 +1240,64 @@
       });
     }
 
-    // Cookie Banner Handling s Google Consent Mode v2
+    // Sklik měření (SEM & Retargeting)
+    function updateSklik(granted) {
+      const mode = granted ? 'granted' : 'denied';
+      const applySem = () => {
+        if (typeof window.SEM === 'function') {
+          window.SEM('updateConsent', {
+            consent_mode: {
+              ad_storage: mode,
+              ad_user_data: mode,
+              ad_personalization: mode
+            }
+          });
+          if (granted) {
+            window.SEM('track', 'PageView');
+          }
+          return true;
+        }
+        return false;
+      };
+
+      if (!applySem()) {
+        let retries = 0;
+        const interval = setInterval(() => {
+          retries++;
+          if (applySem() || retries > 30) {
+            clearInterval(interval);
+          }
+        }, 100);
+      }
+
+      if (granted) {
+        const applyRc = () => {
+          if (window.rc && typeof window.rc.retargetingHit === 'function') {
+            window.rc.retargetingHit({ rtgId: 697549, consent: 1 });
+            return true;
+          }
+          return false;
+        };
+        if (!applyRc()) {
+          let rtgRetries = 0;
+          const rtgInterval = setInterval(() => {
+            rtgRetries++;
+            if (applyRc() || rtgRetries > 30) {
+              clearInterval(rtgInterval);
+            }
+          }, 100);
+        }
+      }
+    }
+
+    function trackDonationConversion() {
+      if (typeof window.SEM === 'function') {
+        window.SEM('track', 'Search', { value: 10, currency: 'CZK' });
+        window.SEM('track', 'Lead', { value: 10, currency: 'CZK' });
+      }
+    }
+
+    // Cookie Banner Handling s Google Consent Mode v2 a Sklik SEM
     const banner = document.getElementById('cookie-banner');
     const btnAccept = document.getElementById('cookie-consent-accept');
     const btnReject = document.getElementById('cookie-consent-reject');
@@ -1251,7 +1312,12 @@
           'ad_personalization': 'granted',
           'analytics_storage': 'granted'
         });
+        updateSklik(true);
+      } else {
+        updateSklik(false);
       }
+    } else {
+      updateSklik(false);
     }
 
     btnAccept.addEventListener('click', function() {
@@ -1263,11 +1329,17 @@
         'ad_personalization': 'granted',
         'analytics_storage': 'granted'
       });
+      updateSklik(true);
     });
 
     btnReject.addEventListener('click', function() {
       localStorage.setItem('site_cookie_consent', 'denied');
       banner.style.display = 'none';
+      updateSklik(false);
+    });
+
+    document.querySelectorAll('#cta-button-main, #sticky-btn-link').forEach(btn => {
+      btn.addEventListener('click', trackDonationConversion);
     });
   </script>
 </body>
