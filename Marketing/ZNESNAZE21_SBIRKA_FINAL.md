@@ -62,17 +62,27 @@ PROČ SI NEMŮŽEME POMOCI SAMI:
 
 Jsem invalidní důchodkyně II. stupně s diagnózou epilepsie. Můj invalidní důchod činí přibližně 8 000 Kč měsíčně. Manžel je veden jako uchazeč o zaměstnání. Příspěvek na živobytí pro oba manžele je pouhých 5 510 Kč měsíčně. Žádost o příspěvek na péči podaná v září 2025 nebyla dodnes vyřízena — řízení na Úřadu práce se vleče již celý rok. Žádosti o mimořádnou okamžitou pomoc nám byly opakovaně zamítnuty. Z těchto částek nelze naspořit desítky tisíc na kauci.
 
-NA CO PŘESNĚ PŮJDOU VAŠE PENÍZE:
+NA CO PŘESNĚ PŮJDOU VAŠE PENÍZE (CÍL: 70 000 KČ):
 
-• Kauce (jistota) za nájemní byt
-• První měsíční nájemné
-• Pokud se vybere více: základní vybavení dětského pokoje (postele, povlečení, psací stůl pro Marušku do školy)
+• Kauce (jistota) na nájemní byt: 35 000 Kč (vyplaceno přímo majiteli)
+• První měsíční nájemné: 15 000 Kč (vyplaceno přímo majiteli)
+• Základní vybavení dětského pokoje pro dcery: 20 000 Kč (2 postele, lůžkoviny, psací stůl pro Marušku)
+• Celková potřebná částka: 70 000 Kč
 
-Každá koruna je transparentně sledovatelná přes platformu Znesnáze21. Žádné peníze nepůjdou na nic jiného než na bydlení, které nám umožní vzít si holčičky zpátky k sobě.
+Veškeré čerpání probíhá transparentně přes Znesnáze21 s přímými platbami pronajímateli a dodavatelům.
+
+PRÁVNÍ STAV A KROKY K ZÁCHRANĚ RODINY:
+
+Odebrání dětí a nařízení ústavní výchovy výhradně z finančních a bytových důvodů je v rozporu s judikaturou Ústavního soudu (sp. zn. II. ÚS 2549/15) i Evropského soudu pro lidská práva (rozsudek Wallová a Walla proti ČR). Stát a OSPOD mají zákonnou povinnost poskytnout rodině součinnost k zajištění bydlení.
+
+Paralelně se sbírkou podnikáme veškeré právní i sociální kroky:
+• Podáváme opatření proti nečinnosti Úřadu práce k rukám MPSV (§ 80 správního řádu) kvůli ročním průtahům u příspěvku na péči.
+• Odvoláváme se proti zamítnutí MOP s doložením akutního termínu soudu.
+• Jednáme s terénními službami a krizovými fondy neziskových organizací (Charita, Člověk v tísni) o překlenovací pomoci.
 
 ČAS HRAJE PROTI NÁM:
 
-Příští soudní jednání je stanoveno na 13. října 2026. Do té doby musíme mít podepsanou nájemní smlouvu — jinak hrozí, že soud rozhodne o dlouhodobé ústavní výchově a my o dcery přijdeme na roky.
+Soudní jednání je nařízeno na 13. října 2026. Do té doby musíme doložit zajištěné bydlení, aby soud nemusel rozhodovat o dlouhodobém ústavním umístění. Sbírka je klíčovým pilířem pro složení kauce a bezpečný návrat holčiček.
 
 Prosíme vás: Pomozte nám být zase rodina. Děkujeme z celého srdce za každou korunu i za sdílení.
 
