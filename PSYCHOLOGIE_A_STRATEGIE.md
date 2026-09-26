@@ -12,7 +12,7 @@
   * Maminka má epilepsii (ID 2. stupně), tatínek o ni nepřetržitě pečuje při záchvatech.
   * Pád do krize zavinil 6měsíční výpadek výplaty dávek státem, nikoliv alkohol či nezodpovědnost.
 * **Efekt konkrétního dopadu:**
-  * Dárce vidí přesné položky: kauce pronajímateli, postýlka pro Jolanku (3), stůl pro Marušku (12).
+  * Dárce vidí přesné položky: kauce pronajímateli, postýlka pro Jolanku (3), stůl pro Marušku (11).
 
 ---
 
@@ -20,10 +20,10 @@
 
 ### A. Titulek
 * **Vzorec:** Emoce dětí + Konkrétní cíl + Naděje na domov.
-* **Příklad:** *„Vraťme Jolanku (3) a Marušku (12) domů k mámě a tátovi: Pomoc s kaucí na bydlení“*.
+* **Příklad:** *„Vraťme Jolanku (3) a Marušku (11) domů k mámě a tátovi: Pomoc s kaucí na bydlení“*.
 
 ### B. Úvod (Kdo jsou dcerky)
-* Představení dcer (Jolanka 3 roky, Maruška 12 let, co prožívají, jak moc jim chybí domov).
+* Představení dcer (Jolanka 3 roky, Maruška 11 let, co prožívají, jak moc jim chybí domov).
 * Láskyplné pouto rodiny a pravidelné víkendové návštěvy.
 
 ### C. Zlomový moment (Jak ke krizi došlo)

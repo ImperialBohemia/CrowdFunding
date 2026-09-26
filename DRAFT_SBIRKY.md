@@ -1,4 +1,4 @@
-# Návrh sbírky: Návrat dcer Jolanky (3) a Marušky (12) domů k rodičům
+# Návrh sbírky: Návrat dcer Jolanky (3) a Marušky (11) domů k rodičům
 
 ## Základní parametry sbírky
 * **Doporučená platforma:** Znesnáze21 (ochrana před exekucí, přímá platba pronajímateli).
@@ -10,10 +10,10 @@
 ## Vzorový text sbírky
 
 ### Titulek
-**Vraťme Jolanku (3) a Marušku (12) domů k mámě a tátovi: Pomoc s kaucí na bydlení**
+**Vraťme Jolanku (3) a Marušku (11) domů k mámě a tátovi: Pomoc s kaucí na bydlení**
 
 ### 1. Úvod (Naše dcerky)
-Jsme dva milující rodiče dvou dcer – tříleté Jolanky a dvanáctileté školačky Marušky. Děti jsou pro nás vším, ale kvůli ztrátě bydlení musely být dočasně umístěny do zařízení. Každý den bez nich je pro nás nesmírně těžký. Naším jediným životním cílem je mít dcery zpátky doma u sebe.
+Jsme dva milující rodiče dvou dcer – tříleté Jolanky a jedenáctileté školačky Marušky. Děti jsou pro nás vším, ale kvůli ztrátě bydlení musely být dočasně umístěny do zařízení. Každý den bez nich je pro nás nesmírně těžký. Naším jediným životním cílem je mít dcery zpátky doma u sebe.
 
 ### 2. Proč ke krizi došlo (Zdraví maminky a byrokracie)
 Maminka trpí vážnou epilepsií a má přiznaný invalidní důchod 2. stupně. Tatínek o ni musí celodenně pečovat a pomáhat jí při záchvatech, proto nemůže odcházet do běžného zaměstnání na směny mimo domov. 
